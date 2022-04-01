@@ -1434,7 +1434,7 @@ var concernsfront=[
 ]
 
 
-Herbs.forEach(function(ele)
+/.forEach(function(ele)
 {
     var div=document.createElement("div")
     var image=document.createElement("img")
