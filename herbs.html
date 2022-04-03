@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/index.css">
+    <style>
+      #harbs{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns:repeat(4,1fr);
+        grid-template-rows: auto;
+        gap: 10px;
+      }
+      #harbs>div{
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        height: 400px;
+        border-radius: 12px;
+      }
+      #harbs>div:hover{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        cursor: pointer;
+      }
+      .tag1{
+        color: grey;
+        font-size: 14px;
+       margin-left: 10px;
+      }
+      .himg{
+        border-radius: 12px 12px 0px 0px;
+        width: 100%;
+      }
+      h2{
+        margin-left: 10px;
+      }
+    </style>
+</head>
+<body>
+  <div id="b1">
+    <div class="b2"><a href="index.html"><img src="https://www.1mg.com/images/tata_1mg_logo.svg"></div> </a>
+
+    <div> <p> <a id="a1" href="index.html">MEDICINE</a></p> </div>
+
+    <div class="b1"><p><a href="labtest.html">LAB TESTS</a></p></div>
+    <div class="b1"><p><a href="askdoctor.html">ASK DOCTOR</a></p></div>
+    <div class="b1"><p><a href="covid.html">COVID-19</a></p></div>
+    <div class="b1"><p><a href="herbs.html">AYURVEDA</a></p></div>
+    <div class="b1"><p><a href="plan.html">CARE PLAN</a></p></div>
+    <!-- <div class="b3"> <P><a>Login</a>/<a>Sign Up</a></P></div> -->
+    <!-- ................................................... .................................-->
+  <div>  <P><a  onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login/Sign Up</a></div>
+
+    <!-- ..................................................................................... -->
+    <div><p><a href="offer.html">Offers</a></p></div>
+    <a href="Cart.html"><i style="font-size: 30px;" class="fa-solid fa-cart-arrow-down"></i></a>
+    <div><p><a href="Needhelp.html">Need Help?</a></p></div>
+</div>
+<div id="b1">
+
+ <div class="location">
+   <i class="fa-solid fa-location-dot icon"></i>
+   <select>
+       <option>delhi</option>
+       <option>Annur</option>
+       <option>Arantangi</option>
+       <option>Ashok Nagar</option>
+       <option>Attuvampatti</option>
+       <option>Aurangabad Maharashtra</option>
+       <option>Aviyur</option>
+       <option>Bagalkot</option>
+       <option>Baghpat</option>
+       <option>Bahadurgarh</option>
+       <option>Bahraich</option>
+       <option>Assaudh</option>
+       <option>Ayyangarkulam</option>
+       <option>Aurangabad Bihar</option>
+
+   </select>
+   <div class="sicon"><i style="margin-left: 40px;" class="fa-solid fa-location-crosshairs  icon"></i></div>
+ </div>
+ <div class="search">
+
+          <div class="input"><input type="search" placeholder="Search for Medicines and Health Products "class="input"></div> 
+       
+         <div class="tsearch"><span class="tr"><a><i class="fa-solid fa-magnifying-glass icon"></i></a></span></div>  
+</div>
+<div class="offer"><div style="width: 40px;"><i style="color: red;" class="fa-solid fa-bolt icon"></i></div><span class="text">QUICK BUY! Flat 25% off on medicines*</span></div>
+
+<button class="btn1">Upload</button> 
+</div>
+<!--.................................................................. home page list.................................................................................... -->
+<div class="list">
+
+ <div>  <ul id="menu">
+       <li><a href="#">Health Resource Center<span><i class="fa-solid fa-angle-down down"></i></span></a>
+       <uL>
+           <li>All Diseases</li>
+           <li>All Medicines</li>
+           <li>Medicines by the Therapeutic Class</li>
+
+       </uL></li>
+   </ul>
+   </div>
+   <div style="width: 170px;">
+       <ul id="menu">
+   <li><a href="#">Covid Essentials<span><i class="fa-solid fa-angle-down down"></i></span></a>
+      <ul>
+     <li>Covid-19 Self test kits</li>
+     <li>Oxygen Cans & Concentrators</li>
+     <li>Masks</li>
+     <li>Sanitizers & Handwash Products</li>
+     <li>Support Your Immunity</li>
+     <li>Thermometer</li>
+     <li>Chyawanprash</li>  l
+   </ul>
+  </li>
+</ul>
+</div>
+<div style="width: 100px;">
+   <ul id="menu">
+  <li ><a>Featured <span><i class="fa-solid fa-angle-down down"></i></span></a>
+     <ul>
+     <li>Tata 1mg Health Products</li>
+     <li>What others are buying</li>
+     <li>New Arrivals on Tata 1MG</li>
+     <li>Buy More, Save More</li>
+     <li>Minimum 33% Off</li>
+     <li>Combos</li> 
+   </ul>
+          </li>
+       </ul>
+</div>
+<div>
+<ul id="menu">
+<li ><a>Vitamins & Nutrition<span ><i class="fa-solid fa-angle-down down"></i></span></a>
+  <ul>
+  <li>Multivitamins</li>
+  <li>Vitamins A-Z</li>
+  <li>Mineral Supplements</li>
+  <li>Vitamin B12 & B Complex</li>
+  <li>Nutritional Drinks</li>
+  <li>Adult Daily Nutrition</li>
+  <li>Kids Nutrition (2-15 Yrs)</li>
+  <li>For Women </li>
+
+</ul>
+       </li>
+    </ul> 
+   </div>
+   <div style="width: 140px;">
+       <ul id="menu">
+           <li ><a>Diabetes<span ><i class="fa-solid fa-angle-down down"></i></span></a>
+              <ul>
+              <li>Devices</li>
+              <li>Blood Glucose Monitors</li>
+              <li>Test Strips & Lancets</li>
+              <li>Syringes & Pens</li>
+              <li>Nutritional Drinks</li>
+              <li> Homeopathy Medicines</li>
+              <li>Diabetic Medicines</li>
+              <li>Ayurvedic Medicines </li>
+        </ul>
+        </li>
+       </ul> 
+   </div>
+   <div style="width: 180px;">
+       <ul id="menu">
+           <li ><a>Healthcare Devices<span ><i class="fa-solid fa-angle-down down"></i></span></a>
+              <ul>
+              <li>Devices</li>
+              <li>Blood Glucose Monitors</li>
+              <li>Test Strips & Lancets</li>
+              <li>Syringes & Pens</li>
+              <li>Nutritional Drinks</li>
+              <li> Homeopathy Medicines</li>
+              <li>Diabetic Medicines</li>
+              <li>Ayurvedic Medicines </li>
+        </ul>
+        </li>
+       </ul> 
+   </div>
+   <div style="width: 170px;">
+       <ul id="menu">
+      <li ><a>Personal Care<span ><i class="fa-solid fa-angle-down down"></i></span></a>
+         <ul>
+         <li>Tata 1mg Health Products</li>
+         <li>What others are buying</li>
+         <li>New Arrivals on Tata 1MG</li>
+         <li>Buy More, Save More</li>
+         <li>Minimum 33% Off</li>
+         <li>Combos</li> 
+       </ul>
+              </li>
+           </ul>
+  </div>
+  <div style="width: 30px;">
+   <ul id="menu">
+  <li ><a>Ayurveda Products<span ><i class="fa-solid fa-angle-down down"></i></span></a>
+     <ul>
+     <li>Tata 1mg Health Products</li>
+     <li>What others are buying</li>
+     <li>New Arrivals on Tata 1MG</li>
+     <li>Buy More, Save More</li>
+     <li>Minimum 33% Off</li>
+     <li>Combos</li> 
+   </ul>
+          </li>
+       </ul>
+</div>
+<div style="margin: auto;">
+<ul id="menu">
+<li ><a>Homeopathy<span ><i class="fa-solid fa-angle-down down"></i></span></a>
+ <ul>
+ <li>Tata 1mg Health Products</li>
+ <li>What others are buying</li>
+ <li>New Arrivals on Tata 1MG</li>
+ <li>Buy More, Save More</li>
+ <li>Minimum 33% Off</li>
+ <li>Combos</li> 
+</ul>
+      </li>
+   </ul>
+</div>  
+</div>
+    <div id="harbs">
+      
+    </div>
+
+    
+
+    <div id="container">
+      <h2>Stay Healthy with Tata 1mg: Your Favourite Online Pharmacy and Healthcare Platform</h2>
+  <h3>We Bring Care to Health.</h3>
+  <p>Tata 1mg is India's leading digital healthcare platform. From doctor consultations on chat to online pharmacy and lab tests at home: we have it all covered for you. Having delivered over 25 million orders in 1000+ cities till date, we are on a mission to bring "care" to "health" to give you a flawless healthcare experience.</p>
+  <h3>Tata 1mg: Your Favourite Online Pharmacy!</h3>
+  <p>
+      Tata 1mg is India's leading online chemist with over 2 lakh medicines available at the best prices. We are your one-stop destination for other healthcare products as well, such as over the counter pharmaceuticals, healthcare devices and homeopathy and ayurveda medicines.
+  </p>
+  <p>
+      With Tata 1mg, you can buy medicines online and get them delivered at your doorstep anywhere in India! But, is ordering medicines online a difficult process? Not at all! Simply search for the products you want to buy, add to cart and checkout. Now all you need to do is sit back as we get your order delivered to you.
+  </p>
+  <p>
+      In case you need assistance, just give us a call and we will help you complete your order.
+  </p>
+  <p>
+      Don't want to go through the hassle of adding each medicine separately? You can simply upload your prescription and we will place your order for you. And there is more! At Tata 1mg, you can buy health products and medicines online at best discounts.
+  </p>
+  <p>
+      Now, isn't that easy? Why go all the way to the medicine store and wait in line, when you have Tata 1mg Pharmacy at your service.
+  </p>
+  <h3>The Feathers in Our Cap</h3>
+  <p>
+      At Tata 1mg, our goal is to make healthcare understandable, accessible and affordable in India. We set out on our journey in 2015, and have come a long way since then. Along the way, we have been conferred with prestigious titles like <b>Munjal Award for 'Business Excellence through Learning and Development', Best Online Pharmacy in India Award and Top 50 venture in The Smart CEO-Startup50 India.</b>  We have been selected as the only company from across the globe for <b>SD#3 "Health & Well Being for all" by Unreasonable group, US State Department.</b> In 2019 alone we received three awards including the <b>BMW Simply Unstoppable Award.</b>
+  </p>
+  <h3>The Services We Offer</h3>
+  <p>
+      Tata 1mg is India's leading digital healthcare platform, where you can buy medicines online with discount. Buy medicine online in Delhi, Mumbai, Bangalore, Hyderabad, Pune, Gurgaon, Noida, Kolkata, Chennai, Ahmedabad, Lucknow and around a 1000 more cities. Besides delivering your online medicine order at your doorstep, we provide accurate, authoritative & trustworthy information on medicines and help people use their medicines effectively and safely.
+  </p>
+  <p>
+      We also facilitate lab tests at home. You can avail over 2,000 tests and get tested by 120+ top and verified labs at the best prices. Need to consult a doctor? On our platform, you can talk to over 20 kinds of specialists in just a few clicks.
+  </p>
+  <p>
+      Customer centricity is the core of our values. Our team of highly trained and experienced doctors, phlebotomists and pharmacists looks into each order to give you a fulfilling experience.
+  </p>
+  <p>
+      We’ve made healthcare accessible to millions by giving them quality care at affordable prices. Customer centricity is the core of our values. Our team of highly trained and experienced doctors, phlebotomists and pharmacists looks into each order to give you a fulfilling experience.
+  </p>
+  <p>
+      Visit our online medical store now, and avail online medicine purchase at a discount.
+  </p>
+  <p>
+      Stay Healthy!
+  </p>
+  <h2 id="head">INDIA’S LARGEST HEALTHCARE PLATFORM</h2>
+  <div class="rel">
+      <div>
+         <div class="rate">260m+</div>
+         <div>Visitors</div> 
+      </div>
+      <div>
+          <div class="rate">31m+</div>
+          <div>Orders Delivered</div>
+      </div>
+      <div>
+          <div class="rate">1800+</div>
+          <div>Cities</div> 
+      </div>
+  </div>
+  <div id="link">
+      <div>Get the link to download App</div>
+      <div>
+          <form>
+              <input type="number" placeholder="Enter Phone Number">
+              <button>Send Link</button>
+          </form>
+      </div>
+  </div>
+  <div class="overall">
+      <div class="inside">
+         <div>
+             <h3 class="extra">Know Us</h3>
+             <ul>
+                 <li><a href="aboutUs.html"><span>About Us</span></a></li>
+                 <li><a href="contact.html"><span>Contact us</span></a></li>
+                 <li><a href="press.html"><span>Press Coverage</span></a></li>
+                 <li><a href="carrers.html"><span>Carrers</span></a></li>
+                 <li><a href="business.html">
+                     <span>Business Parternship</span>
+                 </a></li>
+                 <li><a href="parner.html"><span>Become ahealth Partner</span></a></li>
+             </ul>
+         </div> 
+      </div>
+      <div class="inside">
+          <div>
+              <h3 class="extra">Our Policies</h3>
+              <ul>
+                  <li><a href="aboutUs.html"><span>Privacy Policy</span></a></li>
+                  <li><a href="contact.html"><span>Terms and Conditions</span></a></li>
+                  <li><a href="press.html"><span>Editorial Policy</span></a></li>
+                  <li><a href="carrers.html"><span>Return Policy</span></a></li>
+                  <li><a href="business.html">
+                      <span>IP Policy</span>
+                  </a></li>
+                  <li><a href="parner.html"><span>Grievance Redressal Policy</span></a></li>
+              </ul>
+          </div> 
+      </div >
+      <div class="inside">
+          <div>
+              <h3 class="extra">Our Services</h3>
+              <ul>
+                  <li><a href="aboutUs.html"><span>Order Medicines</span></a></li>
+                  <li><a href="contact.html"><span>Book Lab Tests</span></a></li>
+                  <li><a href="press.html"><span>Consult a Doctor</span></a></li>
+                  <li><a href="carrers.html"><span>Ayurveda Articles</span></a></li>
+                  <li><a href="business.html">
+                      <span>Hindi Articles</span>
+                  </a></li>
+                  <li><a href="parner.html"><span>Care Plan</span></a></li>
+              </ul>
+          </div> 
+      </div>
+      <div class="inside">
+          <div>
+              <h3 class="extra">Connect</h3>
+              <p><span class="tag">Social Links</span></p>
+              <ul>
+                  <!-- <li><span class="tag">Social Links</span></li> -->
+                  <li>
+                      <a class="icn" href="https://www.facebook.com/1mgOfficial"><span><i class="fa-brands fa-facebook-square"></i></span></a>
+                      <a class="icn" href="https://twitter.com/1mgofficial"><i class="fa-brands fa-twitter-square"></i></a>
+                      <a class="icn" href="https://www.youtube.com/c/1mgofficial"><i class="fa-brands fa-youtube"></i></a>
+                      <a class="icn" href="https://www.linkedin.com/company/1mg"><i class="fa-brands fa-linkedin"></i></a>
+                      <a class="icn" href="https://medium.com/1mgofficial"><i class="fa-solid fa-m"></i></a>
+                  </li>
+                  <!-- <li class="tag">Want daily dose of health?</li> -->
+                  <!-- <li><button id="btn">SIGN UP</button></li> -->
+              </ul>
+              <p><span class="tag">Want daily dose of health?</span></p>
+              <button id="btn">SIGN UP</button>
+          </div> 
+      </div>
+      <div>
+          <div>
+              <h5>Download App</h5>
+              <div><a href="https://play.google.com/store/apps/details?id=com.aranoah.healthkart.plus"><img src="images/gpay.jpeg" alt="gpay"/></a></div>
+              <div><div><a href="https://apps.apple.com/in/app/1mg/id554578419"><img src="images/apay.jpeg" alt="apay"/></a></div></div>
+          </div>
+      </div>
+  </div>
+  <div class="secure">
+      <div>
+          <div><img src="/images/relible.jpeg" alt="Reliable"/></div>
+          <div>
+              <h5>Reliable</h5>
+              <p class="blur">All products displayed on Tata 1mg are procured from verified and licensed pharmacies. All labs listed on the platform are accredited</p>
+          </div>
+      </div>
+      <div>
+          <div><img src="/images/secure.jpeg" alt="secure"/></div>
+          <div>
+              <h5>Secure</h5>
+              <p class="blur">Tata 1mg uses Secure Sockets Layer (SSL) 128-bit encryption and is Payment Card Industry Data Security Standard (PCI DSS) compliant</p>
+          </div>
+      </div>
+      <div>
+          <div><img src="/images/affordable.jpeg" alt="Affordable"/></div>
+          <div>
+              <h5>Affordable</h5>
+              <p class="blur">Find affordable medicine substitutes, save up to 50% on health products, up to 80% off on lab tests and free doctor consultations.</p>
+          </div>
+      </div>
+  </div>
+  <div class="last">
+          <div><img class="img" src="https://static.legitscript.com/seals/729605.png" alt=""/></div>
+          <div><img class="img" src="https://res.cloudinary.com/du8msdgbj/image/upload/v1580717209/URS_ebgmxc.png" alt=""/></div>
+  </div>
+  <div id="h"><h3>India's only LegitScript and ISO/ IEC 27001 certified online healthcare platform</h3></div>
+  <h4>Know more about Tata 1mg</h4>
+  <h3>Access medical and health information</h3>
+  <p>
+      Tata 1mg provides you with medical information which is curated, written and verified by experts, accurate and trustworthy. Our experts create high-quality content about medicines, diseases, lab investigations, Over-The-Counter (OTC) health products, Ayurvedic herbs/ingredients, and alternative remedies.
+  </p>
+  <h3>Order medicines online</h3>
+  <p>
+      Get free medicine home delivery in over 1800 cities across India. You can also order Ayurvedic, Homeopathic and other Over-The-Counter (OTC) health products. Your safety is our top priority. All products displayed on Tata 1mg are procured from verified and licensed pharmacies.
+  </p>
+  <h3>Book lab tests</h3>
+  <p>
+      Book any lab tests and preventive health packages from certified labs and get tested from the comfort of your home. Enjoy free home sample collection, view reports online and consult a doctor online for free.
+  </p>
+  <h3>Consult a doctor online</h3>
+  <p>
+      Got a health query? Consult doctors online from the comfort of your home for free. Chat privately with our registered medical specialists to connect directly with verified doctors. Your privacy is guaranteed.
+  </p>
+  <div class="disclaimer">
+      <div>
+          © 2022 Tata 1mg. All rights reserved. In compliance with Drugs and Cosmetics Act, 1940 and Drugs and Cosmetics Rules, 1945, we don't process requests for Schedule X and other habit forming drugs.
+      </div>
+      <div><img src="/images/payment.jpeg" alt="payment"/></div>
+  </div>
+
+  </div>
+
+</body>
+</html>
+
+
+<script>
+var Herbs=[
+
+
+{ image: "https://onemg.gumlet.io/image/upload/sdzsl07upy0u3sxckqyj.jpg",
+name:"Ashwagndha"  ,
+    tag:"Ashwagandha is an important herb of the Ayurvedic system of medicine. It is also known...",
+},
+{ image: "https://onemg.gumlet.io/image/upload/qh2zgvxci0mazembq9rs.jpg",
+name:"Shilajit"  ,
+ tag:"Shilajit is a mineral based extract which is pale-brown to blackish-brown in color. It is found in the Himalayan rocks ...",
+},
+{ image: "https://onemg.gumlet.io/image/upload/un9aranb98jy80ihbj95.jpg",
+name:"Giloy"  ,
+tag:"Giloy, also known as Amrita or Guduchi in Hindi, is an herb that helps improve digestion and boost immunity...",
+},
+{ image: "https://onemg.gumlet.io/image/upload/irazjokdgsiiuw6abiph.jpg",
+name:"Amla"  ,
+tag:"Amla, also known as “Indian gooseberry”, is loaded with nutrients and is the richest natural source of vitamin C...",
+},
+{ image: "https://onemg.gumlet.io/image/upload/wmbvvqjtdbp8svncngbb.jpg",
+name:"Isabgol"  ,
+tag:"Isabgol also known as psyllium husk is a dietary fiber that helps to increase stool and promote laxation...",
+},
+{ image: "https://onemg.gumlet.io/image/upload/s86txjtecyd8kbcjf7dv.jpg",
+name:"Turmeric"  ,
+tag:"Turmeric is an ancient spice which has been used mainly in cooking. It is also used as a medicine in providing...",
+},
+{ image: "https://onemg.gumlet.io/image/upload/qf6foj1ecxfkbtjvibz0.jpg",
+name:"Shatavari"  ,
+tag:"Shatavari is an Ayurvedic rasayana herb which is also known as the female-friendly herb. It is helpful in menstrual...",
+},
+{ image: "https://onemg.gumlet.io/image/upload/prncxs7zhvdk3imctkzk.jpg",
+name:"Apple cider vinegar"  ,
+tag:"Apple cider vinegar or ACV is a health tonic for strength and power. It is prepared by adding yeast and bacteria to apple...",
+},
+
+{ image: "https://onemg.gumlet.io/image/upload/q3lxrcgk8iok8lvx9lap.jpg",
+   name:"Honey"  ,
+    tag:"Honey is a viscous substance rich in a number of nutrients. In Ayurveda, it is called as “Perfection of Sweet",
+},
+  { image: "https://onemg.gumlet.io/image/upload/sykh1bejhrubparllps8.jpg",
+   name:"cinnamon"  ,
+    tag:"Cinnamon, also known as Dalchini, is a spice found in almost every kitchen...",
+}, 
+ { image: "https://onemg.gumlet.io/image/upload/qclivlzn55hbfukf2mjn.jpg",
+name:"Aloe vera"  ,
+ tag:"Aloe vera is a cactus-like succulent plant with a clear healing gel in the leaves. There are many species of Aloe...",
+}, 
+{ image: "https://onemg.gumlet.io/image/upload/uc2vwlgcfu9x2ylp9v0w.jpg",
+name:"Coconut"  ,
+tag:"Coconut is commonly known as “Nariyal” and is considered as a good luck charm for new beginnings. It is ...",
+},
+
+{ image: "https://onemg.gumlet.io/image/upload/gjiscdsvkzjbkcpt8xdw.jpg",
+   name:"Grapes"  ,
+    tag:"Grapes also known as Draksha in Ayurveda, is a famous fruit that offers a variety of health and medicinal",
+},
+  { image: "https://onemg.gumlet.io/image/upload/nn4y5pwmqmomide6az99.jpg",
+   name:"Tulsi"  ,
+    tag:"Tulsi is a holy plant that has both medicinal and spiritual properties. In Ayurveda, it is known by different",
+},
+  { image: "https://onemg.gumlet.io/image/upload/suekeilm4q8tykluzoqb.jpg",
+   name:"Papaya"  ,
+    tag:"Papaya, known as “Erandakarkati” in Ayurveda, is a low calorie juicy fruit rich in vitamin C and A. The fruit as well ",
+}, 
+ { image: "https://onemg.gumlet.io/image/upload/mydfvyybnncrn9dlnwk3.jpg",
+name:"Olive oil"  ,
+ tag:"Olive oil, also known as 'Jaitoon ka tel' is a pale yellow to dark green oil. It is extensively used in cooking",
+}, 
+{ image: "https://onemg.gumlet.io/image/upload/i9cevqvxprdxfe8l7gj9.jpg",
+name:"Tea tree oil"  ,
+tag:"Tea Tree oil is an essential oil with potent antiseptic property. It is beneficial for acne management due to...",
+},
+
+{ image: "https://onemg.gumlet.io/image/upload/qgyjmltpxtbcvd9yfcw0.jpg",
+name:"Alsi"  ,
+tag:"Alsi or Flax seeds are important oil seeds which are used for various medicinal benefits. It is rich in fibre...",
+},
+{ image: "https://onemg.gumlet.io/image/upload/kfvmisbzvvsfrwdrnfkx.jpg",
+name:"Ginger" ,
+tag:"Ginger is used as a spice, flavoring agent as well as herbal remedy in almost every Indian household. It is ",
+},
+{ image: "https://onemg.gumlet.io/image/upload/aajb2xlk0rrf1ihnfssk.jpg",
+name:"Dhania"  ,
+tag:"Dhania or Coriander is an evergreen herb with a characteristic aroma. Dried seeds of this plant are generally",
+},
+{ image: "https://onemg.gumlet.io/image/upload/tx3eulyzgfldbt7igzke.jpg",
+name:"Fennel seeds"  ,
+tag:"Fennel seeds are popularly known as Saunf in Hindi. It is an ancient Indian spice with culinary uses. Spices...",
+},
+{ image: "https://onemg.gumlet.io/image/upload/ayywlnwbshdwibuotbfj.jpg",
+name:"Bael"  ,
+tag:"Bael or Shivaduma also known as the tree of Lord Shiva is of sacred value in India. It is also an important medicinal ",
+},
+{ image: "https://onemg.gumlet.io/image/upload/xz0yj3koo8pkwxur0eff.jpg",
+   name:"Licorice"  ,
+    tag:"Licorice or Mulethi, also known as “Sweetwood”, is an effective and potent medicinal herb. Licorice root i..",
+},  { image: "https://onemg.gumlet.io/image/upload/warfsmkefwmcz7ztbg31.jpg",
+name:"Ajwain"  ,
+ tag:"Ajwain is an Indian spice commonly used as a remedy for gastrointestinal problems like indigestion, flatulence....",
+},
+{ image: "https://onemg.gumlet.io/image/upload/ezfdfqum4v4j5eve0sqo.jpg",
+name:"Onion"  ,
+tag:"Onion or Pyaaz has a strong pungent smell and is used in various forms to impart flavour to dishes. There ",
+},
+{ image: "https://onemg.gumlet.io/image/upload/oxbavfj3ka8nzu3kijq0.jpg",
+name:"Bhringraj"  ,
+tag:"Bhringraj is also known as Kesharaj which means “Ruler of the hair”. It is rich in proteins, vitamins and antioxidants ",
+},
+{ image: "https://onemg.gumlet.io/image/upload/jjuvxnubrxztnibqkp8w.jpg",
+name:"Shikakai"  ,
+tag:"Shikakai which means “fruit for hair” is a part of the traditional Indian Ayurvedic medicine. It is an herb especially ",
+},
+{ image: "https://onemg.gumlet.io/image/upload/clnpt3a8m2bzr4c1gnop.jpg",
+name:"Mehendi"  ,
+tag:"Mehendi or Henna is the symbol of joy, beauty and sacred rituals in the Hindu culture. It is cultivated for cosmetic",
+},
+{ image: "https://onemg.gumlet.io/image/upload/uheuox2au01kl1mcbfwg.jpg",
+name:"Lemongrass"  ,
+tag:"Lemongrass is also known as Bhutrin in Ayurveda. It is widely used in the food industry as a flavouring agent.",
+},{ image: "https://onemg.gumlet.io/image/upload/xcyxzwfyinrizijahzoe.jpg",
+name:"Reetha"  ,
+tag:"Reetha or Soapnuts is also called as Arishtak in Ayurveda and “Soap nut tree” in India. It is well known f...",
+},{ image: "https://onemg.gumlet.io/image/upload/gygt7roien360xj3be3o.jpg",
+name:"Almond"  ,
+tag:"Almond, also known as the “King of Nuts”, is a highly nutritious food and is available in two varieties- sweet and bitter",
+},
+{ 
+image:"https://onemg.gumlet.io/image/upload/pmjcfez9bve8pqpnichg.jpg",
+name:"VACHA",
+tag:"Vacha is an ancient herb having various health benefits. The name “Vacha” in San..."
+
+},
+{
+image:"https://onemg.gumlet.io/image/upload/pmjcfez9bve8pqpnichg.jpg",
+name:	"VANGA BHASMA",
+tag:"Vanga Bhasma is a traditional ayurvedic medicine which is an organometallic prep..."
+},
+{image:"https://onemg.gumlet.io/image/upload/bgrr0tw6kmahsvnabfac.jpg",
+name:	"VARUN",
+tag:	"Varun is a famous diuretic Ayurvedic herb. It is also a good blood purifier that..."
+},
+{image:"https://res.cloudinary.com/du8msdgbj/image/upload/v1636528020/kbbtdajgjvqcerngf5gy.jpg",
+name:	"VASAVALEHA",
+tag:"Vasavaleha is a semi-solid herbal formulation. It provides relief from respirato..."
+},
+{image:"https://onemg.gumlet.io/image/upload/kvavoutc8bpjyan5ygk4.jpg",
+name:	"VATSNABH",
+tag:"Vatsnabh “the king of poisons‟ is a poisonous herb and widely used in therapeuti...",
+},{image:"https://onemg.gumlet.io/image/upload/abflotsygs7rdzneoikr.jpg",
+name:	"VIDANGA",
+tag:"Vidanga, commonly known as false black pepper, has various medicinal properties ...",
+},
+{image:"https://res.cloudinary.com/du8msdgbj/image/upload/v1641537194/fesnnmgliotbiuybb1dk.jpg",
+name:"VIDANGARISHTA",
+tag:"Vidangarishta, also called Vidangarist and Vidangarishtam, is a herbal Ayurvedic...",
+},
+{
+image:"https://onemg.gumlet.io/image/upload/fvxb3hj2tmjgxqjq1vmm.jpg",
+name:"VIDARIKAND",
+tag:"Vidarikand a perennial herb which is commonly known as Indian Kudzu. The tubers ..."
+},
+{image:"https://onemg.gumlet.io/image/upload/gi0xtyu8sspsh6payxr8.jpg",
+name:"VIJAYSAR",
+tag :"Vijaysar is widely used in Ayurveda as a “Rasayana” (rejuvenating) herb. The bar..."
+},
+]
+  
+    Herbs.map(function (elem) {
+    var box = document.createElement("div");
+
+    var img = document.createElement("img");
+    img.src = elem.image;
+    img.setAttribute("class","himg")
+
+    var name = document.createElement("h2");
+    name.textContent = elem.name;
+
+
+    var inline = document.createElement("p");
+    inline.innerText = elem.tag;
+    inline.setAttribute("class","tag1")
+    
+    box.append(img,name,inline);
+
+    document.querySelector("#harbs").append(box);
+  });
+
+</script>

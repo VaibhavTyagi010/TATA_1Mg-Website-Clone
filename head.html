@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+<style>
+*{
+    font-family: clear sans,Helvetica Neue,Helvetica, Arial, sans-seriff; 
+}
+body>a:hover{
+    color: red;
+    cursor: pointer;
+}
+
+#b1{
+    width: 100%;
+    height: 44px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    padding-left: 20px;
+    display: flex;
+    gap: 20px;
+}
+.b1{
+    text-align: center;
+    justify-content:center;
+    font-weight: bold;
+    font-size: 15px;
+}
+.b2{
+    margin-top: 4px;
+    margin-right: 20px;
+
+}
+.b3{
+    margin-left: 130px;
+    
+}
+#a1{
+    color: red;
+    font-weight: bold;
+    font-size: 15px;
+}
+i{
+    
+    font-size: 20px;
+    margin-top:10px;
+    margin-right: 60px;
+    margin-left: 30px;
+    font-size: 25px;
+}
+.location{
+    width: 19%;
+    height: 35px;
+    margin-top: 5px;
+    margin-left:  10px;
+    background-color: #F1F4F6;
+    border-radius: 5px 0px 0px 5px ;
+    display: flex;
+
+}
+.icon{
+    font-size: 15px;
+    color: gray;
+}
+.sicon{
+
+    width: 60px;
+    margin-left: 60px;
+}
+select{
+    width: 80px;
+    height: 20px;
+    margin-left:-50px;
+    border: 0px;
+    background-color: #F1F4F6;
+}
+.search{
+    height: 35px;
+    margin-top: 5px;
+    padding-top: 0px;
+    background-color: #F1F4F6;
+    width: 500px;
+    display: flex;
+}
+.input{
+    background-color: #F1F4F6;
+    width: 440px;
+    height: 25px;
+    margin-top: 0px;
+    display: block;
+    text-align: center;
+    border: 0ch;
+}
+.offer
+{
+    
+    width: 340px;
+    display: flex;
+}
+.text{
+    font-size: 14px;
+    margin-top: 12px;
+    margin-left: 10px;
+}
+.btn1{
+    background-color: #FF6F61;
+    border-radius: 5px;
+    margin-left: -15px;
+    color: white;
+    width: 160px;
+    height: 35px;
+    margin-top: 5px;
+    font-size: 16px;
+    border: none;
+}
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.list>div{
+    
+    width: 200px;
+}
+#menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 40px;
+}
+#menu{
+    width: 500px;
+    margin:-5px;
+    margin-left: 0px;
+    padding:0px
+}
+#menu li{
+    float:left;
+    position:relative;
+    color: #6F6F6F;
+}
+#menu a{
+    float:left;
+    padding:12px 30px;
+    font-family: Baloo;
+    text-decoration: none;
+    color: #6F6F6F;
+}
+#menu ul{
+    margin :20px 0 0 0 ;
+    opacity: 0;
+    visibility:hidden ;
+    position:absolute;
+    top:40px;
+    left: 0;
+    z-index: 1;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+}
+#menu li:hover>ul{
+    opacity: 1;
+    visibility: visible;
+    margin: 0;
+    color: #6F6F6F;
+    background-color:wheat;
+}
+ul{
+    list-style: none;
+    font-size: small;
+    
+}
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+
+
+</head>
+<body>
+    <!--................................................................................ novbar .............................................................................................................-->
+    <div id="b1">
+         <div class="b2"><img src="https://www.1mg.com/images/tata_1mg_logo.svg"></div> 
+     
+         <div> <p> <a id="a1">MEDICINE</a></p> </div>
+    
+         <div class="b1"><p><a>LAB TESTS</a></p></div>
+         <div class="b1"><p><a>ASK DOCTOR</a></p></div>
+         <div class="b1"><p><a>COVID-19</a></p></div>
+         <div class="b1"><p><a>AYURVEDA</a></p></div>
+         <div class="b1"><p><a>CARE PLAN</a></p></div>
+         <div class="b3"> <P><a>Login</a>/<a>Sign Up</a></P></div>
+         <div><p><a>Offers</a></p></div>
+         <a><i class="fa-solid fa-cart-arrow-down"></i></a>
+         <div><p><a>Need Help?</a></p></div>
+</div>
+<div id="b1">
+  
+      <div class="location">
+        <i class="fa-solid fa-location-dot icon"></i>
+        <select>
+            <option>delhi</option>
+            <option>Annur</option>
+            <option>Arantangi</option>
+            <option>Ashok Nagar</option>
+            <option>Attuvampatti</option>
+            <option>Aurangabad Maharashtra</option>
+            <option>Aviyur</option>
+            <option>Bagalkot</option>
+            <option>Baghpat</option>
+            <option>Bahadurgarh</option>
+            <option>Bahraich</option>
+            <option>Assaudh</option>
+            <option>Ayyangarkulam</option>
+            <option>Aurangabad Bihar</option>
+
+        </select>
+        <div class="sicon"><i style="margin-left: 40px;" class="fa-solid fa-location-crosshairs  icon"></i></div>
+      </div>
+      <div class="search">
+
+               <div class="input"><input type="search" placeholder="Search for Medicines and Health Products "class="input"></div> 
+            
+              <div class="tsearch"><span class="tr"><a><i class="fa-solid fa-magnifying-glass icon"></i></a></span></div>  
+</div>
+   <div class="offer"><div style="width: 40px;"><i style="color: red;" class="fa-solid fa-bolt icon"></i></div><span class="text">QUICK BUY! Flat 25% off on medicines*</span></div>
+  
+   <button class="btn1">Upload</button> 
+</div>
+<!--.................................................................. home page list.................................................................................... -->
+<div class="list">
+    
+      <div>  <ul id="menu">
+            <li><a href="#">Health Resource Center<span><i class="fa-solid fa-angle-down down"></i></span></a>
+            <uL>
+                <li>All Diseases</li>
+                <li>All Medicines</li>
+                <li>Medicines by the Therapeutic Class</li>
+    
+            </uL></li>
+        </ul>
+        </div>
+        <div style="width: 170px;">
+            <ul id="menu">
+        <li><a href="#">Covid Essentials<span><i class="fa-solid fa-angle-down down"></i></span></a>
+           <ul>
+          <li>Covid-19 Self test kits</li>
+          <li>Oxygen Cans & Concentrators</li>
+          <li>Masks</li>
+          <li>Sanitizers & Handwash Products</li>
+          <li>Support Your Immunity</li>
+          <li>Thermometer</li>
+          <li>Chyawanprash</li>  l
+        </ul>
+       </li>
+    </ul>
+    </div>
+    <div style="width: 100px;">
+        <ul id="menu">
+       <li ><a>Featured <span><i class="fa-solid fa-angle-down down"></i></span></a>
+          <ul>
+          <li>Tata 1mg Health Products</li>
+          <li>What others are buying</li>
+          <li>New Arrivals on Tata 1MG</li>
+          <li>Buy More, Save More</li>
+          <li>Minimum 33% Off</li>
+          <li>Combos</li> 
+        </ul>
+               </li>
+            </ul>
+   </div>
+    <div>
+<ul id="menu">
+    <li ><a>Vitamins & Nutrition<span ><i class="fa-solid fa-angle-down down"></i></span></a>
+       <ul>
+       <li>Multivitamins</li>
+       <li>Vitamins A-Z</li>
+       <li>Mineral Supplements</li>
+       <li>Vitamin B12 & B Complex</li>
+       <li>Nutritional Drinks</li>
+       <li>Adult Daily Nutrition</li>
+       <li>Kids Nutrition (2-15 Yrs)</li>
+       <li>For Women </li>
+
+     </ul>
+            </li>
+         </ul> 
+        </div>
+        <div style="width: 140px;">
+            <ul id="menu">
+                <li ><a>Diabetes<span ><i class="fa-solid fa-angle-down down"></i></span></a>
+                   <ul>
+                   <li>Devices</li>
+                   <li>Blood Glucose Monitors</li>
+                   <li>Test Strips & Lancets</li>
+                   <li>Syringes & Pens</li>
+                   <li>Nutritional Drinks</li>
+                   <li> Homeopathy Medicines</li>
+                   <li>Diabetic Medicines</li>
+                   <li>Ayurvedic Medicines </li>
+             </ul>
+             </li>
+            </ul> 
+        </div>
+        <div style="width: 180px;">
+            <ul id="menu">
+                <li ><a>Healthcare Devices<span ><i class="fa-solid fa-angle-down down"></i></span></a>
+                   <ul>
+                   <li>Devices</li>
+                   <li>Blood Glucose Monitors</li>
+                   <li>Test Strips & Lancets</li>
+                   <li>Syringes & Pens</li>
+                   <li>Nutritional Drinks</li>
+                   <li> Homeopathy Medicines</li>
+                   <li>Diabetic Medicines</li>
+                   <li>Ayurvedic Medicines </li>
+             </ul>
+             </li>
+            </ul> 
+        </div>
+        <div style="width: 170px;">
+            <ul id="menu">
+           <li ><a>Personal Care<span ><i class="fa-solid fa-angle-down down"></i></span></a>
+              <ul>
+              <li>Tata 1mg Health Products</li>
+              <li>What others are buying</li>
+              <li>New Arrivals on Tata 1MG</li>
+              <li>Buy More, Save More</li>
+              <li>Minimum 33% Off</li>
+              <li>Combos</li> 
+            </ul>
+                   </li>
+                </ul>
+       </div>
+       <div style="width: 30px;">
+        <ul id="menu">
+       <li ><a>Ayurveda Products<span ><i class="fa-solid fa-angle-down down"></i></span></a>
+          <ul>
+          <li>Tata 1mg Health Products</li>
+          <li>What others are buying</li>
+          <li>New Arrivals on Tata 1MG</li>
+          <li>Buy More, Save More</li>
+          <li>Minimum 33% Off</li>
+          <li>Combos</li> 
+        </ul>
+               </li>
+            </ul>
+   </div>
+   <div style="margin: auto;">
+    <ul id="menu">
+   <li ><a>Homeopathy<span ><i class="fa-solid fa-angle-down down"></i></span></a>
+      <ul>
+      <li>Tata 1mg Health Products</li>
+      <li>What others are buying</li>
+      <li>New Arrivals on Tata 1MG</li>
+      <li>Buy More, Save More</li>
+      <li>Minimum 33% Off</li>
+      <li>Combos</li> 
+    </ul>
+           </li>
+        </ul>
+
+
+</div>  
+</div>
+</body>

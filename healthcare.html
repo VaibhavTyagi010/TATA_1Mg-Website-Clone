@@ -7,7 +7,7 @@
     <title>Document</title>
     <script src="https://kit.fontawesome.com/24c494a6b6.js"
     crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./styles/adult.css">
+    <link rel="stylesheet" href="./styles/healthcare.css">
 </head>
 <body>
       <!--................................................................................ novbar .............................................................................................................-->
@@ -28,7 +28,7 @@
         <!-- ..................................................................................... -->
         <div><p><a href="offer.html">Offers</a></p></div>
         <a href="Cart.html"><i style="font-size: 30px;" class="fa-solid fa-cart-arrow-down"></i></a>
-    <div><p><a href="Needhelp.html">Need Help?</a></p></div>
+        <div><p><a href="Needhelp.html">Need Help?</a></p></div>
 </div>
 <div id="b1">
  
@@ -195,11 +195,19 @@
    </ul>
           </li>
        </ul>
+       <div class="sort">
+        <p>Sort By</p>
+        <select id="s" onchange="sort()">
+        <option value="">Relevance</option>
+    <option value="asd">Price: low to high</option>
+    <option value="des">Price: high to low</option>
+    </select>
+    </div>
 </div>  
 </div>
 <div class="sort">
     <p>Sort By</p>
-    <select id="s" onchange="sort()">
+    <select id="s2" onchange="sort()">
     <option value="">Relevance</option>
 <option value="asd">Price: low to high</option>
 <option value="des">Price: high to low</option>
@@ -589,396 +597,412 @@
     </div>
 </body>
 </html>
-<script>
-    var others = [
-    {  
-        image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600112036/cropped/tqvups7t0qyejtmcrmlx.png",
-        name: "Digene Acidity & Gas Relief Gel Mint",
-        inline:"bottle of 450 ml Oral Gel",
-        rate:4.5,
-        ratingno:"791 ratings",
-        mrp:"MRP₹209.3330% OFF",
-        price:"₹146",
-    },
-    {  
-        image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600172865/cropped/p9llrthga484uzpridy1.jpg",
-        name: "UV Doux Silicone Sunscreen Gel SPF 50",
-        inline:"tube of 50 gm Gel",
-        rate:4.5,
-        ratingno:"105 ratings",
-        mrp:"MRP₹69921% OFF",
-        price:"₹547",
-    },
-    {
-        image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1646827978/g3maimvrdml91wvwyps1.jpg",
-        name: "Brufen Power Pain Relief 800 Sprays",
-        inline:"bottle of 40 gm Sprayl",
-        rate:4.1,
-        ratingno:"106 ratings",
-        mrp:"MRP₹15030% OFF",
-        price:"₹105",
-    },
-    { 
-        image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1638339497/zx0pwjazzovyyylhggz9.jpg",
-        name: "Lifree Extra Absorb Pants New...",
-        inline:"packet of 10 diapers",
-        rate:4.2,
-        ratingno:"31 ratings",
-        mrp:"MRP₹209.3330% OFF",
-        price:"₹364",
-    },
-    {   
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600090007/cropped/chesipqujcvcsuy1m8iw.jpg",
-        name: "Shelcal 500 Tablet",
-        inline:	"strip of 15 tablets",
-        rate:	4.5,
-        ratingno: "4093 ratings",     
-        mrp: "MRP₹108.718% OFF",	
-        price: "₹ 89",	
-    },
-    {   image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600247831/cropped/fecia1ifdlag62iqjhxw.jpg",
-        name: "Durex Air Ultra Thin Condom",
-        inline: "packet of 10 condoms",
-        rate: 4.2,
-        ratingno: "714 ratings",
-        mrp: "MRP₹22826% OFF",
-        price: "₹ 169",
-        },
-    {
-       image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1632312417/sftqra1arzgoufnxvfgz.jpg",
-       name: "Evion 400mg Capsule",
-       inline: "strip of 10 capsules",
-       rate: 4.5,
-       ratingno: "5538 ratings",
-       mrp: "MRP₹32.712% OFF",
-       price: "₹ 28",
 
-    },
+<script>
+
+
+var healthconcerns=[
     {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600085907/cropped/ysk4g4nzqqzkmdn4aemq.png",
-        name: "Zincovit Tablet",
-        inline: "strip of 15 tablets",
-        rate: 4.5,
-        ratingno: "4146 ratingss",
-        mrp: "MRP₹10519% OFF",
-        price: "₹ 85",
-   
+    image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1603182454/pc0kfczcu5phbkk5sy41.jpg",
+name:"	Dr Morepen Gluco One BG 03 Blood...",
+tag:"	box of 50 Test Strips	",
+rating:"	4.3	",
+ratno:"	5128 ratings	",
+mrp:"	MRP₹84928% OFF	",
+price:"₹612.98	",
     },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600085129/cropped/mu5bahqxfrp28cut6que.jpg",
-        name: "Dolo 650 Tablet",
-        inline: "strip of 15 tablets",
-        rate: 4.5,
-        ratingno: "4146 ratingss",
-        mrp: "MRP₹30.9120% OFF",
-        price: "₹ 24",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1647390351/peqt9rbamkoiajvdpew9.jpg",
-        name: "Dettol Original Bathing Soap...",
-        inline: "combo pack of 5 soaps",
-        rate: 4.5,
-        ratingno: "333 ratingss",
-        mrp: "MRP₹26012% OFF",
-        price: "₹ 227", 
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600196240/cropped/yho9zbsqs1yqgsmlq5fs.jpg",
-        name: "New Follihair Tablet",
-        inline: "bottle of 30 tablets",
-        rate: 4.1,
-        ratingno: "1250 ratingss",
-        mrp: "MRP₹61220% OFF",
-        price: "₹ 489", 
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600137906/cropped/ckrjzacxu5okokbtdgku.jpg",
-        name: "Dabur Pudin Hara Pearls",
-        inline: "strip of 10 soft gelatin capsules",
-        rate: 4.5,
-        ratingno: "1471 ratingss",
-        mrp: "MRP₹258% OFF",
-        price: "₹ 23",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1627473644/zsnkotrzi2xnhjzk9b6p.jpg",
-        name: "Seacod Cod Liver Oil Capsule",
-        inline: "bottle of 110 soft gelatin capsules",
-        rate: 4.5,
-        ratingno: "826 ratingss",
-        mrp: "MRP₹352.9825% OFF",
-        price: "₹ 264",
-      
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1621589190/cmrzmaq7uw07cjvvmmxq.jpg",
-        name: "Patanjali Divya Madhunashini Vati Extra Power",
-        inline: "box of 120 tablets",
-        rate: 4.5,
-        ratingno: "136 ratingss",
-        mrp: "MRP₹225",
-        price: "₹ 264",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1616005712/dh2hdm3d6qowctw6hofc.jpg",
-        name: "Mintop Forte 5% Solution",
-        inline: "bottle of 60 ml Solution",
-        rate: 4.5,
-        ratingno: "826 ratingss",
-        mrp: "MRP₹868.2519% OFF",
-        price: "₹ 703", 
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600091024/cropped/dgf5022akiboxp7drnhm.jpg",
-        name: "Refresh Tears Eye Drop",
-        inline: "bottle of 10 ml Eye Drop",
-        rate: 4.5,
-        ratingno: "826 ratingss",
-        mrp: "MRP₹143.3518% OFFF",
-        price: "₹ 117", 
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1637324194/gc3u9gfc331wtsipnljl.jpg",
-        name: "Tata 1mg Calcium + Vitam...",
-        inline: "bottle of 60 tablets",
-        rate: 4.2,
-        ratingno: "814 ratings",
-        mrp: "MRP₹59560% OFF",
-        price: "₹ 238", 
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600147625/cropped/zpfmlvskvqr6gzwhhfwc.png",
-        name: "Bgr 34 Tablet",
-        inline: "bottle of 100 tablets",
-        rate: 4.2,
-        ratingno: "1084 ratings",
-        mrp: "MRP₹60025% OFF",
-        price: "₹ 449",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1625118846/xqljyyelnecasglguvf6.jpg",
-        name: "Revital H Woman Tablet",
-        inline: "bottle of 30 tablets",
-        rate: 4.4,
-        ratingno: "1088 ratings",
-        mrp: "MRP₹34517% OFF",
-        price: "₹ 286",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1645618072/erduomsv6zkhycc5hj5k.jpg",
-        name: "Himalaya Wellness Pure Herbs Gokshura Tablet",
-        inline: "bottle of 60 tablets",
-        rate: 4.1,
-        ratingno: "691 ratings",
-        mrp: "MRP₹2005% OFF",
-        price: "₹ 190",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600089684/cropped/pvae0u3lqct2buryvo0r.jpg",
-        name: "Electral Powder",
-        inline: "sachet of 21.8 gm Powder",
-        rate: 4.6,
-        ratingno: "2180 ratings",
-        mrp: "MRP₹19.8418% OFF",
-        price: "₹ 16",  
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600138746/cropped/t3g9ksjjbcmmmrlwef5p.jpg",
-        name: "Prega News Pregnancy Test Kit",
-        inline: "packet of 1 Test Kit",
-        rate: 4.3,
-        ratingno: "181 ratings",
-        mrp: "MRP₹5540% OFF",
-        price: "₹ 33", 
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600149534/cropped/fpek6ht5m5nvi4ifzp5o.jpg",
-        name: "Sat-Isabgol Powder",
-        inline: "box of 200 gm Powder",
-        rate: 4.6,
-        ratingno: "1406 ratings",
-        mrp: "MRP₹20512% OFF",
-        price: "₹ 180", 
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600692556/pg0w5oqchlazn8khi1ij.jpg",
-        name: "Calcirol Sachet",
-        inline: "sachet of 1 gm Granules",
-        rate: 4.6,
-        ratingno: "1696 ratings",
-        mrp: "MRP₹56.418% OFF",
-        price: "₹ 46",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1618942125/uaerylojm65fdh0o0dfo.jpg",
-        name: "Otrivin Oxy Fast Relief Adult Nasal Spray",
-        inline: "bottle of 10 ml Nasal Spray",
-        rate: 4.4,
-        ratingno: "1157 ratings",
-        mrp: "MRP₹96.818% OFF",
-        price: "₹ 79",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600150822/cropped/hs8n67tibvf7k7egbqrg.jpg",
-        name: "Cofsils Lozenges Lemon Ginger",
-        inline: "strip of 10 lozenges",
-        rate: 4.6,
-        ratingno: "765 ratings",
-        mrp: "MRP₹3025% OFFF",
-        price: "₹ 22",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600169607/cropped/n1k4duta0orlzsoukthc.jpg",
-        name: "Scalpe+ Expert Anti Dandruff Shampoor",
-        inline: "bottle of 75 ml Shampoos",
-        rate: 4.2,
-        ratingno: "1620 ratings",
-        mrp: "MRP₹26015% OFF",
-        price: "₹ 221",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1613566796/iheqzrewt0n4auxbd2l6.jpg",
-        name: "Horlicks Health and Nutrition Drink Classic Malt",
-        inline: "packet of 1 kg Powder",
-        rate: 4.5,
-        ratingno: "254 ratings",
-        mrp: "MMRP₹390",
-        price: "₹ 221",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600082665/cropped/n0a7l0pflxnzbspqxklc.jpg",
-        name: "i-pill Tablet",
-        inline: "strip of 1 Tablet",
-        rate: 4.3,
-        ratingno: "164 ratings",
-        mrp: "MRP₹11010% OFF",
-        price: "₹ 99",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600159765/cropped/jajhds52xsvgols7owvz.jpg",
-        name: "Neeri KFT  Sugar Free Syrup",
-        inline: "bottle of 200 ml Syrup",
-        rate: 4.4,
-        ratingno: "665 ratings",
-        mrp: "MRP₹59525% OFF",
-        price: "₹ 442",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600643760/cropped/pkpjvytxdfehfgxbnnm8.jpg",
-        name: "Softovac-SF Bowel Regulator Powder Sugar Free",
-        inline: "jar of 250 gm Powderp",
-        rate: 4.4,
-        ratingno: "435 ratings",
-        mrp: "MRP₹41521% OFF",
-        price: "₹ 328",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600153167/cropped/qjz8l72piinjwwynexks.png",
-        name: "Dr Ortho an Ayurvedic Medicine Oil",
-        inline: "bottle of 120 ml Oil",
-        rate: 4.,
-        ratingno: "1200 ratings",
-        mrp: "MRP₹295 25% OFF",
-        price: "₹ 221",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1614235864/onqhkrg9xwnxjh5j53bd.jpg",
-        name: "Vantej Toothpaste",
-        inline: "tube of 100 gm Toothpaste",
-        rate: 4.5,
-        ratingno: "908 ratings",
-        mrp: "MRP₹288 6% OFF",
-        price: "₹ 241",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1648040207/nl1cydgm9ca9soq5yz1p.jpg",
-        name: "Abzorb Anti Fungal Dusting Powder",
-        inline: "bottle of 100 gm Dusting Powder",
-        rate: 4.5,
-        ratingno: "799 ratings",
-        mrp: "MRP₹14218% OFF",
-        price: "₹ 116",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600090238/cropped/uop87kzztwx7r3olo7g2.png",
-        name: "Venusia Max Intensive Moisturizing...",
-        inline: "pump bottle of 300 gm Lotion",
-        rate: 4.4,
-        ratingno: "479 ratings",
-        mrp: "MRP₹601 18% OFF",
-        price: "₹ 490",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1612854564/sjbhlpjner4thvjdrkdp.jpg",
-        name: "Friends Premium Adult Dry Pants Medium",
-        inline: "packet of 10 diapers",
-        rate: 4.3,
-        ratingno: "325 ratings",
-        mrp: "MRP₹55028% OFF",
-        price: "₹ 396",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600553706/cropped/usu74sohegveqfzcxlug.jpg",
-        name: "Dettol Antiseptic Disinfectant Liquid",
-        inline: "bottle of 550 ml Liquid",
-        rate: 4.6,
-        ratingno: "10977 ratings",
-        mrp: "MRP₹194",
-        price: "₹ 194",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1609419124/wb4ndsavl7ixslwyohbi.jpg",
-        name: "Vicks Vaporub",
-        inline: "bottle of 50 gm Balm",
-        rate: 4.5,
-        ratingno: "1527 ratings",
-        mrp: "MRP₹14514% OFF",
-        price: "₹ 124",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1634636286/w5repuspahff9st0dp8a.jpg",
-        name: "Cetaphil Moisturising Cream",
-        inline: "tube of 80 gm Cream",
-        rate: 4.4,
-        ratingno: "223 ratings",
-        mrp: "MRP₹46515% OFF",
-        price: "₹ 395",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1602507031/dvcnjp3dtor79sfkxyh7.jpg",
-        name: "VWash Plus Expert Intimate Hygiene",
-        inline: "bottle of 100 ml Liquid",
-        rate: 4.4,
-        ratingno: "985 ratings",
-        mrp: "MRP₹18020% OFF",
-        price: "₹ 143",
-    }];
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600089107/cropped/bpgstknem0udqzp9p4dm.jpg",
+name:"	Sugar Free Gold Low Calorie Sweetener	",
+tag:"	bottle of 500 pellets	",
+rating:"	4.4	",
+ratno:"	1822 ratings	",
+mrp:"	MRP₹28510% OFF	",
+price:"₹256	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1647510044/mrqm83ag4gzuvxbphena.jpg",
+name:"	Ensure Diabetes Care Vanilla Delight Powder	",
+tag:"	jar of 400 gm Powder	",
+rating:"	4.5	",
+ratno:"	1041 ratings	",
+mrp:"	MRP₹7258% OFF	",
+price:"₹667	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600165049/cropped/tdzjd23yjxn7duniuz7p.jpg	",
+name:"	Dabur Chyawanprakash Sugarfree	",
+tag:"	jar of 900 gm Paste	",
+rating:"	4.5	",
+ratno:"	1617 ratings	",
+mrp:"	MRP₹41517% OFF	",
+price:"₹342	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600090672/cropped/zulvh6fdr7bukuu18zhq.jpg	",
+name:"	Accu-Chek Active Test Strip	",
+tag:"	box of 50 Test Strips	",
+rating:"	4.3	",
+ratno:"	4103 ratings	",
+mrp:"	MRP₹97517% OFF	",
+price:"₹809.25	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1648023039/mpraei9nq1cjrgsbhrdr.jpg",
+name:"	Contour Plus One Blood Glucose Monitoring...	",
+tag:"	box of 1 Unit	",
+rating:"	4	",
+ratno:"	166 ratings	",
+mrp:"	MRP₹166013% OFF	",
+price:"₹1444.6	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1631892302/bpstjff7hzg9uecj54n7.jpg	",
+name:"	1mg Diabetes Nutrition Mix Vanilla	",
+tag:"	box of 400 gm Powder	",
+rating:"	4.4	",
+ratno:"	28 ratings	",
+mrp:"	MRP₹74533% OFF	",
+price:"₹498	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600170149/cropped/o1ywlwplxmyrvow4syj3.jpg	",
+name:"	Axiom Karela Jamun Juice	",
+tag:"	bottle of 1 Ltr Juice	",
+rating:"	4.3	",
+ratno:"	474 ratings	",
+mrp:"	MRP₹3004% OFF	",
+price:"₹287	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600147625/cropped/zpfmlvskvqr6gzwhhfwc.png	",
+name:"	Bgr 34 Tablet	",
+tag:"	bottle of 100 tablets	",
+rating:"	4.2	",
+ratno:"	1048 ratings	",
+mrp:"	MRP₹60025% OFF	",
+price:"₹449	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600147603/cropped/gokczkks8wo5b8voauft.png	",
+name:"	OneTouch Select Test Strip	",
+tag:"	packet of 50 Test Strips	",
+rating:"	4.4	",
+ratno:"	1625 ratings	",
+mrp:"	MRP₹11955% OFF	",
+price:"₹1135.25	",
+},
+{
+image:"	https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1635271654/wrl2sdrm7kfdkgzeelxp.jpg	",
+name:"	Organic India Flaxseed Oil Veg Capsule	",
+tag:"	bottle of 60 vegicaps	",
+rating:"	4.3	",
+raton:"	92 ratings	",
+mrp:"	MRP₹4955% OFF	",
+price:"₹470	",
+},
+{
+image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1632483982/xfgyllio46ox2tlje8p5.jpg	",
+name:"	Garlic Pearls Capsule	",
+tag:"	bottle of 100 soft gelatin capsules	",
+rating:"	4.4	",
+raton:"	883 ratings	",
+mrp:"	MRP₹1507% OFF	",
+price:"₹139	",
+},
+{image:"	https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1641125917/nhqfb8zmstolcbamt82x.jpg	",
+name:"	Carbamide Forte Cold Pressed Flaxseed Oil...	",
+tag:"	bottle of 120 soft gelatin capsules	",
+rating:"	4	",
+raton:"	12 ratings	",
+mrp:"	MRP₹69528% OFF	",
+price:"₹499	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600087145/cropped/hc5bpskpat3fp04pcrl2.jpg",
+name:"	Himalaya Abana Tablet	",
+tag:"	bottle of 60 tablets	",
+rating:"	4.6	",
+raton:"	274 ratings	",
+mrp:"	MRP₹14020% OFF	",
+price:"₹112	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1633955077/rw5500pjyjbuaozribtl.jpg	",
+name:"	Zingavita Omega 3 Fish Oil 1000mg Softgel	",
+tag:"	bottle of 60 soft gelatin capsules	",
+rating:"	2.8	",
+raton:"	5 ratings	",
+mrp:"	MRP₹79940% OFF	",
+price:"₹473	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1632474311/tovaghx82apxlozh81d0.jpg	",
+name:"	Patanjali Divya Hridyamrit Vati Extra Power	",
+tag:"	bottle of 120 tablets	",
+rating:"	4.2	",
+raton:"	38 ratings	",
+mrp:"	MRP₹210	",
+price:"₹210	",
+},
+{image:"	https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1640110655/d6f12cxsudhkjamlbz0c.jpg",
+name:"	Dr. Morepen Omega 3 Triple Strength 1250mg Deep Sea...	",
+tag:"	bottle of 60 soft gelatin capsules	",
+rating:"	4.3	",
+raton:"	47 ratings	",
+mrp:"	MRP₹109936% OFF	",
+price:"₹697	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1646741709/rddjrx5bg3uoa6iz51fq.jpg	",
+name:"	Prohance -D Diabetes Nutritional...",
+tag:"	jar of 400 gm Powder	",
+rating:"	4.4	",
+ratno:"	205 ratings	",
+mrp:"	MRP₹67520% OFF	",
+price:"₹540	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1611742736/bquiks5qwqhrwnw2gajg.jpg",
+name:"	1mg Karela Pure Natural Extract 500mg..",
+tag:"	bottle of 60 capsules	",
+rating:"	4.2	",
+ratno:"	197 ratings	",
+mrp:"	MRP₹44566% OFF	",
+price:"₹148	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1608282096/cropped/dru5ne9rnikqsgayenyy.png",
+name:"	Baidyanath Basant Kusumakar Ras...	",
+tag:"	bottle of 50 tablets	",
+rating:"	4	",
+ratno:"	205 ratings	",
+mrp:"	MRP₹270027% OFF	",
+price:"₹1955	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1603957461/rjiotgoqizwjqcctvuv1.jpg",
+name:"	Accu-Chek Active Blood Glucometer...	",
+tag:"	packet of 1 Kit	",
+rating:"	4	",
+ratno:"	856 ratings	",
+mrp:"	MRP₹159923% OFF	",
+price:"₹1231.23	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600211923/cropped/wc72tbagnjxcn8fbm8tc.jpg	",
+name:"	Sugar Free Natura Low Calorie Sweetener Powder	",
+tag:"	jar of 1 kg Powder	",
+rating:"	4.5	",
+ratno:"	859 ratings	",
+mrp:"	MRP₹9509% OFF	",
+price:"₹859.56	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1609239126/h5aceivwzqivmqbpis7p.jpg",
+name:"	Dr. Reckeweg R40 Diabetes Drop Homeopathic...	",
+tag:"	bottle of 22 ml Drop	",
+rating:"	4.8	",
+ratno:"	57 ratings	",
+mrp:"	MRP₹2506% OFF	",
+price:"₹233	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1648022961/xf6ogn1ygwsa8jgbcfaq.jpg	",
+name:"	Contour Plus Blood Glucose Test Strip	",
+tag:"	box of 50 Test Strips	",
+rating:"	4.4	",
+ratno:"	736 ratings	",
+mrp:"	MRP₹94917% OFF	",
+price:"₹785.69	",
+},
+{image:"	https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1608220577/cropped/h89rmrkucsmvt6i6nado.jpg	",
+name:"	D-Protin Powder Chocolate	",
+tag:"	jar of 500 gm Powder	",
+rating:"	4.6	",
+ratno:"	461 ratings	",
+mrp:"	MRP₹5782% OFF	",
+price:"₹566	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1647931811/jnrcqxwhvzo4wjarh6mu.jpg",
+name:"	Sri Sri Tattva Karela Jamun Juice	",
+tag:"	bottle of 1000 ml Juice	",
+rating:"	4.4	",
+ratno:"	852 ratings	",
+mrp:"	MRP₹28020% OFF	",
+price:"₹224	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1639570202/skdaqvit202p5zqtp2hb.jpg",
+name:"	OneTouch Select Plus Test Strip Green	",
+tag:"	box of 50 Test Strips	",
+rating:"	4.3	",
+ratno:"	291 ratings	",
+mrp:"	MRP₹10955% OFF	",
+price:"₹1041	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1642594643/opj6r4zzusf5654ubggc.jpg",
+name:"	Bagrry's Crunchy No Added Sugar Muesli	",
+tag:"	jar of 1000 gm Muesli	",
+rating:"	4.2	",
+ratno:"	22 ratings	",
+mrp:"	MRP₹59510% OFF	",
+price:"₹534	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600250468/cropped/k5zfooxvn5cqv9jzrtan.png	",
+name:"	Accu-Chek Instant Test Strip	",
+tag:"	box of 50 Test Strips	",
+rating:"	4.3	",
+ratno:"	1401 ratings	",
+mrp:"	MRP₹9757% OFF	",
+price:"₹906.75	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1601323204/cropped/wtqfxogu9c5p5iternjf.png",
+name:"	Dr Trust USA Gold Standard Blood...",
+tag:"	box of 1 Kit	",
+rating:"	4.3	",
+ratno:"	38 ratings	",
+mrp:"	MRP₹100019% OFF	",
+price:"₹809	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1612961565/k9gy1vxxtslm7yusqnqg.jpg	",
+name:"	Jiva Chyawanprash Sugar Free	",
+tag:"	jar of 1 kg Paste	",
+rating:"	4.1	",
+ratno:"	1066 ratings	",
+mrp:"	MRP₹35016% OFF	",
+price:"₹292.92	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1627283634/qxzyfrwwwt4njxy6eip2.jpg	",
+name:"	OneTouch Ultra Test Strip	",
+tag:"	box of 50 Test Strips	",
+rating:"	4.4	",
+ratno:"	596 ratings	",
+mrp:"	MRP₹14455% OFF	",
+price:"₹1373.75	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1647510113/jgaacexy4exd3ferbyqs.jpg	",
+name:"	Ensure Diabetes Care Chocolate Powder	",
+tag:"	box of 200 gm Powder	",
+rating:"	4.4	",
+ratno:"	295 ratings	",
+mrp:"	MRP₹4006% OFF	",
+price:"₹376	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1607498146/sugfp8qaty3f6s6urpxa.jpg",
+name:"	True Elements No Added Sugar Muesli	",
+tag:"	box of 400 gm Muesli	",
+rating:"	4.4	",
+ratno:"	42 ratings	",
+mrp:"	MRP₹2953% OFF	",
+price:"₹286	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1631038897/oxm3yrglzdy06xligskb.jpg",
+name:"	Zandu Kesari Jeevan Fit for Diabetics	",
+tag:"	jar of 900 gm Paste	",
+rating:"	4.4	",
+ratno:"	143 ratings	",
+mrp:"	MRP₹77020% OFF	",
+price:"₹616	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1644229316/lcdzif1qexhaapv8ijpm.jpg",
+name:"	Tata 1mg Cold Pressed Karela Jamun Juice Supports..	",
+tag:"	bottle of 500 ml Juice	",
+rating:"	4.1	",
+ratno:"	128 ratings	",
+mrp:"	MRP₹18546% OFF	",
+price:"₹99	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600174292/cropped/srbjwonnklmuwlu7cg7z.jpg	",
+name:"	Dabur Chyawanprakash Sugarfree	",
+tag:"	jar of 500 gm Paste	",
+rating:"	4.5	",
+ratno:"	1617 ratings	",
+mrp:"	MRP₹23515% OFF	",
+price:"₹200	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1612444122/akatbzesklvi4vtyro1g.jpg",
+name:"	PentaSure DM Diabetes Care Powder Creamy...	",
+tag:"	Tin of 1 kg Powder	",
+rating:"	4.3	",
+ratno:"	149 ratings	",
+mrp:"	MRP₹278611% OFF	",
+price:"₹2476.86	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1614759115/eds6ghegqiwdxfbzgeeq.jpg",
+name:"	Tata 1mg Ceylon Cinnamon 10:1 Ratio... 	",
+tag:"	bottle of 30 capsules	",
+rating:"	4.6	",
+ratno:"	50 ratings	",
+mrp:"	MRP₹49565% OFF	",
+price:"₹173	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1616046802/tq1bu3ufi9rak1nqwam4.jpg",
+name:"	Contour TS Blood Glucose Test Strip	",
+tag:"	box of 100 Test Strips	",
+rating:"	4.3	",
+ratno:"	301 ratings	",
+mrp:"	MRP₹260045% OFF	",
+price:"₹1425	",
+},
+{image:"	https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1601000106/cropped/tlmrmfmizfwwgpr4kvt2.png",
+name:"	Celevida Kesar Elaichi Nutrition Health Drink	",
+tag:"	Tin of 400 gm Powder	",
+rating:"	4.3	",
+ratno:"	99 ratings	",
+mrp:"	MRP₹69012% OFF	",
+price:"₹607	",
+},
+{image:"	https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1622811812/z4pobowy57pegjmkadba.jpg",
+name:"	SBL Dibonil Drop	",
+tag:"	bottle of 30 ml Drop	",
+rating:"	4.8	",
+ratno:"	54 ratings	",
+mrp:"	MRP₹11510% OFF	",
+price:"₹103	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600261776/cropped/jvhgfabycwoyeedtw698.jpg",
+name:"	Dia One Orthopedic Sandal PU Sole MCP",
+tag:"	box of 1 Pair of Sandals	",
+rating:"	4.3	",
+ratno:"	41 ratings	",
+mrp:"	MRP₹110026% OFF	",
+price:"₹810	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600152696/cropped/gmtiu5bxrnnm2nqgi6nl.jpg	",
+name:"	Accu-Chek Active Test Strip	",
+tag:"	box of 100 Test Strips	",
+rating:"	4.3	",
+ratno:"	4103 ratings	",
+mrp:"	MRP₹17257% OFF	",
+price:"₹1604.25	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600103778/cropped/d8wetugtajdasve7gg0u.jpg	",
+name:"	Sugar Free Natura Low Calorie Sweetener Pellets	",
+tag:"	bottle of 500 pellets	",
+rating:"	4.4	",
+ratno:"	710 ratings	",
+mrp:"	MRP₹3009% OFF	",
+price:"₹271.44	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1621589190/cmrzmaq7uw07cjvvmmxq.jpg	",
+name:"	Patanjali Divya Madhunashini Vati Extra Powe",
+tag:"	box of 120 tablets	",
+rating:"	4.5	",
+ratno:"	136 ratings	",
+mrp:"	MRP₹225	",
+price:"₹225",
+},
+]
+
     var cartData = JSON.parse(localStorage.getItem("cart")) || [];
     window.addEventListener("load", function () {
-      display( others);
+      display(healthconcerns);
     });
 function sort()
-    {
-      var s=document.querySelector("#s").value
-      
+    { 
+      var s=document.querySelector("#s2").value
+      console.log(s)
       if(s=="asd")
       { 
-        others.sort(function(a,b){
+        healthconcerns.sort(function(a,b){
           return a.price - b.price});
-          display( others)
+          display(healthconcerns)
+          
          
       }
      else if(s=="des")
-      { 
-      others.sort(function(a,b){
+      {
+        healthconcerns.sort(function(a,b){
           return b.price - a.price});
-          display(others)  
+          display(healthconcerns) 
+        
       }
     }
-    function display( others)
+      function display(healthconcerns)
      {
     document.querySelector("#second").innerHTML=""
-    others.map(function (elem) {
+    healthconcerns.map(function (elem) {
     var box = document.createElement("div");
 
     var img = document.createElement("img");
@@ -990,16 +1014,16 @@ function sort()
     name.style.color = "#212121"
 
     var inline = document.createElement("p");
-    inline.innerText = elem.inline;
+    inline.innerText = elem.tag;
     inline.setAttribute("class","secondp")
     inline.style.color = "#757575"
 
     var star = document.createElement("h4");
-    star.innerText =elem.rate+"☆"
+    star.innerText =elem.rating+"☆"
     star.setAttribute("id","secondh4")
 
     var ratee = document.createElement("pre");
-    ratee.innerText=`  ${elem.ratingno}` 
+    ratee.innerText=elem.ratno; 
     ratee.setAttribute("class","secondp2")
     
     var Mrp = document.createElement("p");
@@ -1011,8 +1035,8 @@ function sort()
     var num=elem.price.split("")
     var n=num[0];
     if(n=='₹')
-    { num.shift()
-    
+    {
+         num.shift()
     num=num.join("")
     elem.price=num
 }
@@ -1029,9 +1053,24 @@ function sort()
   });
 
   function addToCart(elem) {
+    console.log(elem);
     cartData.push(elem);
     localStorage.setItem("cart", JSON.stringify(cartData));
     alert("item added to cart");
-  }
-}
-</script>
+     }
+     }
+</script> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

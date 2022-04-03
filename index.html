@@ -5,36 +5,1412 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
     <link rel="stylesheet" href="/styles/index.css">
     
 </head>
 <body>
+    <!--................................................................................ novbar .............................................................................................................-->
     <div id="b1">
-       <div class="b2"><img src="https://www.1mg.com/images/tata_1mg_logo.svg"></div> 
+         <div class="b2"><a href="index.html"><img src="https://www.1mg.com/images/tata_1mg_logo.svg"></div> </a>
      
-     <div> <p> <a id="a1">MEDICINE</a></p> </div>
+         <div> <p> <a id="a1" href="index.html">MEDICINE</a></p> </div>
     
-    <div class="b1"><p><a>LAB TESTS</a></p></div>
-    <div class="b1"><p><a>ASK DOCTOR</a></p></div>
-    <div class="b1"><p><a>COVID-19</a></p></div>
-    <div class="b1"><p><a>AYURVEDA</a></p></div>
-    <div class="b1"><p><a>CARE PLAN</a></p></div>
-    <div class="b3"> <P><a>Login</a>/<a>Sign Up</a></P></div>
-    <div><p><a>Offers</a></p></div>
-    <div><p><a>Need Help?</a></p></div>
+         <div class="b1"><p><a href="labtest.html">LAB TESTS</a></p></div>
+         <div class="b1"><p><a href="askdoctor.html">ASK DOCTOR</a></p></div>
+         <div class="b1"><p><a href="covid.html">COVID-19</a></p></div>
+         <div class="b1"><p><a href="herbs.html">AYURVEDA</a></p></div>
+         <div class="b1"><p><a href="plan.html">CARE PLAN</a></p></div>
+         <!-- <div class="b3"> <P><a>Login</a>/<a>Sign Up</a></P></div> -->
+         <!-- ................................................... .................................-->
+       <div>  <P><a  onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login/Sign Up</a></div>
+ 
+         <!-- ..................................................................................... -->
+         <div><p><a href="offer.html">Offers</a></p></div>
+         <a href="Cart.html"><i style="font-size: 30px;" class="fa-solid fa-cart-arrow-down"></i></a>
+         <div><p><a href="Needhelp.html">Need Help?</a></p></div>
 </div>
 <div id="b1">
-  <form>
-    <input type="search" placeholder="Search for Medicines and health products">
-  </form>
-    
-</div>
-<div id="box">
   
+      <div class="location">
+        <i class="fa-solid fa-location-dot icon"></i>
+        <select>
+            <option>delhi</option>
+            <option>Annur</option>
+            <option>Arantangi</option>
+            <option>Ashok Nagar</option>
+            <option>Attuvampatti</option>
+            <option>Aurangabad Maharashtra</option>
+            <option>Aviyur</option>
+            <option>Bagalkot</option>
+            <option>Baghpat</option>
+            <option>Bahadurgarh</option>
+            <option>Bahraich</option>
+            <option>Assaudh</option>
+            <option>Ayyangarkulam</option>
+            <option>Aurangabad Bihar</option>
+
+        </select>
+        <div class="sicon"><i style="margin-left: 40px;" class="fa-solid fa-location-crosshairs  icon"></i></div>
+      </div>
+      <div class="search">
+
+               <div class="input"><input type="search" placeholder="Search for Medicines and Health Products "class="input"></div> 
+            
+              <div class="tsearch"><span class="tr"><a><i class="fa-solid fa-magnifying-glass icon"></i></a></span></div>  
 </div>
+   <div class="offer"><div style="width: 40px;"><i style="color: red;" class="fa-solid fa-bolt icon"></i></div><span class="text">QUICK BUY! Flat 25% off on medicines*</span></div>
+  
+   <button class="btn1">Upload</button> 
+</div>
+<!--.................................................................. home page list.................................................................................... -->
+<div class="list">
+    
+      <div>  <ul id="menu">
+            <li><a href="#">Health Resource Center<span><i class="fa-solid fa-angle-down down"></i></span></a>
+            <uL>
+                <li>All Diseases</li>
+                <li>All Medicines</li>
+                <li>Medicines by the Therapeutic Class</li>
+    
+            </uL></li>
+        </ul>
+        </div>
+        <div style="width: 170px;">
+            <ul id="menu">
+        <li><a href="#">Covid Essentials<span><i class="fa-solid fa-angle-down down"></i></span></a>
+           <ul>
+          <li>Covid-19 Self test kits</li>
+          <li>Oxygen Cans & Concentrators</li>
+          <li>Masks</li>
+          <li>Sanitizers & Handwash Products</li>
+          <li>Support Your Immunity</li>
+          <li>Thermometer</li>
+          <li>Chyawanprash</li>  l
+        </ul>
+       </li>
+    </ul>
+    </div>
+    <div style="width: 100px;">
+        <ul id="menu">
+       <li ><a>Featured <span><i class="fa-solid fa-angle-down down"></i></span></a>
+          <ul>
+          <li>Tata 1mg Health Products</li>
+          <li>What others are buying</li>
+          <li>New Arrivals on Tata 1MG</li>
+          <li>Buy More, Save More</li>
+          <li>Minimum 33% Off</li>
+          <li>Combos</li> 
+        </ul>
+               </li>
+            </ul>
+   </div>
+    <div>
+<ul id="menu">
+    <li ><a>Vitamins & Nutrition<span ><i class="fa-solid fa-angle-down down"></i></span></a>
+       <ul>
+       <li>Multivitamins</li>
+       <li>Vitamins A-Z</li>
+       <li>Mineral Supplements</li>
+       <li>Vitamin B12 & B Complex</li>
+       <li>Nutritional Drinks</li>
+       <li>Adult Daily Nutrition</li>
+       <li>Kids Nutrition (2-15 Yrs)</li>
+       <li>For Women </li>
+
+     </ul>
+            </li>
+         </ul> 
+        </div>
+        <div style="width: 140px;">
+            <ul id="menu">
+                <li ><a>Diabetes<span ><i class="fa-solid fa-angle-down down"></i></span></a>
+                   <ul>
+                   <li>Devices</li>
+                   <li>Blood Glucose Monitors</li>
+                   <li>Test Strips & Lancets</li>
+                   <li>Syringes & Pens</li>
+                   <li>Nutritional Drinks</li>
+                   <li> Homeopathy Medicines</li>
+                   <li>Diabetic Medicines</li>
+                   <li>Ayurvedic Medicines </li>
+             </ul>
+             </li>
+            </ul> 
+        </div>
+        <div style="width: 180px;">
+            <ul id="menu">
+                <li ><a>Healthcare Devices<span ><i class="fa-solid fa-angle-down down"></i></span></a>
+                   <ul>
+                   <li>Devices</li>
+                   <li>Blood Glucose Monitors</li>
+                   <li>Test Strips & Lancets</li>
+                   <li>Syringes & Pens</li>
+                   <li>Nutritional Drinks</li>
+                   <li> Homeopathy Medicines</li>
+                   <li>Diabetic Medicines</li>
+                   <li>Ayurvedic Medicines </li>
+             </ul>
+             </li>
+            </ul> 
+        </div>
+        <div style="width: 170px;">
+            <ul id="menu">
+           <li ><a>Personal Care<span ><i class="fa-solid fa-angle-down down"></i></span></a>
+              <ul>
+              <li>Tata 1mg Health Products</li>
+              <li>What others are buying</li>
+              <li>New Arrivals on Tata 1MG</li>
+              <li>Buy More, Save More</li>
+              <li>Minimum 33% Off</li>
+              <li>Combos</li> 
+            </ul>
+                   </li>
+                </ul>
+       </div>
+       <div style="width: 30px;">
+        <ul id="menu">
+       <li ><a>Ayurveda Products<span ><i class="fa-solid fa-angle-down down"></i></span></a>
+          <ul>
+          <li>Tata 1mg Health Products</li>
+          <li>What others are buying</li>
+          <li>New Arrivals on Tata 1MG</li>
+          <li>Buy More, Save More</li>
+          <li>Minimum 33% Off</li>
+          <li>Combos</li> 
+        </ul>
+               </li>
+            </ul>
+   </div>
+   <div style="margin: auto;">
+    <ul id="menu">
+   <li ><a>Homeopathy<span ><i class="fa-solid fa-angle-down down"></i></span></a>
+      <ul>
+      <li>Tata 1mg Health Products</li>
+      <li>What others are buying</li>
+      <li>New Arrivals on Tata 1MG</li>
+      <li>Buy More, Save More</li>
+      <li>Minimum 33% Off</li>
+      <li>Combos</li> 
+    </ul>
+           </li>
+        </ul>
+</div>  
+</div>
+<!-- .........................................................................slider image................................................................................................................ -->
+ <div style="margin-left:20px;" class="movie-box">
+    <div class="owl-carousel owl-theme ">
+        <div class="item"> <img class="m" src="https://cdn.shopify.com/s/files/1/0264/9980/9339/files/Gudi_Padwa_and_Ugadi_Sale_Web_Banner_1400x.jpg?v=1648190089"></div>
+        <div class="item"> <img class="m" src="https://cdn.shopify.com/s/files/1/0264/9980/9339/files/Gudi_Padwa_Celebration_Kit_1400x.jpg?v=1648190153"></div>
+        <div class="item"> <img class="m" src="https://www.organicindia.com/media/slider/1648463862Ditch%20the%20caffine%20web%20banner.jpg"></div>
+        <div class="item"> <img class="m" src="https://www.organicindia.com/media/slider/1640699514CLEAN%20website%20banner.jpg"></div>
+        <div class="item"> <img class="m" src="https://assets.gadgets360cdn.com/pricee/assets/category/202006/cp-banner-patanjali-1280x250_1591165151.jpg?downsize=1280:*&output-quality=80"></div>
+        <div class="item"> <img class="m" src="https://zandupainrelief.com/wp-content/uploads/2020/12/Zandu-OVO_Web-Banners-2-01.jpg"></div>
+    </div>
+    <div style="width: 500px;">
+       <img style="width: 507px;height: 200px;" src="https://onemg.gumlet.io/image/upload/w_480,h_200,,a_ignore,q_auto,f_auto/v1648234051/wit9uidbn7swo4fvfsxi.jpg">
+    </div>
+    <h2 class="h2v">Tata 1mg: India’s Leading Online Pharmacy & Healthcare Platform</h2>
+ </div> 
+
+<div><img class="mg" src="https://onemg.gumlet.io/image/upload/v1638879520/ccdg5rr0hssuyw6nw27m.png" alt="image"></div>
+
+
+<!-- ..........................................featrured brands.................................................... -->
+
+            <p style="margin-top: 120px;margin-left: 20px;margin-bottom: -30px;">Featured brands</p><a href="others.html"><button id="allbutton">SEE ALL</button></a> 
+
+            <div class="brands">
+                <div id="brand1">
+                    <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1648617635/feuixxt1nlgmv1sago6d.png">
+                     <p style="margin-left: 70px;">Himalaya</p>
+                </div>
+                <div>
+                    <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1648273880/k8mghzxf054mcqongv0x.png">
+                     <p style="margin-left: 70px;">Sri sri</p>
+                </div>
+                <div>
+                    <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1648617669/adh9tvfpssu0ntanrhz6.png">
+                     <p style="margin-left: 70px;">DR.Morepen</p>
+                </div>
+                <div>
+                    <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1648444487/wm6kae4o0ko0unx49qsg.png">
+                     <p style="margin-left: 70px;">Organic India</p>
+                </div>
+                <div>
+                    <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1648533158/o9mydrjw5dtuapm5sy6p.jpg">
+                     <p style="margin-left: 70px;">Optimum</p>
+                </div>
+                <div>
+                    <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1648702779/ieawdgglelgpjy9iakx7.png">
+                     <p style="margin-left: 70px;">Baidyanath</p>
+                </div>
+                <div>
+                    <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1648702792/xsstx1aglsod440t5sph.png">
+                     <p style="margin-left: 70px;">Cetaphli</p>
+                </div>
+                <div>
+                    <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1648702807/otzmpjimpqu59dsmtqdv.png">
+                     <p style="margin-left: 70px;">Glucon-D</p>
+                </div>
+                <div>
+                    <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1648702822/gdepi00xu0yomugvwi2a.png">
+                     <p style="margin-left: 70px;">Dabur Products</p>
+                </div>
+                <div>
+                    <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1648702836/ymaej4vyeqfkb1nj2gru.png">
+                     <p style="margin-left: 70px;">HealthKart</p>
+                </div>
+                <div id="brand2">
+                    <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1648617704/ifmida1hvyrurlee3uhi.png">
+                     <p style="margin-left: 70px;">Kapiva Ayurveda</p>
+                </div>
+                 </div>
+                 <a href="#brand2">  <div id="arrow">
+                    <i class="fa-solid fa-angle-right arrowi"></i>
+                    </div></a>
+            
+            
+                    <a href="#brand1">  <div style="margin-left:-20px;margin-top:-60px;" id="arrow";>
+                        <i class="fa-solid fa-angle-left arrowi"></i>
+                        </div></a>
+<!--.............................................................. popular categories.............................................................. -->
+            
+<p style="margin-top: 120px;margin-left: 20px;margin-bottom: -30px;">Health Care</p><a href="healthcare.html"><button id="allbutton">SEE ALL</button></a> 
+
+<div class="brands">
+    <div id="pop1">
+        <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1624525284/cabpuknnlyyzgqfnb4x5.png">
+         <p style="margin-left: 70px;">Vitamine</p>
+    </div>
+    <div>
+        <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1624525304/kfyx5kvvn2ai5fwswhsa.png">
+         <p style="margin-left: 70px;">Ayurveda</p>
+    </div>
+    <div>
+        <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1624525147/qjfdkz5njmk9n7vvrbb3.png">
+         <p style="margin-left: 70px;">Healthcare</p>
+    </div>
+    <div>
+        <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1624525320/j7ruar88gacbzksuadjn.png">
+         <p style="margin-left: 70px;">Homeopathy</p>
+    </div>
+    <div>
+        <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1624525219/tfrtydrq6uzeyb42gh08.png">
+         <p style="margin-left: 70px;">Diebetes Care</p>
+    </div>
+    <div>
+        <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1624525251/bkhusfgfiu9qedowph2i.png">
+         <p style="margin-left: 70px;">Skin Care</p>
+    </div>
+    <div>
+        <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1624525231/htqiurbbhwmrxkvdzwkg.png">
+         <p style="margin-left: 70px;">Elderly Care</p>
+    </div>
+    <div>
+        <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1648702807/otzmpjimpqu59dsmtqdv.png">
+         <p style="margin-left: 70px;">Glucon-D</p>
+    </div>
+    <div>
+        <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1648702822/gdepi00xu0yomugvwi2a.png">
+         <p style="margin-left: 70px;">Dabur Products</p>
+    </div>
+    <div>
+        <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1624525241/megirsoxbbpn6oiv4g4w.png">
+         <p style="margin-left: 70px;">Health Food</p>
+    </div>
+    <div id="pop2">
+        <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1641187637/lcfd1eufwbtituwyswpi.jpg">
+         <p style="margin-left: 70px;">Covid Essentials</p>
+    </div>
+     </div>
+     <a href="#pop2">  <div id="arrow">
+        <i class="fa-solid fa-angle-right arrowi"></i>
+        </div></a>
+
+
+        <a href="#pop1">  <div style="margin-left:-20px;margin-top:-60px;" id="arrow";>
+            <i class="fa-solid fa-angle-left arrowi"></i>
+            </div></a>
+<div style="width: 100%;height: 100px;"></div>
+<!--................................................................. top seller......................................................................................... -->
+
+
+<p style="margin-bottom: -23px;margin-left: 20px">Top Sellers From Digene, Brufen & Cremaffin</p> <a href="others.html"><button id="allbutton">SEE ALL</button></a> 
+
+<div class="topseller">
+<div id="top1">
+   <a> <img class="top" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1645272646/klpj2khvaphkvpqmchui.jpg"></a>
+    <h4 style="margin-left: 20px;font-size: 14px">Tata 1mg Multivitamin Supreme, Zinc...</h4>
+    <p style=" color: gray;margin-left: 22px;margin-top: -10px; font-size: 13px;">bottle of 60 capsules</p>
+    <div class="rateingm" style="margin-top: -20px;">4.9★ </div><p style="display: inline-block;font-size: 13px;color: gray;">778 ratings</p>
+   <div style="display: flex;"><p style="margin-top:0px;margin-left: 20px; font-size: 14px;">MRP </p><p style="text-decoration: line-through ;margin-left: 3px;color: gray; font-size:14px;margin-top:0px;"> ₹3398</p><p style="color: green; font-size: 12px; margin-top: 2px; margin-left: 10px;">55% off</p> </div> 
+    <p style="margin-left: 20px;margin-top:-10px;" >₹448</p>
+</div>
+<div>
+    <img class="top" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600174116/cropped/pf3vraq88havppemxjar.png">
+    <h4 style="margin-left: 20px;font-size: 14px">Digene Acidity & Gas Relief Gel Orange...</h4>
+    <p style=" color: gray;margin-left: 22px;margin-top: -10px; font-size: 13px;">bottle of 450 ml Oral Gel</p>
+    <div class="rateingm" style="margin-top: -20px;">4.9★ </div><p style="display: inline-block;font-size: 13px;color: gray;">778 ratings</p>
+   <div style="display: flex;"><p style="margin-top:0px;margin-left: 20px; font-size: 14px;">MRP </p><p style="text-decoration: line-through ;margin-left: 3px;color: gray; font-size:14px;margin-top:0px;"> ₹₹209.33</p><p style="color: green; font-size: 12px; margin-top: 2px; margin-left: 10px;">22% off</p> </div> 
+    <p style="margin-left: 20px;margin-top:-10px;" >₹163</p>
+</div>
+<div>
+    <img class="top" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600112036/cropped/tqvups7t0qyejtmcrmlx.png">
+    <h4 style="margin-left: 20px;font-size: 14px">Digene Acidity & Gas Relief Gel Mint...</h4>
+    <p style=" color: gray;margin-left: 22px;margin-top: -10px; font-size: 13px;">bottle of 450 ml Oral Gel</p>
+    <div class="rateingm" style="margin-top: -20px;">4.9★ </div><p style="display: inline-block;font-size: 13px;color: gray;">778 ratings</p>
+   <div style="display: flex;"><p style="margin-top:0px;margin-left: 20px; font-size: 14px;">MRP </p><p style="text-decoration: line-through ;margin-left: 3px;color: gray; font-size:14px;margin-top:0px;"> ₹209.33</p><p style="color: green; font-size: 12px; margin-top: 2px; margin-left: 10px;">23% off</p> </div> 
+    <p style="margin-left: 20px;margin-top:-10px;" >₹148</p>
+</div>
+<div>
+    <img class="top" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1646827978/g3maimvrdml91wvwyps1.jpg">
+    <h4 style="margin-left: 20px;font-size: 14px">Brufen Power Pain Relief 800 Sprays...</h4>
+    <p style=" color: gray;margin-left: 22px;margin-top: -10px; font-size: 13px;">bottle of 60 capsules</p>
+    <div class="rateingm" style="margin-top: -20px;">4 ★ </div><p style="display: inline-block;font-size: 13px;color: gray;">778 ratings</p>
+   <div style="display: flex;"><p style="margin-top:0px;margin-left: 20px; font-size: 14px;">MRP </p><p style="text-decoration: line-through ;margin-left: 3px;color: gray; font-size:14px;margin-top:0px;"> ₹150</p><p style="color: green; font-size: 12px; margin-top: 2px; margin-left: 10px;">25% off</p> </div> 
+    <p style="margin-left: 20px;margin-top:-10px;" >₹108</p>
+</div>
+<div>
+    <img class="top" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600689355/vhdx2ta9nmzpbbdpeybi.jpg">
+    <h4 style="margin-left: 20px;font-size: 14px">Digene Acidity & Gas Relief Tablet Orange...</h4>
+    <p style=" color: gray;margin-left: 22px;margin-top: -10px; font-size: 13px;">bottle of 60 capsules</p>
+    <div class="rateingm" style="margin-top: -20px;">4.9★ </div><p style="display: inline-block;font-size: 13px;color: gray;">778 ratings</p>
+   <div style="display: flex;"><p style="margin-top:0px;margin-left: 20px; font-size: 14px;">MRP </p><p style="text-decoration: line-through ;margin-left: 3px;color: gray; font-size:14px;margin-top:0px;"> ₹33</p><p style="color: green; font-size: 12px; margin-top: 2px; margin-left: 10px;">75% off</p> </div> 
+    <p style="margin-left: 20px;margin-top:-10px;" >₹18</p>
+</div>
+<div>
+    <img class="top" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1601905309/fyw3facamjsqlv4mwzvb.jpg">
+    <h4 style="margin-left: 20px;font-size: 14px">Brufen Power Pain Relief 400 Sprays...</h4>
+    <p style=" color: gray;margin-left: 22px;margin-top: -10px; font-size: 13px;">bottle of 20 gm Spray</p>
+    <div class="rateingm" style="margin-top: -20px;">4.9★ </div><p style="display: inline-block;font-size: 13px;color: gray;">778 ratings</p>
+   <div style="display: flex;"><p style="margin-top:0px;margin-left: 20px; font-size: 14px;">MRP </p><p style="text-decoration: line-through ;margin-left: 3px;color: gray; font-size:14px;margin-top:0px;"> ₹98</p><p style="color: green; font-size: 12px; margin-top: 2px; margin-left: 10px;">10% off</p> </div> 
+    <p style="margin-left: 20px;margin-top:-10px;" >₹78</p>
+</div>
+<div>
+    <img class="top" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1629309842/i9uw97bk1msa2mlihv1m.jpg">
+    <h4 style="margin-left: 20px;font-size: 14px">Digene Gel On The Go Stick Pack (10ml Each) Mint...</h4>
+    <p style=" color: gray;margin-left: 22px;margin-top: -10px; font-size: 13px;">bottle of 60 capsules</p>
+    <div class="rateingm" style="margin-top: -20px;">4.9★ </div><p style="display: inline-block;font-size: 13px;color: gray;">778 ratings</p>
+   <div style="display: flex;"><p style="margin-top:0px;margin-left: 20px; font-size: 14px;">MRP </p><p style="text-decoration: line-through ;margin-left: 3px;color: gray; font-size:14px;margin-top:0px;"> ₹33.8</p><p style="color: green; font-size: 12px; margin-top: 2px; margin-left: 10px;">5% off</p> </div> 
+    <p style="margin-left: 20px;margin-top:-10px;" >₹38</p>
+</div>
+<div id="top2">
+    <img class="top" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600688236/nlbmjfaguyhk9vxkj7z4.jpg">
+    <h4 style="margin-left: 20px;font-size: 14px"> Digene Acidity & Gas Relief Tablet Mint...</h4>
+    <p style=" color: gray;margin-left: 22px;margin-top: -10px; font-size: 13px;">strip of 15 tablets</p>
+    <div class="rateingm" style="margin-top: -20px;">4.9★ </div><p style="display: inline-block;font-size: 13px;color: gray;">778 ratings</p>
+   <div style="display: flex;"><p style="margin-top:0px;margin-left: 20px; font-size: 14px;">MRP </p><p style="text-decoration: line-through ;margin-left: 3px;color: gray; font-size:14px;margin-top:0px;"> ₹33</p><p style="color: green; font-size: 12px; margin-top: 2px; margin-left: 10px;">55% off</p> </div> 
+    <p style="margin-left: 20px;margin-top:-10px;" >₹14</p>
+</div>
+</div>
+<a href="#top1">  <div style="margin-left:-20px;margin-top:-260px;" id="arrow";>
+    <i class="fa-solid fa-angle-left arrowi"></i>
+    </div></a>
+<a href="#top2">  <div id="arrow" style="margin-top:-70px ;">
+    <i class="fa-solid fa-angle-right arrowi"></i>
+    </div></a>
+
+    <!-- ..............................................1mg health product............................................ -->
+<div style=" width: 100%;height: 200px;"></div>
+
+<p style="margin-bottom:-20px;margin-top: 100px;margin-left: 20px">Tata 1mg health Care</p> <a href="explorenew.html"><button id="allbutton">SEE ALL</button></a> 
+
+<div class="topseller">
+<div id="tata1mg1">
+   <a> <img class="top" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1642507775/gmkrpf1imjj9djwvq4gq.jpg"></a>
+    <h4 style="margin-left: 20px;font-size: 14px">Tata 1mg Multivitamin Supreme, Zinc...</h4>
+    <p style=" color: gray;margin-left: 22px;margin-top: -10px; font-size: 13px;">bottle of 60 capsules</p>
+    <div class="rateingm" style="margin-top: -20px;">4.9★ </div><p style="display: inline-block;font-size: 13px;color: gray;">778 ratings</p>
+   <div style="display: flex;"><p style="margin-top:0px;margin-left: 20px; font-size: 14px;">MRP </p><p style="text-decoration: line-through ;margin-left: 3px;color: gray; font-size:14px;margin-top:0px;"> ₹3398</p><p style="color: green; font-size: 12px; margin-top: 2px; margin-left: 10px;">55% off</p> </div> 
+    <p style="margin-left: 20px;margin-top:-10px;" >₹448</p>
+</div>
+<div>
+    <a> <img class="top" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1637324194/gc3u9gfc331wtsipnljl.jpg"></a>
+     <h4 style="margin-left: 20px;font-size: 14px">Tata 1mg Calcium + Vitamin D3, Zinc, Magnesium and Alfalfa...</h4>
+     <p style=" color: gray;margin-left: 22px;margin-top: -10px; font-size: 13px;">bottle of 60 capsules</p>
+     <div class="rateingm" style="margin-top: -20px;">4.2★ </div><p style="display: inline-block;font-size: 13px;color: gray;">778 ratings</p>
+    <div style="display: flex;"><p style="margin-top:0px;margin-left: 20px; font-size: 14px;">MRP </p><p style="text-decoration: line-through ;margin-left: 3px;color: gray; font-size:14px;margin-top:0px;"> ₹598</p><p style="color: green; font-size: 12px; margin-top: 2px; margin-left: 10px;">55% off</p> </div> 
+     <p style="margin-left: 20px;margin-top:-10px;" >₹248</p>
+ </div>
+ <div>
+    <a> <img class="top" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1643307171/ffel0eytbg8gvbjxlykh.jpg"></a>
+     <h4 style="margin-left: 20px;font-size: 14px">Tata 1mg BIS Approved FFP2 N95 Mask - Head...</h4>
+     <p style=" color: gray;margin-left: 22px;margin-top: -10px; font-size: 13px;">bbox of 10 masks</p>
+     <div class="rateingm" style="margin-top: -20px;">3.9★ </div><p style="display: inline-block;font-size: 13px;color: gray;">778 ratings</p>
+    <div style="display: flex;"><p style="margin-top:0px;margin-left: 20px; font-size: 14px;">MRP </p><p style="text-decoration: line-through ;margin-left: 3px;color: gray; font-size:14px;margin-top:0px;"> ₹998</p><p style="color: green; font-size: 12px; margin-top: 2px; margin-left: 10px;">55% off</p> </div> 
+     <p style="margin-left: 20px;margin-top:-10px;" >₹448</p>
+ </div>
+ <div>
+    <a> <img class="top" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1645272788/qh1au45w8u7cfvf3lg3i.jpg"></a>
+     <h4 style="margin-left: 20px;font-size: 14px">Tata 1mg Women's Multivitamin, Zinc, ...</h4>
+     <p style=" color: gray;margin-left: 22px;margin-top: -10px; font-size: 13px;">bottle of 60 capsules</p>
+     <div class="rateingm" style="margin-top: -20px;">4.2★ </div><p style="display: inline-block;font-size: 13px;color: gray;">778 ratings</p>
+    <div style="display: flex;"><p style="margin-top:0px;margin-left: 20px; font-size: 14px;">MRP </p><p style="text-decoration: line-through ;margin-left: 3px;color: gray; font-size:14px;margin-top:0px;"> ₹998</p><p style="color: green; font-size: 12px; margin-top: 2px; margin-left: 10px;">55% off</p> </div> 
+     <p style="margin-left: 20px;margin-top:-10px;" >₹348</p>
+ </div>
+ <div>
+    <a> <img class="top" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1642507827/fwram2p7rbkoigjg6zas.jpg"></a>
+     <h4 style="margin-left: 20px;font-size: 14px">Tata 1mg Salmon Omega 3 Fish Oil...</h4>
+     <p style=" color: gray;margin-left: 22px;margin-top: -10px; font-size: 13px;">bottle of 60 capsules</p>
+     <div class="rateingm" style="margin-top: -20px;">4.3★ </div><p style="display: inline-block;font-size: 13px;color: gray;">778 ratings</p>
+    <div style="display: flex;"><p style="margin-top:0px;margin-left: 20px; font-size: 14px;">MRP </p><p style="text-decoration: line-through ;margin-left: 3px;color: gray; font-size:14px;margin-top:0px;"> ₹998</p><p style="color: green; font-size: 12px; margin-top: 2px; margin-left: 10px;">55% off</p> </div> 
+     <p style="margin-left: 20px;margin-top:-10px;" >₹448</p>
+ </div>
+ <div>
+    <a> <img class="top" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1638444070/nwhioxrxmwjkaxitryag.jpg"></a>
+     <h4 style="margin-left: 20px;font-size: 14px">Tata 1mg BIS Approved FFP2 N95 Mask for Kids...</h4>
+     <p style=" color: gray;margin-left: 22px;margin-top: -10px; font-size: 13px;">box of 5 masks</p>
+     <div class="rateingm" style="margin-top: -20px;">4.9★ </div><p style="display: inline-block;font-size: 13px;color: gray;">78 ratings</p>
+    <div style="display: flex;"><p style="margin-top:0px;margin-left: 20px; font-size: 14px;">MRP </p><p style="text-decoration: line-through ;margin-left: 3px;color: gray; font-size:14px;margin-top:0px;"> ₹498</p><p style="color: green; font-size: 12px; margin-top: 2px; margin-left: 10px;">55% off</p> </div> 
+     <p style="margin-left: 20px;margin-top:-10px;" >₹248</p>
+ </div>
+ <div>
+    <a> <img class="top" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1631894537/w9eyedqdlnlntuc0zl7d.jpg"></a>
+     <h4 style="margin-left: 20px;font-size: 14px">1mg High Fiber with Pre- & Probiotics with Inuli...</h4>
+     <p style=" color: gray;margin-left: 22px;margin-top: -10px; font-size: 13px;">jar of 200 gm Powder</p>
+     <div class="rateingm" style="margin-top: -20px;">4.9★ </div><p style="display: inline-block;font-size: 13px;color: gray;">378 ratings</p>
+    <div style="display: flex;"><p style="margin-top:0px;margin-left: 20px; font-size: 14px;">MRP </p><p style="text-decoration: line-through ;margin-left: 3px;color: gray; font-size:14px;margin-top:0px;"> ₹998</p><p style="color: green; font-size: 12px; margin-top: 2px; margin-left: 10px;">55% off</p> </div> 
+     <p style="margin-left: 20px;margin-top:-10px;" >₹48</p>
+ </div>
+ <div>
+    <a> <img class="top" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1631894048/uqehwqt3b6cwuuvqrymf.jpg"></a>
+     <h4 style="margin-left: 20px;font-size: 14px">
+        Tata 1mg Apple Cider Vinegar Probiotic Plus -...</h4>
+     <p style=" color: gray;margin-left: 22px;margin-top: -10px; font-size: 13px;">bottle of 500 ml Liquid</p>
+     <div class="rateingm" style="margin-top: -20px;">4.9★ </div><p style="display: inline-block;font-size: 13px;color: gray;">178 ratings</p>
+    <div style="display: flex;"><p style="margin-top:0px;margin-left: 20px; font-size: 14px;">MRP </p><p style="text-decoration: line-through ;margin-left: 3px;color: gray; font-size:14px;margin-top:0px;"> ₹598</p><p style="color: green; font-size: 12px; margin-top: 2px; margin-left: 10px;">55% off</p> </div> 
+     <p style="margin-left: 20px;margin-top:-10px;" >₹248</p>
+ </div>
+ <div>
+    <a> <img class="top" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1645272646/klpj2khvaphkvpqmchui.jpg"></a>
+     <h4 style="margin-left: 20px;font-size: 14px">Tata 1mg Multivitamin Supreme, Zinc...</h4>
+     <p style=" color: gray;margin-left: 22px;margin-top: -10px; font-size: 13px;">bottle of 60 capsules</p>
+     <div class="rateingm" style="margin-top: -20px;">4.9★ </div><p style="display: inline-block;font-size: 13px;color: gray;">778 ratings</p>
+    <div style="display: flex;"><p style="margin-top:0px;margin-left: 20px; font-size: 14px;">MRP </p><p style="text-decoration: line-through ;margin-left: 3px;color: gray; font-size:14px;margin-top:0px;"> ₹3398</p><p style="color: green; font-size: 12px; margin-top: 2px; margin-left: 10px;">55% off</p> </div> 
+     <p style="margin-left: 20px;margin-top:-10px;" >₹448</p>
+ </div>
+ <div id="tata1mg2">
+    <a> <img class="top" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1631892302/bpstjff7hzg9uecj54n7.jpg"></a>
+     <h4 style="margin-left: 20px;font-size: 14px">1mg Active Nutrition Mix with Whey Protein...</h4>
+     <p style=" color: gray;margin-left: 22px;margin-top: -10px; font-size: 13px;">bottle of 60 capsules</p>
+     <div class="rateingm" style="margin-top: -20px;">4.1★ </div><p style="display: inline-block;font-size: 13px;color: gray;">778 ratings</p>
+    <div style="display: flex;"><p style="margin-top:0px;margin-left: 20px; font-size: 14px;">MRP </p><p style="text-decoration: line-through ;margin-left: 3px;color: gray; font-size:14px;margin-top:0px;"> ₹3398</p><p style="color: green; font-size: 12px; margin-top: 2px; margin-left: 10px;">55% off</p> </div> 
+     <p style="margin-left: 20px;margin-top:-10px;" >₹448</p>
+ </div>
+</div>
+<a href="#tata1mg1">  <div style="margin-left:-20px;margin-top:-260px;" id="arrow";>
+    <i class="fa-solid fa-angle-left arrowi"></i>
+    </div></a>
+<a href="#tata1mg2">  <div id="arrow" style="margin-top:-70px ;">
+    <i class="fa-solid fa-angle-right arrowi"></i>
+    </div></a>
+    <div style=" width: 100%;height: 200px;"></div>
+    <!-- ...................................................all test....................................................................................... -->
+   
+<p style="margin-left: 20px;margin-top: 40px; margin-bottom: -30px;">Pathology Tests | Up to 70% off</p> <a><button id="allbutton">SEE ALL</button></a> 
+
+<div id="tests">
+    <div id="t1">
+        <div style="display: flex;"><div style="width: 220px;height: 40px;margin-left: 10px;"><h4 style="font-size: 15px">Comprehensive Silver full b..</h4></div><i class="fa-solid fa-shield-halved test-box"></i> <p style="margin-left:-110px;font-size: 14px;font-weight: bold;">SAFE</p>  </div>
+         <p style=" color: gray;margin-left: 12px;margin-top: -20px; font-size: 13px;">Includes 71 tests</p>
+         <img class="testimg" src="https://onemg.gumlet.io/diagnostics/13745198-de27-11eb-b6a9-028c4b29e266.png?format=auto" alt="">
+        <div class="rateingm">4.9★ </div><p style="font-size: 12px; margin-top: 25px; margin-right: 90px;margin-left: 5px;">ISO</p>
+        <p style="display:inline; margin-left: 12px;">₹1699</p>
+       <p style="display:inline-block ;text-decoration: line-through; margin-left: 5px;color: gray; font-size: small;margin-top: 18px;">₹3398</p>
+         <div class="offert" >50% Off</div> 
+    </div> 
+    <div >
+        <div style="display: flex;"><div style="width: 220px;height: 40px;margin-left: 10px;"><h4 style="font-size: 15px">Comprehensive Silver full b..</h4></div><i class="fa-solid fa-shield-halved test-box"></i> <p style="margin-left:-110px;font-size: 14px;font-weight: bold;">SAFE</p>  </div>
+         <p style=" color: gray;margin-left: 12px;margin-top: -20px; font-size: 13px;">Includes 71 tests</p>
+         <img class="testimg" src="https://onemg.gumlet.io/diagnostics/13745198-de27-11eb-b6a9-028c4b29e266.png?format=auto" alt="">
+        <div class="rateingm">4.9★ </div><p style="font-size: 12px; margin-top: 25px; margin-right: 90px;margin-left: 5px;">ISO</p>
+        <p style="display:inline; margin-left: 12px;">₹1699</p>
+       <p style="display:inline-block ;text-decoration: line-through; margin-left: 5px;color: gray; font-size: small;margin-top: 18px;">₹3398</p>
+         <div class="offert" >50% Off</div> 
+    </div> 
+    <div >
+        <div style="display: flex;"><div style="width: 220px;height: 40px;margin-left: 10px;"><h4 style="font-size: 15px">Comprehensive Silver full b..</h4></div><i class="fa-solid fa-shield-halved test-box"></i> <p style="margin-left:-110px;font-size: 14px;font-weight: bold;">SAFE</p>  </div>
+         <p style=" color: gray;margin-left: 12px;margin-top: -20px; font-size: 13px;">Includes 71 tests</p>
+         <img class="testimg" src="https://onemg.gumlet.io/diagnostics/13745198-de27-11eb-b6a9-028c4b29e266.png?format=auto" alt="">
+        <div class="rateingm">4.9★ </div><p style="font-size: 12px; margin-top: 25px; margin-right: 90px;margin-left: 5px;">ISO</p>
+        <p style="display:inline; margin-left: 12px;">₹1699</p>
+       <p style="display:inline-block ;text-decoration: line-through; margin-left: 5px;color: gray; font-size: small;margin-top: 18px;">₹3398</p>
+         <div class="offert" >50% Off</div> 
+    </div> 
+    <div >
+        <div style="display: flex;"><div style="width: 220px;height: 40px;margin-left: 10px;"><h4 style="font-size: 15px">Comprehensive Silver full b..</h4></div><i class="fa-solid fa-shield-halved test-box"></i> <p style="margin-left:-110px;font-size: 14px;font-weight: bold;">SAFE</p>  </div>
+         <p style=" color: gray;margin-left: 12px;margin-top: -20px; font-size: 13px;">Includes 71 tests</p>
+         <img class="testimg" src="https://onemg.gumlet.io/diagnostics/13745198-de27-11eb-b6a9-028c4b29e266.png?format=auto" alt="">
+        <div class="rateingm">4.9★ </div><p style="font-size: 12px; margin-top: 25px; margin-right: 90px;margin-left: 5px;">ISO</p>
+        <p style="display:inline; margin-left: 12px;">₹1699</p>
+       <p style="display:inline-block ;text-decoration: line-through; margin-left: 5px;color: gray; font-size: small;margin-top: 18px;">₹3398</p>
+         <div class="offert" >50% Off</div> 
+    </div> 
+    <div >
+        <div style="display: flex;"><div style="width: 220px;height: 40px;margin-left: 10px;"><h4 style="font-size: 15px">Comprehensive Silver full b..</h4></div><i class="fa-solid fa-shield-halved test-box"></i> <p style="margin-left:-110px;font-size: 14px;font-weight: bold;">SAFE</p>  </div>
+         <p style=" color: gray;margin-left: 12px;margin-top: -20px; font-size: 13px;">Includes 71 tests</p>
+         <img class="testimg" src="https://onemg.gumlet.io/diagnostics/13745198-de27-11eb-b6a9-028c4b29e266.png?format=auto" alt="">
+        <div class="rateingm">4.9★ </div><p style="font-size: 12px; margin-top: 25px; margin-right: 90px;margin-left: 5px;">ISO</p>
+        <p style="display:inline; margin-left: 12px;">₹1699</p>
+       <p style="display:inline-block ;text-decoration: line-through; margin-left: 5px;color: gray; font-size: small;margin-top: 18px;">₹3398</p>
+         <div class="offert" >50% Off</div> 
+    </div> 
+    <div >
+        <div style="display: flex;"><div style="width: 220px;height: 40px;margin-left: 10px;"><h4 style="font-size: 15px">Comprehensive Silver full b..</h4></div><i class="fa-solid fa-shield-halved test-box"></i> <p style="margin-left:-110px;font-size: 14px;font-weight: bold;">SAFE</p>  </div>
+         <p style=" color: gray;margin-left: 12px;margin-top: -20px; font-size: 13px;">Includes 71 tests</p>
+         <img class="testimg" src="https://onemg.gumlet.io/diagnostics/13745198-de27-11eb-b6a9-028c4b29e266.png?format=auto" alt="">
+        <div class="rateingm">4.9★ </div><p style="font-size: 12px; margin-top: 25px; margin-right: 90px;margin-left: 5px;">ISO</p>
+        <p style="display:inline; margin-left: 12px;">₹1699</p>
+       <p style="display:inline-block ;text-decoration: line-through; margin-left: 5px;color: gray; font-size: small;margin-top: 18px;">₹3398</p>
+         <div class="offert" >50% Off</div> 
+    </div> 
+    <div >
+        <div style="display: flex;"><div style="width: 220px;height: 40px;margin-left: 10px;"><h4 style="font-size: 15px">Comprehensive Silver full b..</h4></div><i class="fa-solid fa-shield-halved test-box"></i> <p style="margin-left:-110px;font-size: 14px;font-weight: bold;">SAFE</p>  </div>
+         <p style=" color: gray;margin-left: 12px;margin-top: -20px; font-size: 13px;">Includes 71 tests</p>
+         <img class="testimg" src="https://onemg.gumlet.io/diagnostics/13745198-de27-11eb-b6a9-028c4b29e266.png?format=auto" alt="">
+        <div class="rateingm">4.9★ </div><p style="font-size: 12px; margin-top: 25px; margin-right: 90px;margin-left: 5px;">ISO</p>
+        <p style="display:inline; margin-left: 12px;">₹1699</p>
+       <p style="display:inline-block ;text-decoration: line-through; margin-left: 5px;color: gray; font-size: small;margin-top: 18px;">₹3398</p>
+         <div class="offert" >50% Off</div> 
+    </div> 
+    <div id="t2" >
+        <div style="display: flex;"><div style="width: 220px;height: 40px;margin-left: 10px;"><h4 style="font-size: 15px">Comprehensive Silver full b..</h4></div><i class="fa-solid fa-shield-halved test-box"></i> <p style="margin-left:-110px;font-size: 14px;font-weight: bold;">SAFE</p>  </div>
+         <p style=" color: gray;margin-left: 12px;margin-top: -20px; font-size: 13px;">Includes 71 tests</p>
+         <img class="testimg" src="https://onemg.gumlet.io/diagnostics/13745198-de27-11eb-b6a9-028c4b29e266.png?format=auto" alt="">
+        <div class="rateingm">4.9★ </div><p style="font-size: 12px; margin-top: 25px; margin-right: 90px;margin-left: 5px;">ISO</p>
+        <p style="display:inline; margin-left: 12px;">₹1699</p>
+       <p style="display:inline-block ;text-decoration: line-through; margin-left: 5px;color: gray; font-size: small;margin-top: 18px;">₹3398</p>
+         <div class="offert" >50% Off</div>
+    </div> 
+</div>
+    <a href="#t2">  <div id="arrow">
+        <i class="fa-solid fa-angle-right arrowi"></i>
+        </div></a>
+
+
+        <a href="#t1">  <div style="margin-left:-20px;margin-top:-60px;" id="arrow";>
+            <i class="fa-solid fa-angle-left arrowi"></i>
+            </div></a> <div style=" width: 100%;height: 200px;"></div>
+
+<!--............................................................................. New arrivals on TATA 1mg............................................................................................... -->
+
+<p style="margin-bottom: -23px; margin-top: -50px;margin-left: 20px;">Top Sellers From Digene, Brufen & Cremaffin</p> <a href="deal.html"><button id="allbutton">SEE ALL</button></a> 
+
+<div class="topseller">
+<div id="new1">
+   <a> <img class="top" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1637259299/sbs1gebsyavypjjfw5vi.jpg"></a>
+    <h4 style="margin-left: 20px;font-size: 14px">Just Herbs 8 in 1 Root Nourishing...</h4>
+    <p style=" color: gray;margin-left: 22px;margin-top: -10px; font-size: 13px;">bottle of 200 ml Shampoo</p>
+    <div class="rateingm" style="margin-top: -20px;">4.9★ </div><p style="display: inline-block;font-size: 13px;color: gray;">778 ratings</p>
+   <div style="display: flex;"><p style="margin-top:0px;margin-left: 20px; font-size: 14px;">MRP </p><p style="text-decoration: line-through ;margin-left: 3px;color: gray; font-size:14px;margin-top:0px;"> ₹698</p><p style="color: green; font-size: 12px; margin-top: 2px; margin-left: 10px;">15% off</p> </div> 
+    <p style="margin-left: 20px;margin-top:-10px;" >₹548</p>
+</div>
+<div>
+    <img class="top" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1644581420/nuwbxucwstwy55tlk31d.jpg">
+    <h4 style="margin-left: 20px;font-size: 14px">Health OK Multivitamin & Multimineral Tablet...</h4>
+    <p style=" color: gray;margin-left: 22px;margin-top: -10px; font-size: 13px;">bottle of 30 tablets</p>
+    <div class="rateingm" style="margin-top: -20px;">4.9★ </div><p style="display: inline-block;font-size: 13px;color: gray;">778 ratings</p>
+   <div style="display: flex;"><p style="margin-top:0px;margin-left: 20px; font-size: 14px;">MRP </p><p style="text-decoration: line-through ;margin-left: 3px;color: gray; font-size:14px;margin-top:0px;"> ₹₹309.33</p><p style="color: green; font-size: 12px; margin-top: 2px; margin-left: 10px;">12% off</p> </div> 
+    <p style="margin-left: 20px;margin-top:-10px;" >₹263</p>
+</div>
+<div>
+    <img class="top" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1623160125/jxfetx6hxvtmsw2ar9ri.jpg">
+    <h4 style="margin-left: 20px;font-size: 14px">RiteBite Fruit and Nut Max Protein...</h4>
+    <p style=" color: gray;margin-left: 22px;margin-top: -10px; font-size: 13px;">box of 6 bars</p>
+    <div class="rateingm" style="margin-top: -20px;">4.9★ </div><p style="display: inline-block;font-size: 13px;color: gray;">778 ratings</p>
+   <div style="display: flex;"><p style="margin-top:0px;margin-left: 20px; font-size: 14px;">MRP </p><p style="text-decoration: line-through ;margin-left: 3px;color: gray; font-size:14px;margin-top:0px;"> ₹309.33</p><p style="color: green; font-size: 12px; margin-top: 2px; margin-left: 10px;">23% off</p> </div> 
+    <p style="margin-left: 20px;margin-top:-10px;" >₹248</p>
+</div>
+<div>
+    <img class="top" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1625512407/itrmlrrc9lsfe2amdlhi.jpg">
+    <h4 style="margin-left: 20px;font-size: 14px">Livon Anti-Frizz Serum for Rough &...</h4>
+    <p style=" color: gray;margin-left: 22px;margin-top: -10px; font-size: 13px;">bottle of 50 ml Serum</p>
+    <div class="rateingm" style="margin-top: -20px;">4 ★ </div><p style="display: inline-block;font-size: 13px;color: gray;">778 ratings</p>
+   <div style="display: flex;"><p style="margin-top:0px;margin-left: 20px; font-size: 14px;">MRP </p><p style="text-decoration: line-through ;margin-left: 3px;color: gray; font-size:14px;margin-top:0px;"> ₹150</p><p style="color: green; font-size: 12px; margin-top: 2px; margin-left: 10px;">25% off</p> </div> 
+    <p style="margin-left: 20px;margin-top:-10px;" >₹108</p>
+</div>
+<div>
+    <img class="top" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1629206889/j3faukfl3oxvpekujdzv.jpg">
+    <h4 style="margin-left: 20px;font-size: 14px">Pedigree Meat Jerky Adult Dog Treat Roasted...</h4>
+    <p style=" color: gray;margin-left: 22px;margin-top: -10px; font-size: 13px;">packet of 80 gm Pet Food</p>
+    <div class="rateingm" style="margin-top: -20px;">4.9★ </div><p style="display: inline-block;font-size: 13px;color: gray;">778 ratings</p>
+   <div style="display: flex;"><p style="margin-top:0px;margin-left: 20px; font-size: 14px;">MRP </p><p style="text-decoration: line-through ;margin-left: 3px;color: gray; font-size:14px;margin-top:0px;"> ₹133</p><p style="color: green; font-size: 12px; margin-top: 2px; margin-left: 10px;">75% off</p> </div> 
+    <p style="margin-left: 20px;margin-top:-10px;" >₹118</p>
+</div>
+<div>
+    <img class="top" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1623587468/s3920iodcm4tcyekisyd.jpg">
+    <h4 style="margin-left: 20px;font-size: 14px">Ambic Giloy Aloevera Amla Ras...</h4>
+    <p style=" color: gray;margin-left: 22px;margin-top: -10px; font-size: 13px;">bottle of 1000 ml Juice</p>
+    <div class="rateingm" style="margin-top: -20px;">4.9★ </div><p style="display: inline-block;font-size: 13px;color: gray;">778 ratings</p>
+   <div style="display: flex;"><p style="margin-top:0px;margin-left: 20px; font-size: 14px;">MRP </p><p style="text-decoration: line-through ;margin-left: 3px;color: gray; font-size:14px;margin-top:0px;"> ₹398</p><p style="color: green; font-size: 12px; margin-top: 2px; margin-left: 10px;">10% off</p> </div> 
+    <p style="margin-left: 20px;margin-top:-10px;" >₹278</p>
+</div>
+<div>
+    <img class="top" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1640874950/ihy7ma7ng1zdlupkhxdt.jpg">
+    <h4 style="margin-left: 20px;font-size: 14px">Mamaearth Charcoal Nourishing Bath Soap...</h4>
+    <p style=" color: gray;margin-left: 22px;margin-top: -10px; font-size: 13px;">combo pack of 5 soaps</p>
+    <div class="rateingm" style="margin-top: -20px;">4.9★ </div><p style="display: inline-block;font-size: 13px;color: gray;">778 ratings</p>
+    <div style="display: flex;"><p style="margin-top:0px;margin-left: 20px; font-size: 14px;">MRP </p><p style="text-decoration: line-through ;margin-left: 3px;color: gray; font-size:14px;margin-top:0px;"> ₹373.8</p><p style="color: green; font-size: 12px; margin-top: 2px; margin-left: 10px;">5% off</p> </div> 
+    <p style="margin-left: 20px;margin-top:-10px;" >₹338</p>
+</div>
+<div id="new2">
+    <img class="top" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1609938704/x7illv60z5yuevgb8eym.jpg">
+    <h4 style="margin-left: 20px;font-size: 14px">Siddhayu Diabo Yogue Restorative Foot Care Cream for Diabetics...</h4>
+    <p style=" color: gray;margin-left: 22px;margin-top: -10px; font-size: 13px;">tube of 60 gm Cream</p>
+    <div style="display: flex;"><p style="margin-top:0px;margin-left: 20px; font-size: 14px;">MRP </p><p style="text-decoration: line-through ;margin-left: 3px;color: gray; font-size:14px;margin-top:0px;"> ₹243.8</p><p style="color: green; font-size: 12px; margin-top: 2px; margin-left: 10px;">5% off</p> </div> 
+    <p style="margin-left: 20px;margin-top:-10px;" >₹338</p>
+</div> 
+</div>
+    <a href="#new2">  <div id="arrow">
+        <i class="fa-solid fa-angle-right arrowi"></i>
+        </div></a>
+
+
+        <a href="#new1">  <div style="margin-left:-20px;margin-top:-60px;" id="arrow";>
+            <i class="fa-solid fa-angle-left arrowi"></i>
+            </div></a> <div style=" width: 100%;height: 200px;"></div>
+
+   <!-- ..............................................Adult............................................ -->
+
+
+
+<div style=" width: 100%;height: 200px;"></div>
+
+   <p style="margin-bottom:-20px;margin-top: -250px;margin-left: 20px">Adult diapers</p> <a href="adult.html"><button id="allbutton">SEE ALL</button></a> 
+   
+   <div class="topseller">
+   <div id="bp1">
+      <a> <img class="top" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1626091343/pvebeld6lrpigm0ugdav.jpg"></a>
+       <h4 style="margin-left: 20px;font-size: 14px">Friends Easy Adult Diaper Medium</h4>
+       <p style=" color: gray;margin-left: 22px;margin-top: -10px; font-size: 13px;">packet of 10 diapers</p>
+       <div class="rateingm" style="margin-top: -20px;">3.9★ </div><p style="display: inline-block;font-size: 13px;color: gray;">778 ratings</p>
+      <div style="display: flex;"><p style="margin-top:0px;margin-left: 20px; font-size: 14px;">MRP </p><p style="text-decoration: line-through ;margin-left: 3px;color: gray; font-size:14px;margin-top:0px;"> ₹698</p><p style="color: green; font-size: 12px; margin-top: 2px; margin-left: 10px;">25% off</p> </div> 
+       <p style="margin-left: 20px;margin-top:-10px;" >₹548</p>
+   </div>
+   <div>
+       <a> <img class="top" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600626905/cropped/dzyrdfppecuvl3tldfjk.png"></a>
+        <h4 style="margin-left: 20px;font-size: 14px">Dignity Premium Adult Diaper Large.</h4>
+        <p style=" color: gray;margin-left: 22px;margin-top: -10px; font-size: 13px;">packet of 10 diapers</p>
+        <div class="rateingm" style="margin-top: -20px;">4.2★ </div><p style="display: inline-block;font-size: 13px;color: gray;">778 ratings</p>
+       <div style="display: flex;"><p style="margin-top:0px;margin-left: 20px; font-size: 14px;">MRP </p><p style="text-decoration: line-through ;margin-left: 3px;color: gray; font-size:14px;margin-top:0px;"> ₹798</p><p style="color: green; font-size: 12px; margin-top: 2px; margin-left: 10px;">15% off</p> </div> 
+        <p style="margin-left: 20px;margin-top:-10px;" >₹648</p>
+    </div>
+   <div>
+       <a> <img class="top" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1640953971/jhvgnrtekfc16wmecjkk.jpg"></a>
+        <h4 style="margin-left: 20px;font-size: 14px"> Super Liife Premium Adult Diaper XL.</h4>
+        <p style=" color: gray;margin-left: 22px;margin-top: -10px; font-size: 13px;">packet of 10 diapers</p>
+        <div class="rateingm" style="margin-top: -20px;">3.9★ </div><p style="display: inline-block;font-size: 13px;color: gray;">778 ratings</p>
+       <div style="display: flex;"><p style="margin-top:0px;margin-left: 20px; font-size: 14px;">MRP </p><p style="text-decoration: line-through ;margin-left: 3px;color: gray; font-size:14px;margin-top:0px;"> ₹798</p><p style="color: green; font-size: 12px; margin-top: 2px; margin-left: 10px;">45% off</p> </div> 
+        <p style="margin-left: 20px;margin-top:-10px;" >₹548</p>
+    </div>
+    <div>
+       <a> <img class="top" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600167442/cropped/p4pvvxnhrclh1vxqcl5j.jpg"></a>
+        <h4 style="margin-left: 20px;font-size: 14px">Comfrey Adult Easywear Diaper Large</h4>
+        <p style=" color: gray;margin-left: 22px;margin-top: -10px; font-size: 13px;">packet of 10 diapers</p>
+        <div class="rateingm" style="margin-top: -20px;">4.2★ </div><p style="display: inline-block;font-size: 13px;color: gray;">778 ratings</p>
+       <div style="display: flex;"><p style="margin-top:0px;margin-left: 20px; font-size: 14px;">MRP </p><p style="text-decoration: line-through ;margin-left: 3px;color: gray; font-size:14px;margin-top:0px;"> ₹698</p><p style="color: green; font-size: 12px; margin-top: 2px; margin-left: 10px;">35% off</p> </div> 
+        <p style="margin-left: 20px;margin-top:-10px;" >₹548</p>
+    </div>
+    <div>
+        
+       <a> <img class="top" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600830606/cropped/r3j0khdng9dsbzil2t1x.jpg"></a>
+        <h4 style="margin-left: 20px;font-size: 14px">Dignity Magna Adult Diaper XL</h4>
+        <p style=" color: gray;margin-left: 22px;margin-top: -10px; font-size: 13px;">packet of 10 diapers</p>
+        <div class="rateingm" style="margin-top: -20px;">4.3★ </div><p style="display: inline-block;font-size: 13px;color: gray;">778 ratings</p>
+       <div style="display: flex;"><p style="margin-top:0px;margin-left: 20px; font-size: 14px;">MRP </p><p style="text-decoration: line-through ;margin-left: 3px;color: gray; font-size:14px;margin-top:0px;"> ₹498</p><p style="color: green; font-size: 12px; margin-top: 2px; margin-left: 10px;">25% off</p> </div> 
+        <p style="margin-left: 20px;margin-top:-10px;" >₹348</p>
+    </div>
+    <div>
+      
+       <a> <img class="top" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1622118010/ovrzjcl50p72p8u4e9n5.jpg"></a>
+        <h4 style="margin-left: 20px;font-size: 14px">Kare In Adult Diaper Medium .</h4>
+        <p style=" color: gray;margin-left: 22px;margin-top: -10px; font-size: 13px;">packet of 10 diapers</p>
+        <div class="rateingm" style="margin-top: -20px;">4.9★ </div><p style="display: inline-block;font-size: 13px;color: gray;">78 ratings</p>
+       <div style="display: flex;"><p style="margin-top:0px;margin-left: 20px; font-size: 14px;">MRP </p><p style="text-decoration: line-through ;margin-left: 3px;color: gray; font-size:14px;margin-top:0px;"> ₹698</p><p style="color: green; font-size: 12px; margin-top: 2px; margin-left: 10px;">25% off</p> </div> 
+        <p style="margin-left: 20px;margin-top:-10px;" >₹648</p>
+    </div>
+    <div id="bp2">
+       <a> <img class="top" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1617624443/cqb7dpgbkasycathblzt.jpg"></a>
+        <h4 style="margin-left: 20px;font-size: 14px">packet of 10 diapers.</h4>
+        <p style=" color: gray;margin-left: 22px;margin-top: -10px; font-size: 13px;">combo pack of 3 Packs</p>
+        <div class="rateingm" style="margin-top: -20px;">4.9★ </div><p style="display: inline-block;font-size: 13px;color: gray;">378 ratings</p>
+       <div style="display: flex;"><p style="margin-top:0px;margin-left: 20px; font-size: 14px;">MRP </p><p style="text-decoration: line-through ;margin-left: 3px;color: gray; font-size:14px;margin-top:0px;"> ₹998</p><p style="color: green; font-size: 12px; margin-top: 2px; margin-left: 10px;">15% off</p> </div> 
+        <p style="margin-left: 20px;margin-top:-10px;" >₹798</p>
+    </div>
+   
+   </div>
+   <a href="#bp1">  <div style="margin-left:-20px;margin-top:-260px;" id="arrow";>
+       <i class="fa-solid fa-angle-left arrowi"></i>
+       </div></a>
+   <a href="#bp2">  <div id="arrow" style="margin-top:-70px ;">
+       <i class="fa-solid fa-angle-right arrowi"></i>
+       </div></a>
+       <div style=" width: 100%;height: 200px;"></div>
+
+       <!-- ...................................................Radiology Tests | Up to 60% off....................................................................................... -->
+      
+   <p style="margin-left: 20px;margin-top: 40px; margin-bottom: -30px;">Radiology Tests | Up to 60% off</p> <a><button id="allbutton">SEE ALL</button></a> 
+   
+   <div id="tests">
+       <div id="r1">
+           <div style="display: flex;"><div style="width: 220px;height: 40px;margin-left: 10px;"><h4 style="font-size: 15px">Comprehensive Silver full b..</h4></div><i class="fa-solid fa-shield-halved test-box"></i> <p style="margin-left:-110px;font-size: 14px;font-weight: bold;">SAFE</p>  </div>
+            <p style=" color: gray;margin-left: 12px;margin-top: -20px; font-size: 13px;">Includes 71 tests</p>
+            <img class="testimg" src="https://onemg.gumlet.io/diagnostics/13745198-de27-11eb-b6a9-028c4b29e266.png?format=auto" alt="">
+           <div class="rateingm">4.9★ </div><p style="font-size: 12px; margin-top: 25px; margin-right: 90px;margin-left: 5px;">ISO</p>
+           <p style="display:inline; margin-left: 12px;">₹1699</p>
+          <p style="display:inline-block ;text-decoration: line-through; margin-left: 5px;color: gray; font-size: small;margin-top: 18px;">₹3398</p>
+            <div class="offert" >50% Off</div> 
+       </div> 
+       <div >
+           <div style="display: flex;"><div style="width: 220px;height: 40px;margin-left: 10px;"><h4 style="font-size: 15px">Comprehensive Silver full b..</h4></div><i class="fa-solid fa-shield-halved test-box"></i> <p style="margin-left:-110px;font-size: 14px;font-weight: bold;">SAFE</p>  </div>
+            <p style=" color: gray;margin-left: 12px;margin-top: -20px; font-size: 13px;">Includes 71 tests</p>
+            <img class="testimg" src="https://onemg.gumlet.io/diagnostics/13745198-de27-11eb-b6a9-028c4b29e266.png?format=auto" alt="">
+           <div class="rateingm">4.9★ </div><p style="font-size: 12px; margin-top: 25px; margin-right: 90px;margin-left: 5px;">ISO</p>
+           <p style="display:inline; margin-left: 12px;">₹1699</p>
+          <p style="display:inline-block ;text-decoration: line-through; margin-left: 5px;color: gray; font-size: small;margin-top: 18px;">₹3398</p>
+            <div class="offert" >50% Off</div> 
+       </div> 
+       <div >
+           <div style="display: flex;"><div style="width: 220px;height: 40px;margin-left: 10px;"><h4 style="font-size: 15px">Comprehensive Silver full b..</h4></div><i class="fa-solid fa-shield-halved test-box"></i> <p style="margin-left:-110px;font-size: 14px;font-weight: bold;">SAFE</p>  </div>
+            <p style=" color: gray;margin-left: 12px;margin-top: -20px; font-size: 13px;">Includes 71 tests</p>
+            <img class="testimg" src="https://onemg.gumlet.io/diagnostics/13745198-de27-11eb-b6a9-028c4b29e266.png?format=auto" alt="">
+           <div class="rateingm">4.9★ </div><p style="font-size: 12px; margin-top: 25px; margin-right: 90px;margin-left: 5px;">ISO</p>
+           <p style="display:inline; margin-left: 12px;">₹1699</p>
+          <p style="display:inline-block ;text-decoration: line-through; margin-left: 5px;color: gray; font-size: small;margin-top: 18px;">₹3398</p>
+            <div class="offert" >50% Off</div> 
+       </div> 
+       <div >
+           <div style="display: flex;"><div style="width: 220px;height: 40px;margin-left: 10px;"><h4 style="font-size: 15px">Comprehensive Silver full b..</h4></div><i class="fa-solid fa-shield-halved test-box"></i> <p style="margin-left:-110px;font-size: 14px;font-weight: bold;">SAFE</p>  </div>
+            <p style=" color: gray;margin-left: 12px;margin-top: -20px; font-size: 13px;">Includes 71 tests</p>
+            <img class="testimg" src="https://onemg.gumlet.io/diagnostics/13745198-de27-11eb-b6a9-028c4b29e266.png?format=auto" alt="">
+           <div class="rateingm">4.9★ </div><p style="font-size: 12px; margin-top: 25px; margin-right: 90px;margin-left: 5px;">ISO</p>
+           <p style="display:inline; margin-left: 12px;">₹1699</p>
+          <p style="display:inline-block ;text-decoration: line-through; margin-left: 5px;color: gray; font-size: small;margin-top: 18px;">₹3398</p>
+            <div class="offert" >50% Off</div> 
+       </div> 
+       <div >
+           <div style="display: flex;"><div style="width: 220px;height: 40px;margin-left: 10px;"><h4 style="font-size: 15px">Comprehensive Silver full b..</h4></div><i class="fa-solid fa-shield-halved test-box"></i> <p style="margin-left:-110px;font-size: 14px;font-weight: bold;">SAFE</p>  </div>
+            <p style=" color: gray;margin-left: 12px;margin-top: -20px; font-size: 13px;">Includes 71 tests</p>
+            <img class="testimg" src="https://onemg.gumlet.io/diagnostics/13745198-de27-11eb-b6a9-028c4b29e266.png?format=auto" alt="">
+           <div class="rateingm">4.9★ </div><p style="font-size: 12px; margin-top: 25px; margin-right: 90px;margin-left: 5px;">ISO</p>
+           <p style="display:inline; margin-left: 12px;">₹1699</p>
+          <p style="display:inline-block ;text-decoration: line-through; margin-left: 5px;color: gray; font-size: small;margin-top: 18px;">₹3398</p>
+            <div class="offert" >50% Off</div> 
+       </div> 
+       <div >
+           <div style="display: flex;"><div style="width: 220px;height: 40px;margin-left: 10px;"><h4 style="font-size: 15px">Comprehensive Silver full b..</h4></div><i class="fa-solid fa-shield-halved test-box"></i> <p style="margin-left:-110px;font-size: 14px;font-weight: bold;">SAFE</p>  </div>
+            <p style=" color: gray;margin-left: 12px;margin-top: -20px; font-size: 13px;">Includes 71 tests</p>
+            <img class="testimg" src="https://onemg.gumlet.io/diagnostics/13745198-de27-11eb-b6a9-028c4b29e266.png?format=auto" alt="">
+           <div class="rateingm">4.9★ </div><p style="font-size: 12px; margin-top: 25px; margin-right: 90px;margin-left: 5px;">ISO</p>
+           <p style="display:inline; margin-left: 12px;">₹1699</p>
+          <p style="display:inline-block ;text-decoration: line-through; margin-left: 5px;color: gray; font-size: small;margin-top: 18px;">₹3398</p>
+            <div class="offert" >50% Off</div> 
+       </div> 
+       <div >
+           <div style="display: flex;"><div style="width: 220px;height: 40px;margin-left: 10px;"><h4 style="font-size: 15px">Comprehensive Silver full b..</h4></div><i class="fa-solid fa-shield-halved test-box"></i> <p style="margin-left:-110px;font-size: 14px;font-weight: bold;">SAFE</p>  </div>
+            <p style=" color: gray;margin-left: 12px;margin-top: -20px; font-size: 13px;">Includes 71 tests</p>
+            <img class="testimg" src="https://onemg.gumlet.io/diagnostics/13745198-de27-11eb-b6a9-028c4b29e266.png?format=auto" alt="">
+           <div class="rateingm">4.9★ </div><p style="font-size: 12px; margin-top: 25px; margin-right: 90px;margin-left: 5px;">ISO</p>
+           <p style="display:inline; margin-left: 12px;">₹1699</p>
+          <p style="display:inline-block ;text-decoration: line-through; margin-left: 5px;color: gray; font-size: small;margin-top: 18px;">₹3398</p>
+            <div class="offert" >50% Off</div> 
+       </div> 
+       <div id="r2" >
+           <div style="display: flex;"><div style="width: 220px;height: 40px;margin-left: 10px;"><h4 style="font-size: 15px">Comprehensive Silver full b..</h4></div><i class="fa-solid fa-shield-halved test-box"></i> <p style="margin-left:-110px;font-size: 14px;font-weight: bold;">SAFE</p>  </div>
+            <p style=" color: gray;margin-left: 12px;margin-top: -20px; font-size: 13px;">Includes 71 tests</p>
+            <img class="testimg" src="https://onemg.gumlet.io/diagnostics/13745198-de27-11eb-b6a9-028c4b29e266.png?format=auto" alt="">
+           <div class="rateingm">4.9★ </div><p style="font-size: 12px; margin-top: 25px; margin-right: 90px;margin-left: 5px;">ISO</p>
+           <p style="display:inline; margin-left: 12px;">₹1699</p>
+          <p style="display:inline-block ;text-decoration: line-through; margin-left: 5px;color: gray; font-size: small;margin-top: 18px;">₹3398</p>
+            <div class="offert" >50% Off</div>
+       </div> 
+   </div>
+       <a href="#r2">  <div id="arrow">
+           <i class="fa-solid fa-angle-right arrowi"></i>
+           </div></a>
+   
+   
+           <a href="#r1">  <div style="margin-left:-20px;margin-top:-60px;" id="arrow";>
+               <i class="fa-solid fa-angle-left arrowi"></i>
+               </div></a> 
+
+
+
+                   
+<p style="margin-top: 120px;margin-left: 20px;margin-bottom: -30px;">Shop by Health Concerns</p><a href="healthcare.html"><button id="allbutton">SEE ALL</button></a> 
+
+<div class="brands">
+    <div id="hc1">
+        <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1624524227/hgzkyio2rphkn6wjif94.png">
+         <p style="margin-left: 70px;">Diabetes</p>
+    </div>
+    <div>
+        <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1624524269/zo7sc14nqpt6ebeojkvr.png">
+         <p style="margin-left: 70px;">Cardiac Care</p>
+    </div>
+    <div>
+        <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1624524293/ttagxlnxulsvkyv9fetr.png">
+         <p style="margin-left: 70px;">Stomach Care</p>
+    </div>
+    <div>
+        <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1624524308/ijgn7fhyq8ig0welmrcp.png">
+         <p style="margin-left: 70px;">Liver care</p>
+    </div>
+    <div>
+        <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1624524282/zytsldnf5mvb0u19ydep.png">
+         <p style="margin-left: 70px;">kidney Care</p>
+    </div>
+    <div>
+        <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1624525251/bkhusfgfiu9qedowph2i.png">
+         <p style="margin-left: 70px;">Skin Care</p>
+    </div>
+    <div>
+        <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1624524210/ywohqm4txnehsmibypaz.png">
+         <p style="margin-left: 70px;">Bone,joint Care</p>
+    </div>
+    <div>
+        <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1624524252/hn5bpr1ci2do5kdub51v.png">
+         <p style="margin-left: 70px;">Pain Relief</p>
+    </div>
+  
+    <div id="hc2">
+        <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1624524365/t0ehbhfrkughfxoygvs2.png">
+         <p style="margin-left: 70px;">Eye care</p>
+    </div>
+     </div>
+     <a href="#hc2">  <div id="arrow">
+        <i class="fa-solid fa-angle-right arrowi"></i>
+        </div></a>
+
+
+        <a href="#hc1">  <div style="margin-left:-20px;margin-top:-60px;" id="arrow";>
+            <i class="fa-solid fa-angle-left arrowi"></i>
+            </div></a>
+            <div style="width: 100%;height: 100px;"></div>
+
+
+
+<!--.................................................................Amla Juice | Supplement of the week......................................................................................... -->
+
+
+<p style="margin-bottom: -23px;margin-left: 20px">Amla Juice | Supplement of the week</p> <a href="harbaljuices.html"><button id="allbutton">SEE ALL</button></a> 
+
+<div class="topseller">
+<div id="awla1">
+   <a> <img class="top" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1601225774/cropped/xrutleivd3jyw7e4ho8h.png"></a>
+    <h4 style="margin-left: 20px;font-size: 14px">Dabur Amla Juice.</h4>
+    <p style=" color: gray;margin-left: 22px;margin-top: -10px; font-size: 13px;">bottle of 1 Ltr Juice</p>
+    <div class="rateingm" style="margin-top: -20px;">4.9★ </div><p style="display: inline-block;font-size: 13px;color: gray;">778 ratings</p>
+   <div style="display: flex;"><p style="margin-top:0px;margin-left: 20px; font-size: 14px;">MRP </p><p style="text-decoration: line-through ;margin-left: 3px;color: gray; font-size:14px;margin-top:0px;"> ₹398</p><p style="color: green; font-size: 12px; margin-top: 2px; margin-left: 10px;">25% off</p> </div> 
+    <p style="margin-left: 20px;margin-top:-10px;" >₹218</p>
+</div>
+<div>
+    <img class="top" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1621534247/urgraxgd4aag4xvj6nhh.jpg">
+    <h4 style="margin-left: 20px;font-size: 14px">Kapiva Amla Juice.</h4>
+    <p style=" color: gray;margin-left: 22px;margin-top: -10px; font-size: 13px;">bottle of 1 Ltr Juice </p>
+    <div class="rateingm" style="margin-top: -20px;">4.9★ </div><p style="display: inline-block;font-size: 13px;color: gray;">778 ratings</p>
+   <div style="display: flex;"><p style="margin-top:0px;margin-left: 20px; font-size: 14px;">MRP </p><p style="text-decoration: line-through ;margin-left: 3px;color: gray; font-size:14px;margin-top:0px;"> ₹₹299.33</p><p style="color: green; font-size: 12px; margin-top: 2px; margin-left: 10px;">22% off</p> </div> 
+    <p style="margin-left: 20px;margin-top:-10px;" >₹223</p>
+</div>
+<div>
+    <img class="top" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600150551/cropped/azjsfsxd3isqta7emtcw.jpg">
+    <h4 style="margin-left: 20px;font-size: 14px">
+        Patanjali Ayurveda Amla Juice.</h4>
+    <p style=" color: gray;margin-left: 22px;margin-top: -10px; font-size: 13px;">bottle of 1000 ml Juice</p>
+    <div class="rateingm" style="margin-top: -20px;">4.9★ </div><p style="display: inline-block;font-size: 13px;color: gray;">778 ratings</p>
+   <div style="display: flex;"><p style="margin-top:0px;margin-left: 20px; font-size: 14px;">MRP </p><p style="text-decoration: line-through ;margin-left: 3px;color: gray; font-size:14px;margin-top:0px;"> ₹209.33</p><p style="color: green; font-size: 12px; margin-top: 2px; margin-left: 10px;">23% off</p> </div> 
+    <p style="margin-left: 20px;margin-top:-10px;" >₹148</p>
+</div>
+<div>
+    <img class="top" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1644229081/kb78d0sbjqdsgg69fftc.jpg">
+    <h4 style="margin-left: 20px;font-size: 14px">Tata 1mg Cold Pressed Amla Juice..</h4>
+    <p style=" color: gray;margin-left: 22px;margin-top: -10px; font-size: 13px;">bottle of 1 Ltr Juice</p>
+    <div class="rateingm" style="margin-top: -20px;">4 ★ </div><p style="display: inline-block;font-size: 13px;color: gray;">778 ratings</p>
+   <div style="display: flex;"><p style="margin-top:0px;margin-left: 20px; font-size: 14px;">MRP </p><p style="text-decoration: line-through ;margin-left: 3px;color: gray; font-size:14px;margin-top:0px;"> ₹150</p><p style="color: green; font-size: 12px; margin-top: 2px; margin-left: 10px;">25% off</p> </div> 
+    <p style="margin-left: 20px;margin-top:-10px;" >₹148</p>
+</div>
+<div>
+    <img class="top" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600170134/cropped/stiaa3trc2kpy3qqzlab.jpg">
+    <h4 style="margin-left: 20px;font-size: 14px">ADDTata 1mg Cold Pressed Amla JuiceCOrange...</h4>
+    <p style=" color: gray;margin-left: 22px;margin-top: -10px; font-size: 13px;">bottle of 1 Ltr Juice</p>
+    <div class="rateingm" style="margin-top: -20px;">4.9★ </div><p style="display: inline-block;font-size: 13px;color: gray;">778 ratings</p>
+   <div style="display: flex;"><p style="margin-top:0px;margin-left: 20px; font-size: 14px;">MRP </p><p style="text-decoration: line-through ;margin-left: 3px;color: gray; font-size:14px;margin-top:0px;"> ₹233</p><p style="color: green; font-size: 12px; margin-top: 2px; margin-left: 10px;">45% off</p> </div> 
+    <p style="margin-left: 20px;margin-top:-10px;" >₹148</p>
+</div>
+<div>
+    <img class="top" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600211589/cropped/zcoednwfsiglysjvtdmf.jpg">
+    <h4 style="margin-left: 20px;font-size: 14px">Axiom Aloevera Amla Juice.</h4>
+    <p style=" color: gray;margin-left: 22px;margin-top: -10px; font-size: 13px;">bottle of 1000 ml Juice</p>
+    <div class="rateingm" style="margin-top: -20px;">4.9★ </div><p style="display: inline-block;font-size: 13px;color: gray;">778 ratings</p>
+   <div style="display: flex;"><p style="margin-top:0px;margin-left: 20px; font-size: 14px;">MRP </p><p style="text-decoration: line-through ;margin-left: 3px;color: gray; font-size:14px;margin-top:0px;"> ₹398</p><p style="color: green; font-size: 12px; margin-top: 2px; margin-left: 10px;">10% off</p> </div> 
+    <p style="margin-left: 20px;margin-top:-10px;" >₹278</p>
+</div>
+<div>
+    <img class="top" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1610112306/kzx8jojwoduqz6yn9gea.jpg">
+    <h4 style="margin-left: 20px;font-size: 14px">Patanjali Ayurveda Amla-Aloe Vera with Wheat Grass Juice.</h4>
+    <p style=" color: gray;margin-left: 22px;margin-top: -10px; font-size: 13px;">bottle of 500 ml Juice</p>
+    <div class="rateingm" style="margin-top: -20px;">4.9★ </div><p style="display: inline-block;font-size: 13px;color: gray;">778 ratings</p>
+   <div style="display: flex;"><p style="margin-top:0px;margin-left: 20px; font-size: 14px;">MRP </p><p style="text-decoration: line-through ;margin-left: 3px;color: gray; font-size:14px;margin-top:0px;"> ₹33.8</p><p style="color: green; font-size: 12px; margin-top: 2px; margin-left: 10px;">5% off</p> </div> 
+    <p style="margin-left: 20px;margin-top:-10px;" >₹138</p>
+</div>
+<div id="awla2">
+    <img class="top" src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1601325905/cropped/ssos0zqlimcibg01rmaj.png">
+    <h4 style="margin-left: 20px;font-size: 14px"> Digene Acidity & Gas Relief Tablet Mint...</h4>
+    <p style=" color: gray;margin-left: 22px;margin-top: -10px; font-size: 13px;">strip of 15 tablets</p>
+    <div class="rateingm" style="margin-top: -20px;">4.9★ </div><p style="display: inline-block;font-size: 13px;color: gray;">778 ratings</p>
+   <div style="display: flex;"><p style="margin-top:0px;margin-left: 20px; font-size: 14px;">MRP </p><p style="text-decoration: line-through ;margin-left: 3px;color: gray; font-size:14px;margin-top:0px;"> ₹233</p><p style="color: green; font-size: 12px; margin-top: 2px; margin-left: 10px;">55% off</p> </div> 
+    <p style="margin-left: 20px;margin-top:-10px;" >₹14</p>
+</div>
+</div>
+<a href="#awla1">  <div style="margin-left:-20px;margin-top:-260px;" id="arrow";>
+    <i class="fa-solid fa-angle-left arrowi"></i>
+    </div></a>
+<a href="#awla2">  <div id="arrow" style="margin-top:-70px ;">
+    <i class="fa-solid fa-angle-right arrowi"></i>
+    </div></a>
+    <div style="width: 100%;height: 100px;"></div>
+   <!--.............................................................. Ayurvedic herbs.............................................................. -->
+            
+<p style="margin-top: 120px;margin-left: 20px;margin-bottom: -30px;">Ayurvedic herbs</p><a href="herbs.html"><button id="allbutton">SEE ALL</button></a> 
+
+<div class="brands">
+    <div id="ay1">
+        <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1627454405/wgis1yqlrzowli2yjvss.png">
+         <p style="margin-left: 70px;">Turmeric</p>
+    </div>
+    <div>
+        <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1627454436/qlkxh0js0qp9xqmsqzes.png">
+         <p style="margin-left: 70px;">Ashwagandha</p>
+    </div>
+    <div>
+        <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1627454447/jgwqyddtjrkctyrbdp6g.png">
+         <p style="margin-left: 70px;">Ginseng</p>
+    </div>
+    <div>
+        <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1627454458/wyw5njibngdr5sguzanq.png">
+         <p style="margin-left: 70px;">Karela</p>
+    </div>
+    <div>
+        <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1627454472/kfpg4oebb3npqqpntnsj.png">
+         <p style="margin-left: 70px;">Neem Supplement</p>
+    </div>
+    <div>
+        <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1627454485/wvkuvbduk8c4sejcosra.png">
+         <p style="margin-left: 70px;">Noni</p>
+    </div>
+    <div>
+        <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1627454614/ecclytvhbfnky1aisv7w.png">
+         <p style="margin-left: 70px;">Shilajit</p>
+    </div>
+    <div>
+        <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1627455157/bcwrkenksobkmwjxlueh.png">
+         <p style="margin-left: 70px;">Triphala</p>
+    </div>
+    <div id="ay2">
+        <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1627459120/nbfkewv2pycijzmyh2m9.png">
+         <p style="margin-left: 70px;">Tulsi Drops & More</p>
+    </div>
+    
+    
+     </div>
+     <a href="#ay2">  <div id="arrow">
+        <i class="fa-solid fa-angle-right arrowi"></i>
+        </div></a>
+
+
+        <a href="#ay1">  <div style="margin-left:-20px;margin-top:-60px;" id="arrow";>
+            <i class="fa-solid fa-angle-left arrowi"></i>
+            </div></a>
+
+            
+ <!--..............................................................Herbal juices.............................................................. -->
+                     
+         <p style="margin-top: 120px;margin-left: 20px;margin-bottom: -30px;">Herbal juices</p><a href="harbaljuices.html"><button id="allbutton">SEE ALL</button></a> 
+         
+         <div class="brands">
+             <div id="hj1">
+                 <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1625814112/cvzn2iytrid3dqu2sixh.png">
+                  <p style="margin-left: 70px;">Wheat juices</p>
+             </div>
+             <div>
+                 <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1625814170/anjvkx9q3ybqacjbgnlc.png">
+                  <p style="margin-left: 70px;">Noni juices</p>
+             </div>
+             <div>
+                 <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1625814053/k0tgja38cwsmekapkc6w.png">
+                  <p style="margin-left: 70px;">Karela juices</p>
+             </div>
+             <div>
+                 <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1625814067/lx69x5zl7g5qvqmzdbmy.png">
+                  <p style="margin-left: 70px;">Aloevera juices</p>
+             </div>
+             <div>
+                 <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1625814084/vm2sctbilfxnthudwu3m.png">
+                  <p style="margin-left: 70px;">Amla juices</p>
+             </div>
+             <div>
+                 <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1625814150/jxv11lezchjrkepjncd8.png">
+                  <p style="margin-left: 70px;">Giloy juices</p>
+             </div>
+             <div>
+                 <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1625814133/wyf9gd5uvaza9yci9cwq.png">
+                  <p style="margin-left: 70px;">Triphala juices</p>
+             </div>
+             <div>
+                 <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1625814189/g5qsfsjsrapwmw8lbdmb.png">
+                  <p style="margin-left: 70px;">Tulsi juices/p>
+             </div>
+             <div id="hj2">
+                 <img class="brandimg" src="https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1625814304/gglxwp9gdrzvjpcccgxn.png">
+                  <p style="margin-left: 70px;">Jamun juices</p>
+             </div>
+            
+              </div>
+              <a href="#hj2">  <div id="arrow">
+                 <i class="fa-solid fa-angle-right arrowi"></i>
+                 </div></a>
+         
+         
+                 <a href="#hj1">  <div style="margin-left:-20px;margin-top:-60px;" id="arrow";>
+                     <i class="fa-solid fa-angle-left arrowi"></i>
+                     </div></a>
+                     <div style=" width: 100%;height: 200px;"></div>
+           
+                     <p style="margin-top: -30px;margin-left: 20px;margin-bottom: -30px;">Ayurvedic herbs</p> <a href="herbs.html"><button id="allbutton">SEE ALL</button></a> 
+
+
+<!--.................................................................Ayurveda.............................................................................................................-->
+          <div class="auyurveda">
+              <div id="ahs1">
+                 <a> <img class="auyimg" src="https://onemg.gumlet.io/image/upload/x0ww6mg7dyiuhntpcqfe.jpg" alt=""> </a>
+                 <h3 style="margin-left: 20px;margin-top: -10px;">Kuchla</h3>
+                <div style=" display: flex; height: 40px; width: 430px;"> <p class="ayurvetxt">Kuchla is an evergreen plant and the most used part of this plant are its seeds. It has a pungent smell and a bitter</p> </div>
+             
+                </div>
+                <div >
+                    <a> <img class="auyimg" src="https://onemg.gumlet.io/image/upload/j5xn5f4bqotwgw3uveua.jpg" alt=""> </a>
+                    <h3 style="margin-left: 20px;margin-top: -10px;">Pistachio</h3>
+                   <div style=" display: flex; height: 40px; width: 430px;"> <p class="ayurvetxt">Kuchla is an evergreen plant and the most used part of this plant are its seeds. It has a pungent smell and a bitter</p> </div>
+                
+                   </div>
+                   <div>
+                    <a> <img class="auyimg" src="https://onemg.gumlet.io/image/upload/qh2zgvxci0mazembq9rs.jpg" alt=""> </a>
+                    <h3 style="margin-left: 20px;margin-top: -10px;">Shilajit</h3>
+                   <div style=" display: flex; height: 40px; width: 430px;"> <p class="ayurvetxt">Kuchla is an evergreen plant and the most used part of this plant are its seeds. It has a pungent smell and a bitter</p> </div>
+                
+                   </div>
+                   <div>
+                    <a> <img class="auyimg" src="https://onemg.gumlet.io/image/upload/j2pfmlwcxfmxutlswfhd.jpg" alt=""> </a>
+                    <h3 style="margin-left: 20px;margin-top: -10px;">Brahma Rasayan</h3>
+                   <div style=" display: flex; height: 40px; width: 430px;"> <p class="ayurvetxt">Kuchla is an evergreen plant and the most used part of this plant are its seeds. It has a pungent smell and a bitter</p> </div>
+                
+                   </div>
+                   <div>
+                    <a> <img class="auyimg" src="https://onemg.gumlet.io/image/upload/rakfbluf7mhf8qsfmcec.jpg" alt=""> </a>
+                    <h3 style="margin-left: 20px;margin-top: -10px;">peas</h3>
+                   <div style=" display: flex; height: 40px; width: 430px;"> <p class="ayurvetxt">Kuchla is an evergreen plant and the most used part of this plant are its seeds. It has a pungent smell and a bitter</p> </div>
+                
+                   </div>
+                   <div id="ahs2">
+                    <a> <img class="auyimg" src="https://onemg.gumlet.io/image/upload/bbxlvugknoltl65tqanp.jpg" alt=""> </a>
+                    <h3 style="margin-left: 20px;margin-top: -10px;">Cashew Nuts</h3>
+                   <div style=" display: flex; height: 40px; width: 430px;"> <p class="ayurvetxt">Kuchla is an evergreen plant and the most used part of this plant are its seeds. It has a pungent smell and a bitter</p> </div>
+                
+                   </div>
+                   <div id="ahs2">
+                    <a> <img class="auyimg" src="https://onemg.gumlet.io/image/upload/dzdvuhvp7hqbl4rakhbo.jpg" alt=""> </a>
+                    <h3>Kuchla</h3>
+                   <div style=" display: flex; height: 40px; width: 430px;"> <p class="ayurvetxt">Kuchla is an evergreen plant and the most used part of this plant are its seeds. It has a pungent smell and a bitter</p> </div>
+                
+                   </div> </div> 
+                   <a href="#ahs2">  <div style="margin-top:-300px;margin-left: 1270px;" >
+                    <i class="fa-solid fa-angle-right arrowi"></i>
+                    </div></a>
+            
+            
+                    <a href="#ahs1">  <div style="margin-left:-30px;margin-top:-40px;";>
+                        <i class="fa-solid fa-angle-left arrowi"></i>
+                        </div></a> 
+                        <div style=" width: 100%;height: 490px;"></div>
+         <!--.....................................................................................footer..........................................................................................  -->
+
+
+
+                        <div id="container">
+                            <h2>Stay Healthy with Tata 1mg: Your Favourite Online Pharmacy and Healthcare Platform</h2>
+                        <h3>We Bring Care to Health.</h3>
+                        <p>Tata 1mg is India's leading digital healthcare platform. From doctor consultations on chat to online pharmacy and lab tests at home: we have it all covered for you. Having delivered over 25 million orders in 1000+ cities till date, we are on a mission to bring "care" to "health" to give you a flawless healthcare experience.</p>
+                        <h3>Tata 1mg: Your Favourite Online Pharmacy!</h3>
+                        <p>
+                            Tata 1mg is India's leading online chemist with over 2 lakh medicines available at the best prices. We are your one-stop destination for other healthcare products as well, such as over the counter pharmaceuticals, healthcare devices and homeopathy and ayurveda medicines.
+                        </p>
+                        <p>
+                            With Tata 1mg, you can buy medicines online and get them delivered at your doorstep anywhere in India! But, is ordering medicines online a difficult process? Not at all! Simply search for the products you want to buy, add to cart and checkout. Now all you need to do is sit back as we get your order delivered to you.
+                        </p>
+                        <p>
+                            In case you need assistance, just give us a call and we will help you complete your order.
+                        </p>
+                        <p>
+                            Don't want to go through the hassle of adding each medicine separately? You can simply upload your prescription and we will place your order for you. And there is more! At Tata 1mg, you can buy health products and medicines online at best discounts.
+                        </p>
+                        <p>
+                            Now, isn't that easy? Why go all the way to the medicine store and wait in line, when you have Tata 1mg Pharmacy at your service.
+                        </p>
+                        <h3>The Feathers in Our Cap</h3>
+                        <p>
+                            At Tata 1mg, our goal is to make healthcare understandable, accessible and affordable in India. We set out on our journey in 2015, and have come a long way since then. Along the way, we have been conferred with prestigious titles like <b>Munjal Award for 'Business Excellence through Learning and Development', Best Online Pharmacy in India Award and Top 50 venture in The Smart CEO-Startup50 India.</b>  We have been selected as the only company from across the globe for <b>SD#3 "Health & Well Being for all" by Unreasonable group, US State Department.</b> In 2019 alone we received three awards including the <b>BMW Simply Unstoppable Award.</b>
+                        </p>
+                        <h3>The Services We Offer</h3>
+                        <p>
+                            Tata 1mg is India's leading digital healthcare platform, where you can buy medicines online with discount. Buy medicine online in Delhi, Mumbai, Bangalore, Hyderabad, Pune, Gurgaon, Noida, Kolkata, Chennai, Ahmedabad, Lucknow and around a 1000 more cities. Besides delivering your online medicine order at your doorstep, we provide accurate, authoritative & trustworthy information on medicines and help people use their medicines effectively and safely.
+                        </p>
+                        <p>
+                            We also facilitate lab tests at home. You can avail over 2,000 tests and get tested by 120+ top and verified labs at the best prices. Need to consult a doctor? On our platform, you can talk to over 20 kinds of specialists in just a few clicks.
+                        </p>
+                        <p>
+                            Customer centricity is the core of our values. Our team of highly trained and experienced doctors, phlebotomists and pharmacists looks into each order to give you a fulfilling experience.
+                        </p>
+                        <p>
+                            We’ve made healthcare accessible to millions by giving them quality care at affordable prices. Customer centricity is the core of our values. Our team of highly trained and experienced doctors, phlebotomists and pharmacists looks into each order to give you a fulfilling experience.
+                        </p>
+                        <p>
+                            Visit our online medical store now, and avail online medicine purchase at a discount.
+                        </p>
+                        <p>
+                            Stay Healthy!
+                        </p>
+                        <h2 id="head">INDIA’S LARGEST HEALTHCARE PLATFORM</h2>
+                        <div class="rel">
+                            <div>
+                               <div class="rate">260m+</div>
+                               <div>Visitors</div> 
+                            </div>
+                            <div>
+                                <div class="rate">31m+</div>
+                                <div>Orders Delivered</div>
+                            </div>
+                            <div>
+                                <div class="rate">1800+</div>
+                                <div>Cities</div> 
+                            </div>
+                        </div>
+                        <div id="link">
+                            <div>Get the link to download App</div>
+                            <div>
+                                <form>
+                                    <input type="number" placeholder="Enter Phone Number">
+                                    <button>Send Link</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="overall">
+                            <div class="inside">
+                               <div>
+                                   <h3 class="extra">Know Us</h3>
+                                   <ul>
+                                       <li><a href="aboutUs.html"><span>About Us</span></a></li>
+                                       <li><a href="contact.html"><span>Contact us</span></a></li>
+                                       <li><a href="press.html"><span>Press Coverage</span></a></li>
+                                       <li><a href="carrers.html"><span>Carrers</span></a></li>
+                                       <li><a href="business.html">
+                                           <span>Business Parternship</span>
+                                       </a></li>
+                                       <li><a href="parner.html"><span>Become ahealth Partner</span></a></li>
+                                   </ul>
+                               </div> 
+                            </div>
+                            <div class="inside">
+                                <div>
+                                    <h3 class="extra">Our Policies</h3>
+                                    <ul>
+                                        <li><a href="aboutUs.html"><span>Privacy Policy</span></a></li>
+                                        <li><a href="contact.html"><span>Terms and Conditions</span></a></li>
+                                        <li><a href="press.html"><span>Editorial Policy</span></a></li>
+                                        <li><a href="carrers.html"><span>Return Policy</span></a></li>
+                                        <li><a href="business.html">
+                                            <span>IP Policy</span>
+                                        </a></li>
+                                        <li><a href="parner.html"><span>Grievance Redressal Policy</span></a></li>
+                                    </ul>
+                                </div> 
+                            </div >
+                            <div class="inside">
+                                <div>
+                                    <h3 class="extra">Our Services</h3>
+                                    <ul>
+                                        <li><a href="aboutUs.html"><span>Order Medicines</span></a></li>
+                                        <li><a href="contact.html"><span>Book Lab Tests</span></a></li>
+                                        <li><a href="press.html"><span>Consult a Doctor</span></a></li>
+                                        <li><a href="carrers.html"><span>Ayurveda Articles</span></a></li>
+                                        <li><a href="business.html">
+                                            <span>Hindi Articles</span>
+                                        </a></li>
+                                        <li><a href="parner.html"><span>Care Plan</span></a></li>
+                                    </ul>
+                                </div> 
+                            </div>
+                            <div class="inside">
+                                <div>
+                                    <h3 class="extra">Connect</h3>
+                                    <p><span class="tag">Social Links</span></p>
+                                    <ul>
+                                        <!-- <li><span class="tag">Social Links</span></li> -->
+                                        <li>
+                                            <a class="icn" href="https://www.facebook.com/1mgOfficial"><span><i class="fa-brands fa-facebook-square"></i></span></a>
+                                            <a class="icn" href="https://twitter.com/1mgofficial"><i class="fa-brands fa-twitter-square"></i></a>
+                                            <a class="icn" href="https://www.youtube.com/c/1mgofficial"><i class="fa-brands fa-youtube"></i></a>
+                                            <a class="icn" href="https://www.linkedin.com/company/1mg"><i class="fa-brands fa-linkedin"></i></a>
+                                            <a class="icn" href="https://medium.com/1mgofficial"><i class="fa-solid fa-m"></i></a>
+                                        </li>
+                                        <!-- <li class="tag">Want daily dose of health?</li> -->
+                                        <!-- <li><button id="btn">SIGN UP</button></li> -->
+                                    </ul>
+                                    <p><span class="tag">Want daily dose of health?</span></p>
+                                    <button id="btn">SIGN UP</button>
+                                </div> 
+                            </div>
+                            <div>
+                                <div>
+                                    <h5>Download App</h5>
+                                    <div><a href="https://play.google.com/store/apps/details?id=com.aranoah.healthkart.plus"><img src="images/gpay.jpeg" alt="gpay"/></a></div>
+                                    <div><div><a href="https://apps.apple.com/in/app/1mg/id554578419"><img src="images/apay.jpeg" alt="apay"/></a></div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="secure">
+                            <div>
+                                <div><img src="/images/relible.jpeg" alt="Reliable"/></div>
+                                <div>
+                                    <h5>Reliable</h5>
+                                    <p class="blur">All products displayed on Tata 1mg are procured from verified and licensed pharmacies. All labs listed on the platform are accredited</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div><img src="/images/secure.jpeg" alt="secure"/></div>
+                                <div>
+                                    <h5>Secure</h5>
+                                    <p class="blur">Tata 1mg uses Secure Sockets Layer (SSL) 128-bit encryption and is Payment Card Industry Data Security Standard (PCI DSS) compliant</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div><img src="/images/affordable.jpeg" alt="Affordable"/></div>
+                                <div>
+                                    <h5>Affordable</h5>
+                                    <p class="blur">Find affordable medicine substitutes, save up to 50% on health products, up to 80% off on lab tests and free doctor consultations.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="last">
+                                <div><img class="img" src="https://static.legitscript.com/seals/729605.png" alt=""/></div>
+                                <div><img class="img" src="https://res.cloudinary.com/du8msdgbj/image/upload/v1580717209/URS_ebgmxc.png" alt=""/></div>
+                        </div>
+                        <div id="h"><h3>India's only LegitScript and ISO/ IEC 27001 certified online healthcare platform</h3></div>
+                        <h4>Know more about Tata 1mg</h4>
+                        <h3>Access medical and health information</h3>
+                        <p>
+                            Tata 1mg provides you with medical information which is curated, written and verified by experts, accurate and trustworthy. Our experts create high-quality content about medicines, diseases, lab investigations, Over-The-Counter (OTC) health products, Ayurvedic herbs/ingredients, and alternative remedies.
+                        </p>
+                        <h3>Order medicines online</h3>
+                        <p>
+                            Get free medicine home delivery in over 1800 cities across India. You can also order Ayurvedic, Homeopathic and other Over-The-Counter (OTC) health products. Your safety is our top priority. All products displayed on Tata 1mg are procured from verified and licensed pharmacies.
+                        </p>
+                        <h3>Book lab tests</h3>
+                        <p>
+                            Book any lab tests and preventive health packages from certified labs and get tested from the comfort of your home. Enjoy free home sample collection, view reports online and consult a doctor online for free.
+                        </p>
+                        <h3>Consult a doctor online</h3>
+                        <p>
+                            Got a health query? Consult doctors online from the comfort of your home for free. Chat privately with our registered medical specialists to connect directly with verified doctors. Your privacy is guaranteed.
+                        </p>
+                        <div class="disclaimer">
+                            <div>
+                                © 2022 Tata 1mg. All rights reserved. In compliance with Drugs and Cosmetics Act, 1940 and Drugs and Cosmetics Rules, 1945, we don't process requests for Schedule X and other habit forming drugs.
+                            </div>
+                            <div><img src="/images/payment.jpeg" alt="payment"/></div>
+                        </div>
+                    
+                        </div>
+
+            
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
+
+<script src="index.js"></script>
+<script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+<script>$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    autoplay:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:1
+        }
+    }
+})</script>
+
 
 <script src="/javascript/index.js">
       
     </script>
+
+    <!-- ........................................................................................................................................................... -->
+    <html>
+<body>
+<div id="id01" class="modal">
+    <div id="main">
+        <div id="left">
+            <div id="img">
+                <img class="img21" src="https://www.1mg.com/images/login-signup/Your-Go-To-Health-App.png" alt="">
+            </div>
+            <div id="left-down">
+               <h3 id="one">Make Healthcare Simpler</h3> 
+               <p id="left-p">Get medicine information,order medicine,book lab tests and consult doctors online from the comfort of your home.</p>
+            </div>
+        </div>
+        <div id="right">
+            <div>
+            <h1 id="two">Login</h1> <a href="signUp.html"><h1 style="display:inline-block; margin-left: 10px;color: brown;">Sign Up</h1></a>
+            <p id="p-2">Get access to your orders, lab tests & doctor consultations</p>
+            <input type="search" value="" placeholder="Enter Email ID or Mobile Number" id="input">
+            </div>
+            <div id="three">
+                <button class="buttonlog">LOGIN</button>
+            </div>
+            <p id="p2">New on 1mg? <span>Sing Up</span></p>
+            <p id="p3">Have a corporate account? <span>Click Here</span></p>
+            <p id="p4">By logging in, you agree to our</p>
+            <p id="p5">Terms and Conditions & Privacy Policy</p>
+            <p id="p6">Need Help? Get In Touch</p>
+        </div> 
+    </div>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+<!-- ........................................................................................................................... -->
+
+

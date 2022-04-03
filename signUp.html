@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Poppins:ital,wght@0,200;1,200&family=Work+Sans&display=swap" rel="stylesheet">
+    <style>
+        #main {
+            width: 70%;
+            height: 550px;
+            border: 1px solid black;
+            margin: auto;
+            margin-top: 20px;
+            display: flex;
+            border-radius: 20px;
+        }
+
+        #left {
+            width: 50%;
+            height: 550px;
+        }
+
+        #left-up {
+            width: 100%;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            width: 145px;
+            height: 145px;
+        }
+
+        #left-down {
+            width: 100%;
+            height: 247px;
+        }
+
+        #one {
+            text-align: center;
+            color: rgb(75, 75, 75);
+        }
+
+        #two {
+            text-align: center;
+            color: rgb(180, 178, 178);
+            margin-top: 35px;
+        }
+
+        #cross {
+            font-family: "Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+            margin-left: 100%;
+        }
+
+        #cross:hover {
+            cursor: pointer;
+        }
+
+        #sign {
+            margin-top: 5%;
+            margin-left: 20%;
+            font-family: "Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+        }
+
+        #three {
+            margin-left: 20%;
+            color: rgb(180, 178, 178);
+        }
+
+        #input {
+            width: 80%;
+            height: 40px;
+            font-size: 16px;
+            letter-spacing: 1px;
+            display: block;
+            border: none;
+            border-bottom-color: currentcolor;
+            border-bottom-style: none;
+            border-bottom-width: medium;
+            border-bottom: 2px solid rgb(213, 0, 0);
+            margin-left: 72px;
+            margin-top: 50px;
+        }
+
+        #four {
+            height: 90px;
+            margin-left: 70px;
+            margin-top: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        button {
+            height: 40px;
+            width: 100%;
+            background-color: rgb(255, 111, 97);
+            color: white;
+            border: none;
+            border-radius: 3px;
+            font-weight: bold;
+            font-size: 20px;
+            font-family: "Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+        #box{
+            height: 60px;
+            margin-top: 10px;
+            display: flex;
+            align-items: end;
+            margin-left: 70px;
+        }
+        #five{
+            font-family: "Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+            color: rgb(180, 178, 178);
+        }
+        #p2{
+            color: rgb(129, 129, 129);
+            margin-left: 37%;
+            margin-bottom: 4px;
+        }
+        #p3{
+            color: rgb(129, 129, 129);
+            margin-left: 32%;
+            margin-top: 3px;
+        }
+        #p4{
+            font-size: 13px;
+            margin-left: 35%;
+            margin-bottom: 5px;
+            color: rgb(180,178,178);
+        }
+        #p5{
+            margin-top: 0px;
+            font-size: 13px;
+            margin-left: 29%;
+            margin-bottom: 2px;
+            text-decoration: underline;
+            color: rgb(180,178,178);
+        }
+        span{
+            color: rgb(255,111,97);
+            font-weight: bold;
+        }
+        span:hover{
+            cursor: pointer;
+        }
+        #right{
+             border-left: 1px solid rgb(180,178,178);
+         }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="left">
+            <div id="left-up">
+                <img src="https://www.1mg.com/images/login-signup/Know-Your-Medicines.png" alt="">
+            </div>
+            <div id="left-down">
+                <h2 id="one">Know Your Medicines</h2>
+                <p id="two">Consults our certified doctors from anywhere anytime and for free.
+                    We guarantee your privacy</p>
+            </div>
+        </div>
+        <div id="right">
+            <div>
+                <h1 id="sign">Sign Up</h1>
+                <p id="three">Please enter ypur mobile number to recieve one time password OTP</p>
+                <input type="search" value="" placeholder="Enter Mobile Number" id="input">
+            </div>
+            <div id="box">
+                <input type="checkbox" id="scales" name="scales" checked>
+                <label for="scales" id="five">Are you a healthcare professional</label>
+            </div>
+            <div id="four">
+                 
+                <button>CONRINUE</button>
+            </div>
+            <p id="p2">Have an Account? <span>LogIn</span></p>
+            <p id="p3">For corporate SignUp <span>Click Here</span></p>
+            <p id="p4">By logging in, you agree to our</p>
+            <p id="p5">Terms and Conditions & Privacy Policy</p>
+        </div>
+    </div>
+</body>
+
+</html>

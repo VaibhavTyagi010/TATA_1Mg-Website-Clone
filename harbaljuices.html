@@ -7,7 +7,7 @@
     <title>Document</title>
     <script src="https://kit.fontawesome.com/24c494a6b6.js"
     crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./styles/adult.css">
+    <link rel="stylesheet" href="./styles/harbaljuices.css">
 </head>
 <body>
       <!--................................................................................ novbar .............................................................................................................-->
@@ -28,7 +28,7 @@
         <!-- ..................................................................................... -->
         <div><p><a href="offer.html">Offers</a></p></div>
         <a href="Cart.html"><i style="font-size: 30px;" class="fa-solid fa-cart-arrow-down"></i></a>
-    <div><p><a href="Needhelp.html">Need Help?</a></p></div>
+     <div><p><a href="Needhelp.html">Need Help?</a></p></div>
 </div>
 <div id="b1">
  
@@ -589,396 +589,530 @@
     </div>
 </body>
 </html>
-<script>
-    var others = [
-    {  
-        image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600112036/cropped/tqvups7t0qyejtmcrmlx.png",
-        name: "Digene Acidity & Gas Relief Gel Mint",
-        inline:"bottle of 450 ml Oral Gel",
-        rate:4.5,
-        ratingno:"791 ratings",
-        mrp:"MRP₹209.3330% OFF",
-        price:"₹146",
-    },
-    {  
-        image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600172865/cropped/p9llrthga484uzpridy1.jpg",
-        name: "UV Doux Silicone Sunscreen Gel SPF 50",
-        inline:"tube of 50 gm Gel",
-        rate:4.5,
-        ratingno:"105 ratings",
-        mrp:"MRP₹69921% OFF",
-        price:"₹547",
-    },
-    {
-        image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1646827978/g3maimvrdml91wvwyps1.jpg",
-        name: "Brufen Power Pain Relief 800 Sprays",
-        inline:"bottle of 40 gm Sprayl",
-        rate:4.1,
-        ratingno:"106 ratings",
-        mrp:"MRP₹15030% OFF",
-        price:"₹105",
-    },
-    { 
-        image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1638339497/zx0pwjazzovyyylhggz9.jpg",
-        name: "Lifree Extra Absorb Pants New...",
-        inline:"packet of 10 diapers",
-        rate:4.2,
-        ratingno:"31 ratings",
-        mrp:"MRP₹209.3330% OFF",
-        price:"₹364",
-    },
-    {   
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600090007/cropped/chesipqujcvcsuy1m8iw.jpg",
-        name: "Shelcal 500 Tablet",
-        inline:	"strip of 15 tablets",
-        rate:	4.5,
-        ratingno: "4093 ratings",     
-        mrp: "MRP₹108.718% OFF",	
-        price: "₹ 89",	
-    },
-    {   image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600247831/cropped/fecia1ifdlag62iqjhxw.jpg",
-        name: "Durex Air Ultra Thin Condom",
-        inline: "packet of 10 condoms",
-        rate: 4.2,
-        ratingno: "714 ratings",
-        mrp: "MRP₹22826% OFF",
-        price: "₹ 169",
-        },
-    {
-       image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1632312417/sftqra1arzgoufnxvfgz.jpg",
-       name: "Evion 400mg Capsule",
-       inline: "strip of 10 capsules",
-       rate: 4.5,
-       ratingno: "5538 ratings",
-       mrp: "MRP₹32.712% OFF",
-       price: "₹ 28",
 
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600085907/cropped/ysk4g4nzqqzkmdn4aemq.png",
-        name: "Zincovit Tablet",
-        inline: "strip of 15 tablets",
-        rate: 4.5,
-        ratingno: "4146 ratingss",
-        mrp: "MRP₹10519% OFF",
-        price: "₹ 85",
-   
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600085129/cropped/mu5bahqxfrp28cut6que.jpg",
-        name: "Dolo 650 Tablet",
-        inline: "strip of 15 tablets",
-        rate: 4.5,
-        ratingno: "4146 ratingss",
-        mrp: "MRP₹30.9120% OFF",
-        price: "₹ 24",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1647390351/peqt9rbamkoiajvdpew9.jpg",
-        name: "Dettol Original Bathing Soap...",
-        inline: "combo pack of 5 soaps",
-        rate: 4.5,
-        ratingno: "333 ratingss",
-        mrp: "MRP₹26012% OFF",
-        price: "₹ 227", 
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600196240/cropped/yho9zbsqs1yqgsmlq5fs.jpg",
-        name: "New Follihair Tablet",
-        inline: "bottle of 30 tablets",
-        rate: 4.1,
-        ratingno: "1250 ratingss",
-        mrp: "MRP₹61220% OFF",
-        price: "₹ 489", 
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600137906/cropped/ckrjzacxu5okokbtdgku.jpg",
-        name: "Dabur Pudin Hara Pearls",
-        inline: "strip of 10 soft gelatin capsules",
-        rate: 4.5,
-        ratingno: "1471 ratingss",
-        mrp: "MRP₹258% OFF",
-        price: "₹ 23",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1627473644/zsnkotrzi2xnhjzk9b6p.jpg",
-        name: "Seacod Cod Liver Oil Capsule",
-        inline: "bottle of 110 soft gelatin capsules",
-        rate: 4.5,
-        ratingno: "826 ratingss",
-        mrp: "MRP₹352.9825% OFF",
-        price: "₹ 264",
-      
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1621589190/cmrzmaq7uw07cjvvmmxq.jpg",
-        name: "Patanjali Divya Madhunashini Vati Extra Power",
-        inline: "box of 120 tablets",
-        rate: 4.5,
-        ratingno: "136 ratingss",
-        mrp: "MRP₹225",
-        price: "₹ 264",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1616005712/dh2hdm3d6qowctw6hofc.jpg",
-        name: "Mintop Forte 5% Solution",
-        inline: "bottle of 60 ml Solution",
-        rate: 4.5,
-        ratingno: "826 ratingss",
-        mrp: "MRP₹868.2519% OFF",
-        price: "₹ 703", 
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600091024/cropped/dgf5022akiboxp7drnhm.jpg",
-        name: "Refresh Tears Eye Drop",
-        inline: "bottle of 10 ml Eye Drop",
-        rate: 4.5,
-        ratingno: "826 ratingss",
-        mrp: "MRP₹143.3518% OFFF",
-        price: "₹ 117", 
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1637324194/gc3u9gfc331wtsipnljl.jpg",
-        name: "Tata 1mg Calcium + Vitam...",
-        inline: "bottle of 60 tablets",
-        rate: 4.2,
-        ratingno: "814 ratings",
-        mrp: "MRP₹59560% OFF",
-        price: "₹ 238", 
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600147625/cropped/zpfmlvskvqr6gzwhhfwc.png",
-        name: "Bgr 34 Tablet",
-        inline: "bottle of 100 tablets",
-        rate: 4.2,
-        ratingno: "1084 ratings",
-        mrp: "MRP₹60025% OFF",
-        price: "₹ 449",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1625118846/xqljyyelnecasglguvf6.jpg",
-        name: "Revital H Woman Tablet",
-        inline: "bottle of 30 tablets",
-        rate: 4.4,
-        ratingno: "1088 ratings",
-        mrp: "MRP₹34517% OFF",
-        price: "₹ 286",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1645618072/erduomsv6zkhycc5hj5k.jpg",
-        name: "Himalaya Wellness Pure Herbs Gokshura Tablet",
-        inline: "bottle of 60 tablets",
-        rate: 4.1,
-        ratingno: "691 ratings",
-        mrp: "MRP₹2005% OFF",
-        price: "₹ 190",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600089684/cropped/pvae0u3lqct2buryvo0r.jpg",
-        name: "Electral Powder",
-        inline: "sachet of 21.8 gm Powder",
-        rate: 4.6,
-        ratingno: "2180 ratings",
-        mrp: "MRP₹19.8418% OFF",
-        price: "₹ 16",  
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600138746/cropped/t3g9ksjjbcmmmrlwef5p.jpg",
-        name: "Prega News Pregnancy Test Kit",
-        inline: "packet of 1 Test Kit",
-        rate: 4.3,
-        ratingno: "181 ratings",
-        mrp: "MRP₹5540% OFF",
-        price: "₹ 33", 
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600149534/cropped/fpek6ht5m5nvi4ifzp5o.jpg",
-        name: "Sat-Isabgol Powder",
-        inline: "box of 200 gm Powder",
-        rate: 4.6,
-        ratingno: "1406 ratings",
-        mrp: "MRP₹20512% OFF",
-        price: "₹ 180", 
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600692556/pg0w5oqchlazn8khi1ij.jpg",
-        name: "Calcirol Sachet",
-        inline: "sachet of 1 gm Granules",
-        rate: 4.6,
-        ratingno: "1696 ratings",
-        mrp: "MRP₹56.418% OFF",
-        price: "₹ 46",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1618942125/uaerylojm65fdh0o0dfo.jpg",
-        name: "Otrivin Oxy Fast Relief Adult Nasal Spray",
-        inline: "bottle of 10 ml Nasal Spray",
-        rate: 4.4,
-        ratingno: "1157 ratings",
-        mrp: "MRP₹96.818% OFF",
-        price: "₹ 79",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600150822/cropped/hs8n67tibvf7k7egbqrg.jpg",
-        name: "Cofsils Lozenges Lemon Ginger",
-        inline: "strip of 10 lozenges",
-        rate: 4.6,
-        ratingno: "765 ratings",
-        mrp: "MRP₹3025% OFFF",
-        price: "₹ 22",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600169607/cropped/n1k4duta0orlzsoukthc.jpg",
-        name: "Scalpe+ Expert Anti Dandruff Shampoor",
-        inline: "bottle of 75 ml Shampoos",
-        rate: 4.2,
-        ratingno: "1620 ratings",
-        mrp: "MRP₹26015% OFF",
-        price: "₹ 221",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1613566796/iheqzrewt0n4auxbd2l6.jpg",
-        name: "Horlicks Health and Nutrition Drink Classic Malt",
-        inline: "packet of 1 kg Powder",
-        rate: 4.5,
-        ratingno: "254 ratings",
-        mrp: "MMRP₹390",
-        price: "₹ 221",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600082665/cropped/n0a7l0pflxnzbspqxklc.jpg",
-        name: "i-pill Tablet",
-        inline: "strip of 1 Tablet",
-        rate: 4.3,
-        ratingno: "164 ratings",
-        mrp: "MRP₹11010% OFF",
-        price: "₹ 99",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600159765/cropped/jajhds52xsvgols7owvz.jpg",
-        name: "Neeri KFT  Sugar Free Syrup",
-        inline: "bottle of 200 ml Syrup",
-        rate: 4.4,
-        ratingno: "665 ratings",
-        mrp: "MRP₹59525% OFF",
-        price: "₹ 442",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600643760/cropped/pkpjvytxdfehfgxbnnm8.jpg",
-        name: "Softovac-SF Bowel Regulator Powder Sugar Free",
-        inline: "jar of 250 gm Powderp",
-        rate: 4.4,
-        ratingno: "435 ratings",
-        mrp: "MRP₹41521% OFF",
-        price: "₹ 328",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600153167/cropped/qjz8l72piinjwwynexks.png",
-        name: "Dr Ortho an Ayurvedic Medicine Oil",
-        inline: "bottle of 120 ml Oil",
-        rate: 4.,
-        ratingno: "1200 ratings",
-        mrp: "MRP₹295 25% OFF",
-        price: "₹ 221",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1614235864/onqhkrg9xwnxjh5j53bd.jpg",
-        name: "Vantej Toothpaste",
-        inline: "tube of 100 gm Toothpaste",
-        rate: 4.5,
-        ratingno: "908 ratings",
-        mrp: "MRP₹288 6% OFF",
-        price: "₹ 241",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1648040207/nl1cydgm9ca9soq5yz1p.jpg",
-        name: "Abzorb Anti Fungal Dusting Powder",
-        inline: "bottle of 100 gm Dusting Powder",
-        rate: 4.5,
-        ratingno: "799 ratings",
-        mrp: "MRP₹14218% OFF",
-        price: "₹ 116",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600090238/cropped/uop87kzztwx7r3olo7g2.png",
-        name: "Venusia Max Intensive Moisturizing...",
-        inline: "pump bottle of 300 gm Lotion",
-        rate: 4.4,
-        ratingno: "479 ratings",
-        mrp: "MRP₹601 18% OFF",
-        price: "₹ 490",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1612854564/sjbhlpjner4thvjdrkdp.jpg",
-        name: "Friends Premium Adult Dry Pants Medium",
-        inline: "packet of 10 diapers",
-        rate: 4.3,
-        ratingno: "325 ratings",
-        mrp: "MRP₹55028% OFF",
-        price: "₹ 396",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600553706/cropped/usu74sohegveqfzcxlug.jpg",
-        name: "Dettol Antiseptic Disinfectant Liquid",
-        inline: "bottle of 550 ml Liquid",
-        rate: 4.6,
-        ratingno: "10977 ratings",
-        mrp: "MRP₹194",
-        price: "₹ 194",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1609419124/wb4ndsavl7ixslwyohbi.jpg",
-        name: "Vicks Vaporub",
-        inline: "bottle of 50 gm Balm",
-        rate: 4.5,
-        ratingno: "1527 ratings",
-        mrp: "MRP₹14514% OFF",
-        price: "₹ 124",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1634636286/w5repuspahff9st0dp8a.jpg",
-        name: "Cetaphil Moisturising Cream",
-        inline: "tube of 80 gm Cream",
-        rate: 4.4,
-        ratingno: "223 ratings",
-        mrp: "MRP₹46515% OFF",
-        price: "₹ 395",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1602507031/dvcnjp3dtor79sfkxyh7.jpg",
-        name: "VWash Plus Expert Intimate Hygiene",
-        inline: "bottle of 100 ml Liquid",
-        rate: 4.4,
-        ratingno: "985 ratings",
-        mrp: "MRP₹18020% OFF",
-        price: "₹ 143",
-    }];
+<script>
+    var Herbaljuices=[
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1643976381/dv3qfkvwyu0knj0gxvvv.jpg",
+name:"	Baidyanath Vansaar Triphala Juice Natural Herbal Laxative",
+lebal:"	bottle of 1 Ltr Juice",
+rating:"	4",
+ratn:"	21 ratings",
+mrp:"	MRP₹25015% OFF",
+rate:"₹212.5"
+},
+{
+image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1644229204/sloqcdf8aejuo701ne2m.jpg",
+name:"	Tata 1mg Cold Pressed Giloy Tulsi Juice ",
+lebal:"	bottle of 500 ml Juice",
+rating:"	4.2",
+ratn:"	91 ratings",
+mrp:"	MRP₹24559% OFF",
+rate:"₹99",},
+{
+image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1641570520/ik8yljfj5osqww2rqluw.jpg	",
+name:"	Ambic Arjun Punarnava Jatamansi Ras",
+lebal:"	bottle of 500 ml Juice",
+rating:"	3",
+ratn:"	22 ratings",
+mrp:"	MRP₹34516% OFF",
+rate:"₹289",},
+{
+image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600204339/cropped/ycka3xnrqbspshea4fzm.jpg",
+name:"	Swadeshi Shudh Amla Ras Juice",
+lebal:"	bottle of 1000 ml Juice",
+rating:"	4",
+ratn:"	85 ratings",
+mrp:"	MRP₹2203% OFF",
+rate:"₹213",},
+{
+image:"	https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1621535133/g4bfqrcn8btzx7bcfxjw.jpg",
+name:"	Kapiva Aloe Vera + Garcinia Juice",
+lebal:"	bottle of 1 Ltr Juice",
+rating:"	4.3",
+ratn:"	11 ratings",
+mrp:"	MRP₹55013% OFF",
+rate:"₹475",},
+{
+image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1609419388/hrzjeauh3qdudenpvrlk.jpg",
+name:"	Swadeshi Aloe Vera Juice with Fibre",
+lebal:"	bottle of 1000 ml Juice",
+rating:"	4",
+ratn:"	188 ratings",
+mrp:"	MRP₹2201% OFF",
+rate:"₹218",
+},
+{
+image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1641570221/r3ij4rrmnhvxyjc7jm4z.jpg",
+name:"	Ambic Noni Garcinia AloeVera Ras",
+lebal:"	bottle of 500 ml Juice",
+rating:"	4",
+ratn:"	188 ratings",
+mrp:"	MRP₹37214% OFF",
+rate:"₹319",
+},
+{
+image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1644229316/lcdzif1qexhaapv8ijpm.jpg",
+name:"	Tata 1mg Cold Pressed Ka...",
+lebal:"	bottle of 500 ml Juice",
+rating:"	4.1",
+ratn:"	128 ratings",
+mrp:"	MRP₹18546% OFF",
+rate:"₹99",
+},
+{
+image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600170134/cropped/stiaa3trc2kpy3qqzlab.jpg",
+name:"	Axiom Aloevera Amla Juice",
+lebal:"	bottle of 1000 ml Juice",
+rating:"	4.3",
+ratn:"	486 ratings",
+mrp:"	MRP₹27512% OFF",
+rate:"₹242",
+},
+{
+image:"	https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600170149/cropped/o1ywlwplxmyrvow4syj3.jpg",
+name:"	Axiom Karela Jamun Juice",
+lebal:"	bottle of 1 Ltr Juice",
+rating:"	4.3",
+ratn:"	474 ratings",
+mrp:"	MRP₹3004% OFF",
+rate:"₹287",
+},
+{
+image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1641570607/pcuiufje74ifeghkzkdt.jpg",
+name:"	Ambic Giloy Papita Kalmegh Ras",
+lebal:"	bottle of 1000 ml Juice",
+rating:"	4",
+ratn:"	474 ratings",
+mrp:"	MRP₹35415% OFF",
+rate:"₹299",
+},
+{
+image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1643976304/drdu2hyvcq7cateqm0mj.jpg",
+name:"	Baidyanath Vansaar Aloe Vera Juice",
+lebal:"	bottle of 1 Ltr Juice",
+rating:"	4.3",
+ratn:"	75 ratings",
+mrp:"	MRP₹25015% OFF",
+rate:"₹212.5",
+},
+{
+image:"	https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1644229081/kb78d0sbjqdsgg69fftc.jpg",
+name:"	Tata 1mg Cold Pressed Amla Juice Natural Immunity ....",
+lebal:"	bottle of 1 Ltr Juice",
+rating:"	4.2",
+ratn:"	87 ratings",
+mrp:"	MRP₹29550% OFF",
+rate:"₹148",
+},
+{
+image:"	https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1643976430/cdzyxgh99pjrejsgmh9s.jpg",
+name:"	Baidyanath Vansaar Amla Juice Boosts Immunity for OmniProtection",
+lebal:"	bottle of 1 Ltr Juice",
+rating:"	4.4",
+ratn:"	38 ratings",
+mrp:"	MRP₹23515% OFF",
+rate:"₹199.75",
+},
+{
+image:"	https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600223908/cropped/luu1ggx2cycpwmzcspad.jpg",
+name:"	Bhumija Lifesciences Sea Buckthorne Juice",
+lebal:"	bottle of 500 ml Juice",
+rating:"	5",
+ratn:"	474 ratings",
+mrp:"	MRP₹54917% OFF",
+rate:"₹453.97",
+},
+{
+image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1601225777/cropped/xpf6kmidkixkwktg87sm.png",
+name:"	Dabur Giloy Neem Juice with Tulsi",
+lebal:"	bottle of 1 Ltr Juice",
+rating:"	4.4",
+ratn:"	324 ratings",
+mrp:"	MRP₹27015% OFF",
+rate:"₹230",
+},
+{
+image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1617275905/wqq9dwa8ukrivqpax1pp.jpg",
+name:"	Dabur Jamun Neem Karela Juice",
+lebal:"	bottle of 1 Ltr Juice",
+rating:"	4.5",
+ratn:"	17 ratings",
+mrp:"	MRP₹32511% OFF",
+rate:"₹289.25",
+},
+{
+image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1612767650/yb3gs3ticxdl6yhnv892.jpg",
+name:"	Jiva Amla Juice",
+lebal:"	bottle of 500 ml Juice",
+rating:"	4.2",
+ratn:"	415 ratings",
+mrp:"	MRP₹12017% OFF",
+rate:"₹99.23",
+},
+{
+image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600982420/cropped/bbiuw2a5myaaq2xxsrrn.jpg",
+name:"	Mint Veda Triphala Juice No Added Sugar",
+lebal:"	bottle of 1000 ml Juice",
+rating:"	4.1",
+ratn:"	474 ratings",
+mrp:"	MRP₹74961% OFF",
+rate:"₹291",
+},
+{
+image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600150551/cropped/azjsfsxd3isqta7emtcw.jpg	",
+name:"	Patanjali Ayurveda Amla Juice",
+lebal:"	bottle of 1000 ml Juice",
+rating:"	4.3",
+ratn:"	33 ratings",
+mrp:"	MRP₹140",
+rate:"₹90",
+},
+{	
+image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1644228844/macuk2ucsdpbv93gqc22.jpg",
+name:"	Tata 1mg Cold Pressed Aloe Vera Juice ...",
+lebal:"bottle of 1 Ltr Juice",	
+rating:"4.5	",
+ratn:"84 ratings	",
+mrp:"	MRP₹26544% OFF",
+rate:"₹148",
+},
+
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1617710521/padyzhy6mcjdfebkvzie.jpg	",
+name:"Jiva Giloy Tulsi",	
+lebal:"	bottle of 500 ml Juice",
+rating:"4",	
+ratn:"229 ratings",	
+mrp:"MRP₹15017% OFF",	
+rate:"₹124.03"	
+},
+{
+image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600929370/cropped/xbbherhal5to0xqs6y06.jpg",
+name:"Mint Veda Sea Buckthorne Juice",	
+rating:"4",
+lebal:"	bottle of 500 ml Juice3	",
+ratn:"474 ratings",	
+mrp:"MRP₹945% OFF",	
+rate:"₹549",
+},
+{	
+image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1610112481/bdzhtfavudnojcbjqltg.jpg",
+name:"Zandu Karela Jamun +3 Herbs Health Juice",	
+lebal:"bottle of 1 Ltr Juice",	
+rating:"4.4",	
+ratn:"33 ratings",
+mrp:"	₹183",
+rate:"₹94% OFF",
+},
+{
+image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1646395886/lnniodzjhkmflfeqz0av.jpg",
+name:"	Tata 1mg Noni Juice Plus Immunity Booster...	",
+lebal:"	bottle of 500 ml Juice	",
+rating:"	4.1	",
+ratn:"	157 ratings	",
+mrp:"	MRP₹59566% OFF	",
+rate:"₹199	",},
+{
+image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1647931811/jnrcqxwhvzo4wjarh6mu.jpg",
+name:"	Sri Sri Tattva Karela Jamun Juice	",
+lebal:"	bottle of 1000 ml Juice	",
+rating:"	4.4	",
+ratn:"	852 ratings	",
+mrp:"	MRP₹28020% OFF	",
+rate:"₹224	",},
+
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1601313706/cropped/mcoclokntmxvy7p4slsy.jpg",
+name:"	Baidyanath (Nagpur) Giloy Juice	",
+lebal:"	bottle of 1 Ltr Juice	",
+rating:"	4.6	",
+ratn:"	18 ratings	",
+mrp:"	MRP₹25015% OFF	",
+rate:"₹213	",},
+{
+image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1643115738/vjn1kbmpk3yoeq1rekif.jpg",
+name:"	Vitro Naturals I Am Detox Aloe Vera Juice with...	",
+lebal:"	bottle of 1 Ltr Juice	",
+rating:"	4	",
+ratn:"	474 ratings	",
+mrp:"	MRP₹34910% OFF	",
+rate:"₹314	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1601325905/cropped/xnwvcd1wnnmsxtueqchz.png",
+name:"	Baidyanath (Nagpur) Karela Jamun Juice	",
+lebal:"	bottle of 1 Ltr Juice	",
+rating:"	4.4	",
+ratn:"	31 ratings	",
+mrp:"	MRP₹32522% OFF	",
+rate:"₹254	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600154749/cropped/d2w3vdebkfvsplenoi9k.jpg",
+name:"	Patanjali Ayurveda Giloy Juice	",
+lebal:"	bottle of 500 ml Juice	",
+rating:"	4.4	",
+ratn:"	66 ratings	",
+mrp:"	MRP₹90	",
+rate:"₹45",},
+{image:"	https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1643976381/dv3qfkvwyu0knj0gxvvv.jpg	",
+name:"	Baidyanath Vansaar Triphala Juice Natural Herbal Laxative	",
+lebal:"	bottle of 1 Ltr Juice	",
+rating:"	4	",
+ratn:"	21 ratings	",
+mrp:"	MRP₹25015% OFF	",
+rate:"₹212.5	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1644229204/sloqcdf8aejuo701ne2m.jpg	",
+name:"	Tata 1mg Cold Pressed Giloy Tulsi Juice Natural....",
+lebal:"	bottle of 500 ml Juice	",
+rating:"	4.2	",
+ratn:"	91 ratings	",
+mrp:"	MRP₹24559% OFF	",
+rate:"₹99	",
+},
+{image:"	https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1641570520/ik8yljfj5osqww2rqluw.jpg	",
+name:"	Ambic Arjun Punarnava Jatamansi Ras	",
+lebal:"	bottle of 500 ml Juice	",
+rating:"	3	",
+ratn:"	22 ratings	",
+mrp:"	MRP₹34516% OFF	",
+rate:"₹289	",
+},
+
+
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1620823094/iwlpk7edceoppq2j7kgg.jpg",
+name:"	Swadeshi Aloe Vera Juice with Fibre	",
+lebal:"	bottle of 1000 ml Juice	",
+rating:"	4	",
+ratn:"	188 ratings	",
+mrp:"	MRP₹2201% OFF	",
+rate:"₹218	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1601322617/cropped/zkhc8o6ejkrdvavc4h5e.png	",
+name:"	Ambic Noni Garcinia AloeVera Ras	",
+lebal:"	bottle of 500 ml Juice	",
+rating:"	4	",
+ratn:"	188 ratings	",
+mrp:"	MRP₹37214% OFF	",
+rate:"₹319	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1630389839/bohteajgcs5h1usg5sov.jpg	",
+name:"	Tata 1mg Cold Pressed Karela Jamun...",
+lebal:"	bottle of 500 ml Juice	",
+rating:"	4.1	",
+ratn:"	128 ratings	",
+mrp:"	MRP₹18546% OFF	",
+rate:"₹99	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600541519/cropped/hhcxx00uglpagzgvv12y.jpg",
+name:"	Axiom Aloevera Amla Juice	",
+lebal:"	bottle of 1000 ml Juice	",
+rating:"	4.3	",
+ratn:"	486 ratings	",
+mrp:"	MRP₹27512% OFF	",
+rate:"₹242	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1619442972/rfwlq0fvdbmf0j0ihtex.jpg	",
+name:"	Axiom Karela Jamun Juice	",
+lebal:"	bottle of 1 Ltr Juice	",
+rating:"	4.3	",
+ratn:"	474 ratings	",
+mrp:"	MRP₹3004% OFF	",
+rate:"₹287	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1604911879/tcubainc3jpdltykved8.jpg	",
+name:"	Ambic Giloy Papita Kalmegh Ras	",
+lebal:"	bottle of 1000 ml Juice	",
+rating:"	4	",
+ratn:"	474 ratings	",
+mrp:"	MRP₹35415% OFF	",
+rate:"₹299	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1601240447/cropped/g76ehucfedvgiec75btm.jpg",
+name:"	Baidyanath Vansaar Aloe Vera Juice	",
+lebal:"	bottle of 1 Ltr Juice	",
+rating:"	4.3	",
+ratn:"	75 ratings	",
+mrp:"	MRP₹25015% OFF	",
+rate:"₹212.5	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600272792/cropped/hbtv7jvqjf2eatsspwh2.png	",
+name:"	Tata 1mg Cold Pressed Amla Juice Natural Immunity Booster Rich in Vitamin C	",
+lebal:"	bottle of 1 Ltr Juice	",
+rating:"	4.2	",
+ratn:"	87 ratings	",
+mrp:"	MRP₹29550% OFF	",
+rate:"₹148	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1642618386/tcigo4k0igo4sov9cuti.jpg",
+name:"	Ambic Ashwagandha Musli, Konch Ras Enriched with Shilajit	",
+lebal:"	bottle of 500 ml Juice	",
+rating:"	5	",
+ratn:"	474 ratings	",
+mrp:"	MRP₹3549% OFF	",
+rate:"₹320	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600178288/cropped/suiaagbflvysp8iejjzq.jpg",
+name:"	Sri Sri Tattva Aloe Vera Triphala Juice	",
+lebal:"	bottle of 500 ml Juice	",
+rating:"	4.2	",
+ratn:"	314 ratings	",
+mrp:"	MRP₹15022% OFF	",
+rate:"₹116	",
+}
+,
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1621533997/ir8dqzlgquxl92qhpgkt.jpg",
+name:"	Kapiva Diafree Juice	",
+lebal:"	bottle of 1 Ltr Juice	",
+rating:"	4.4	",
+ratn:"	74 ratings	",
+mrp:"	MRP₹44918% OFF	",
+rate:"₹365	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1621533893/ozhxknnuuxnqquigontq.jpg",
+name:"	Kapiva Wheat Grass Juice	",
+lebal:"	bottle of 1 Ltr Juice	",
+rating:"	3.9	",
+ratn:"	97 ratings	",
+mrp:"	MRP₹4996% OFF	",
+rate:"₹469	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1621534247/urgraxgd4aag4xvj6nhh.jpg",
+name:"	Kapiva Amla Juice	",
+lebal:"	bottle of 1 Ltr Juice	",
+rating:"	4.3	",
+ratn:"	131 ratings	",
+mrp:"	MRP₹29926% OFF	",
+rate:"₹220	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600211589/cropped/zcoednwfsiglysjvtdmf.jpg",
+name:"	Patanjali Ayurveda Amla-Aloe Vera with Wheat Grass Juice	",
+lebal:"	bottle of 500 ml Juice	",
+rating:"	4.3	",
+ratn:"	474 ratings	",
+mrp:"		",
+rate:"₹100	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1647841854/aoawydnhjkmiqfefsrqw.jpg	",
+name:"	Alo Frut Kiwi Aloevera Juice	",
+lebal:"	bottle of 1 Ltr Juice	",
+rating:"	4.1	",
+ratn:"	71 ratings	",
+mrp:"	MRP₹1208% OFF	",
+rate:"₹110	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1610112385/d1x5etvv9xbvuoozi3tv.jpg",
+name:"	Zandu Aloe Vera +5 Herbs Health Juice	",
+lebal:"	bottle of 1 Ltr Juice	",
+rating:"	4.1	",
+ratn:"	20 ratings	",
+mrp:"	MRP₹26525% OFF	",
+rate:"₹199	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600155092/cropped/dbibdnjq9klm5rvyvyfh.jpg",
+name:"	Swadeshi Giloy Ras Juice	",
+lebal:"	bottle of 500 ml Juice	",
+rating:"	4.4	",
+ratn:"	116 ratings	",
+mrp:"	MRP₹19533% OFF	",
+rate:"₹131	",
+},
+{
+image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1621534180/jxcgyr7b9did6ro3jzqx.jpg",
+name:"	Kapiva Aloe Vera Juice	",
+lebal:"	bottle of 1 Ltr Juice	",
+rating:"	4.1	",
+ratn:"	151 ratings	",
+mrp:"	MRP₹29911% OFF	",
+rate:"₹265	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1610112306/kzx8jojwoduqz6yn9gea.jpg",
+name:"	Zandu Amla +5 Herbs Juice	",
+lebal:"	bottle of 1 Ltr Juice	",
+rating:"	4.4	",
+ratn:"	19 ratings	",
+mrp:"	MRP₹23530% OFF	",
+rate:"₹164	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600865725/cropped/dijgrjeka9xvmec6pdlu.jpg	",
+name:"	Baidyanath Giloy Tulsi Juice Boosts Immunity for OmniProtection	",
+lebal:"	bottle of 1 Ltr Juice	",
+rating:"	4.7	",
+ratn:"	15 ratings	",
+mrp:"	MRP₹27515% OFF	",
+rate:"₹233.75	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1631708673/ffudphpkuqforhpo2w62.jpg",
+name:"	Baidyanath (Noida) Aloe Vera Juice with Pulp	",
+lebal:"	bottle of 1 Ltr Juice	",
+rating:"	4.3	",
+ratn:"	474 ratings	",
+mrp:"	MRP₹25024% OFF	",
+rate:"₹189	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1621534389/u4kq2iprncarmvbt0rmm.jpg",
+name:"	Kapiva Karela Jamun Juice	",
+lebal:"	bottle of 1 Ltr Juice	",
+rating:"	4.4	",
+ratn:"	109 ratings	",
+mrp:"	MRP₹30011% OFF	",
+rate:"₹266	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600154150/cropped/ptud5e82rosf4xluj5av.png",
+name:"	Patanjali Divya Saraswatarishta	",
+lebal:"	bottle of 450 ml Liquid	",
+rating:"	4.6	",
+ratn:"	10 ratings	",
+mrp:"		",
+rate:"₹123	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1644237765/ozva1iprtnrsviaq8pcs.jpg",
+name:"	Baidyanath Vansaar Karela & Jamun Juice	",
+lebal:"	bottle of 1000 ml Juice	",
+rating:"	4.3	",
+ratn:"	474 ratings	",
+mrp:"	MRP₹30015% OFF	",
+rate:"₹255	",
+}
+,{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1622465690/bhgpweroaux6q0gz7ifp.jpg",
+name:"	Sri Sri Tattva Aloe Vera Juice	",
+lebal:"	bottle of 1000 ml Juice	",
+rating:"	4	",
+ratn:"	189 ratings	",
+mrp:"	MRP₹25020% OFF	",
+rate:"₹200	",
+},
+{image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1601311807/cropped/xhtfsm1isxho929ketks.jpg	",
+name:"	Baidyanath (Nagpur) Aloe Vera Juice (1Litre Each)	",
+lebal:"	combo pack of 2 bottles	",
+rating:"	3.8	",
+ratn:"	5 ratings	",
+mrp:"	MRP₹50020% OFF	",
+rate:"₹400	",
+},]
+
     var cartData = JSON.parse(localStorage.getItem("cart")) || [];
     window.addEventListener("load", function () {
-      display( others);
+      display(Herbaljuices);
     });
 function sort()
     {
       var s=document.querySelector("#s").value
-      
       if(s=="asd")
       { 
-        others.sort(function(a,b){
-          return a.price - b.price});
-          display( others)
+        Herbaljuices.sort(function(a,b){
+          return a.rate - b.rate});
+          display(Herbaljuices)
          
       }
      else if(s=="des")
-      { 
-      others.sort(function(a,b){
-          return b.price - a.price});
-          display(others)  
+      {
+        Herbaljuices.sort(function(a,b){
+          return b.rate - a.rate});
+          display(Herbaljuices)  
       }
     }
-    function display( others)
+      function display(Herbaljuices)
      {
     document.querySelector("#second").innerHTML=""
-    others.map(function (elem) {
+    Herbaljuices.map(function (elem) {
     var box = document.createElement("div");
 
     var img = document.createElement("img");
@@ -990,16 +1124,16 @@ function sort()
     name.style.color = "#212121"
 
     var inline = document.createElement("p");
-    inline.innerText = elem.inline;
+    inline.innerText = elem.lebal;
     inline.setAttribute("class","secondp")
     inline.style.color = "#757575"
 
     var star = document.createElement("h4");
-    star.innerText =elem.rate+"☆"
+    star.innerText =elem.rating+"☆"
     star.setAttribute("id","secondh4")
 
     var ratee = document.createElement("pre");
-    ratee.innerText=`  ${elem.ratingno}` 
+    ratee.innerText=`  ${elem.ratn}` 
     ratee.setAttribute("class","secondp2")
     
     var Mrp = document.createElement("p");
@@ -1007,14 +1141,15 @@ function sort()
     Mrp.setAttribute("class","secondp")
 
     var Price = document.createElement("h2");
-    Price.innerText = elem.price;
-    var num=elem.price.split("")
+    Price.innerText = elem.rate;
+    var num=elem.rate.split("")
     var n=num[0];
     if(n=='₹')
-    { num.shift()
-    
+    {
+         num.shift()
+        //  console.log(num)
     num=num.join("")
-    elem.price=num
+    elem.rate=num
 }
 
     var btn = document.createElement("button");
@@ -1029,9 +1164,10 @@ function sort()
   });
 
   function addToCart(elem) {
+    console.log(elem);
     cartData.push(elem);
     localStorage.setItem("cart", JSON.stringify(cartData));
     alert("item added to cart");
   }
 }
-</script>
+</script> 

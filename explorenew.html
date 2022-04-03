@@ -7,7 +7,7 @@
     <title>Document</title>
     <script src="https://kit.fontawesome.com/24c494a6b6.js"
     crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./styles/adult.css">
+    <link rel="stylesheet" href="./styles/explorenew.css">
 </head>
 <body>
       <!--................................................................................ novbar .............................................................................................................-->
@@ -28,7 +28,7 @@
         <!-- ..................................................................................... -->
         <div><p><a href="offer.html">Offers</a></p></div>
         <a href="Cart.html"><i style="font-size: 30px;" class="fa-solid fa-cart-arrow-down"></i></a>
-    <div><p><a href="Needhelp.html">Need Help?</a></p></div>
+        <div><p><a href="Needhelp.html">Need Help?</a></p></div>
 </div>
 <div id="b1">
  
@@ -589,432 +589,606 @@
     </div>
 </body>
 </html>
-<script>
-    var others = [
-    {  
-        image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600112036/cropped/tqvups7t0qyejtmcrmlx.png",
-        name: "Digene Acidity & Gas Relief Gel Mint",
-        inline:"bottle of 450 ml Oral Gel",
-        rate:4.5,
-        ratingno:"791 ratings",
-        mrp:"MRP₹209.3330% OFF",
-        price:"₹146",
-    },
-    {  
-        image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600172865/cropped/p9llrthga484uzpridy1.jpg",
-        name: "UV Doux Silicone Sunscreen Gel SPF 50",
-        inline:"tube of 50 gm Gel",
-        rate:4.5,
-        ratingno:"105 ratings",
-        mrp:"MRP₹69921% OFF",
-        price:"₹547",
-    },
-    {
-        image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1646827978/g3maimvrdml91wvwyps1.jpg",
-        name: "Brufen Power Pain Relief 800 Sprays",
-        inline:"bottle of 40 gm Sprayl",
-        rate:4.1,
-        ratingno:"106 ratings",
-        mrp:"MRP₹15030% OFF",
-        price:"₹105",
-    },
-    { 
-        image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1638339497/zx0pwjazzovyyylhggz9.jpg",
-        name: "Lifree Extra Absorb Pants New...",
-        inline:"packet of 10 diapers",
-        rate:4.2,
-        ratingno:"31 ratings",
-        mrp:"MRP₹209.3330% OFF",
-        price:"₹364",
-    },
-    {   
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600090007/cropped/chesipqujcvcsuy1m8iw.jpg",
-        name: "Shelcal 500 Tablet",
-        inline:	"strip of 15 tablets",
-        rate:	4.5,
-        ratingno: "4093 ratings",     
-        mrp: "MRP₹108.718% OFF",	
-        price: "₹ 89",	
-    },
-    {   image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600247831/cropped/fecia1ifdlag62iqjhxw.jpg",
-        name: "Durex Air Ultra Thin Condom",
-        inline: "packet of 10 condoms",
-        rate: 4.2,
-        ratingno: "714 ratings",
-        mrp: "MRP₹22826% OFF",
-        price: "₹ 169",
-        },
-    {
-       image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1632312417/sftqra1arzgoufnxvfgz.jpg",
-       name: "Evion 400mg Capsule",
-       inline: "strip of 10 capsules",
-       rate: 4.5,
-       ratingno: "5538 ratings",
-       mrp: "MRP₹32.712% OFF",
-       price: "₹ 28",
 
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600085907/cropped/ysk4g4nzqqzkmdn4aemq.png",
-        name: "Zincovit Tablet",
-        inline: "strip of 15 tablets",
-        rate: 4.5,
-        ratingno: "4146 ratingss",
-        mrp: "MRP₹10519% OFF",
-        price: "₹ 85",
+<script>
    
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600085129/cropped/mu5bahqxfrp28cut6que.jpg",
-        name: "Dolo 650 Tablet",
-        inline: "strip of 15 tablets",
-        rate: 4.5,
-        ratingno: "4146 ratingss",
-        mrp: "MRP₹30.9120% OFF",
-        price: "₹ 24",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1647390351/peqt9rbamkoiajvdpew9.jpg",
-        name: "Dettol Original Bathing Soap...",
-        inline: "combo pack of 5 soaps",
-        rate: 4.5,
-        ratingno: "333 ratingss",
-        mrp: "MRP₹26012% OFF",
-        price: "₹ 227", 
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600196240/cropped/yho9zbsqs1yqgsmlq5fs.jpg",
-        name: "New Follihair Tablet",
-        inline: "bottle of 30 tablets",
-        rate: 4.1,
-        ratingno: "1250 ratingss",
-        mrp: "MRP₹61220% OFF",
-        price: "₹ 489", 
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600137906/cropped/ckrjzacxu5okokbtdgku.jpg",
-        name: "Dabur Pudin Hara Pearls",
-        inline: "strip of 10 soft gelatin capsules",
-        rate: 4.5,
-        ratingno: "1471 ratingss",
-        mrp: "MRP₹258% OFF",
-        price: "₹ 23",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1627473644/zsnkotrzi2xnhjzk9b6p.jpg",
-        name: "Seacod Cod Liver Oil Capsule",
-        inline: "bottle of 110 soft gelatin capsules",
-        rate: 4.5,
-        ratingno: "826 ratingss",
-        mrp: "MRP₹352.9825% OFF",
-        price: "₹ 264",
-      
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1621589190/cmrzmaq7uw07cjvvmmxq.jpg",
-        name: "Patanjali Divya Madhunashini Vati Extra Power",
-        inline: "box of 120 tablets",
-        rate: 4.5,
-        ratingno: "136 ratingss",
-        mrp: "MRP₹225",
-        price: "₹ 264",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1616005712/dh2hdm3d6qowctw6hofc.jpg",
-        name: "Mintop Forte 5% Solution",
-        inline: "bottle of 60 ml Solution",
-        rate: 4.5,
-        ratingno: "826 ratingss",
-        mrp: "MRP₹868.2519% OFF",
-        price: "₹ 703", 
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600091024/cropped/dgf5022akiboxp7drnhm.jpg",
-        name: "Refresh Tears Eye Drop",
-        inline: "bottle of 10 ml Eye Drop",
-        rate: 4.5,
-        ratingno: "826 ratingss",
-        mrp: "MRP₹143.3518% OFFF",
-        price: "₹ 117", 
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1637324194/gc3u9gfc331wtsipnljl.jpg",
-        name: "Tata 1mg Calcium + Vitam...",
-        inline: "bottle of 60 tablets",
-        rate: 4.2,
-        ratingno: "814 ratings",
-        mrp: "MRP₹59560% OFF",
-        price: "₹ 238", 
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600147625/cropped/zpfmlvskvqr6gzwhhfwc.png",
-        name: "Bgr 34 Tablet",
-        inline: "bottle of 100 tablets",
-        rate: 4.2,
-        ratingno: "1084 ratings",
-        mrp: "MRP₹60025% OFF",
-        price: "₹ 449",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1625118846/xqljyyelnecasglguvf6.jpg",
-        name: "Revital H Woman Tablet",
-        inline: "bottle of 30 tablets",
-        rate: 4.4,
-        ratingno: "1088 ratings",
-        mrp: "MRP₹34517% OFF",
-        price: "₹ 286",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1645618072/erduomsv6zkhycc5hj5k.jpg",
-        name: "Himalaya Wellness Pure Herbs Gokshura Tablet",
-        inline: "bottle of 60 tablets",
-        rate: 4.1,
-        ratingno: "691 ratings",
-        mrp: "MRP₹2005% OFF",
-        price: "₹ 190",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600089684/cropped/pvae0u3lqct2buryvo0r.jpg",
-        name: "Electral Powder",
-        inline: "sachet of 21.8 gm Powder",
-        rate: 4.6,
-        ratingno: "2180 ratings",
-        mrp: "MRP₹19.8418% OFF",
-        price: "₹ 16",  
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600138746/cropped/t3g9ksjjbcmmmrlwef5p.jpg",
-        name: "Prega News Pregnancy Test Kit",
-        inline: "packet of 1 Test Kit",
-        rate: 4.3,
-        ratingno: "181 ratings",
-        mrp: "MRP₹5540% OFF",
-        price: "₹ 33", 
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600149534/cropped/fpek6ht5m5nvi4ifzp5o.jpg",
-        name: "Sat-Isabgol Powder",
-        inline: "box of 200 gm Powder",
-        rate: 4.6,
-        ratingno: "1406 ratings",
-        mrp: "MRP₹20512% OFF",
-        price: "₹ 180", 
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600692556/pg0w5oqchlazn8khi1ij.jpg",
-        name: "Calcirol Sachet",
-        inline: "sachet of 1 gm Granules",
-        rate: 4.6,
-        ratingno: "1696 ratings",
-        mrp: "MRP₹56.418% OFF",
-        price: "₹ 46",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1618942125/uaerylojm65fdh0o0dfo.jpg",
-        name: "Otrivin Oxy Fast Relief Adult Nasal Spray",
-        inline: "bottle of 10 ml Nasal Spray",
-        rate: 4.4,
-        ratingno: "1157 ratings",
-        mrp: "MRP₹96.818% OFF",
-        price: "₹ 79",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600150822/cropped/hs8n67tibvf7k7egbqrg.jpg",
-        name: "Cofsils Lozenges Lemon Ginger",
-        inline: "strip of 10 lozenges",
-        rate: 4.6,
-        ratingno: "765 ratings",
-        mrp: "MRP₹3025% OFFF",
-        price: "₹ 22",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600169607/cropped/n1k4duta0orlzsoukthc.jpg",
-        name: "Scalpe+ Expert Anti Dandruff Shampoor",
-        inline: "bottle of 75 ml Shampoos",
-        rate: 4.2,
-        ratingno: "1620 ratings",
-        mrp: "MRP₹26015% OFF",
-        price: "₹ 221",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1613566796/iheqzrewt0n4auxbd2l6.jpg",
-        name: "Horlicks Health and Nutrition Drink Classic Malt",
-        inline: "packet of 1 kg Powder",
-        rate: 4.5,
-        ratingno: "254 ratings",
-        mrp: "MMRP₹390",
-        price: "₹ 221",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600082665/cropped/n0a7l0pflxnzbspqxklc.jpg",
-        name: "i-pill Tablet",
-        inline: "strip of 1 Tablet",
-        rate: 4.3,
-        ratingno: "164 ratings",
-        mrp: "MRP₹11010% OFF",
-        price: "₹ 99",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600159765/cropped/jajhds52xsvgols7owvz.jpg",
-        name: "Neeri KFT  Sugar Free Syrup",
-        inline: "bottle of 200 ml Syrup",
-        rate: 4.4,
-        ratingno: "665 ratings",
-        mrp: "MRP₹59525% OFF",
-        price: "₹ 442",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600643760/cropped/pkpjvytxdfehfgxbnnm8.jpg",
-        name: "Softovac-SF Bowel Regulator Powder Sugar Free",
-        inline: "jar of 250 gm Powderp",
-        rate: 4.4,
-        ratingno: "435 ratings",
-        mrp: "MRP₹41521% OFF",
-        price: "₹ 328",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600153167/cropped/qjz8l72piinjwwynexks.png",
-        name: "Dr Ortho an Ayurvedic Medicine Oil",
-        inline: "bottle of 120 ml Oil",
-        rate: 4.,
-        ratingno: "1200 ratings",
-        mrp: "MRP₹295 25% OFF",
-        price: "₹ 221",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1614235864/onqhkrg9xwnxjh5j53bd.jpg",
-        name: "Vantej Toothpaste",
-        inline: "tube of 100 gm Toothpaste",
-        rate: 4.5,
-        ratingno: "908 ratings",
-        mrp: "MRP₹288 6% OFF",
-        price: "₹ 241",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1648040207/nl1cydgm9ca9soq5yz1p.jpg",
-        name: "Abzorb Anti Fungal Dusting Powder",
-        inline: "bottle of 100 gm Dusting Powder",
-        rate: 4.5,
-        ratingno: "799 ratings",
-        mrp: "MRP₹14218% OFF",
-        price: "₹ 116",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600090238/cropped/uop87kzztwx7r3olo7g2.png",
-        name: "Venusia Max Intensive Moisturizing...",
-        inline: "pump bottle of 300 gm Lotion",
-        rate: 4.4,
-        ratingno: "479 ratings",
-        mrp: "MRP₹601 18% OFF",
-        price: "₹ 490",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1612854564/sjbhlpjner4thvjdrkdp.jpg",
-        name: "Friends Premium Adult Dry Pants Medium",
-        inline: "packet of 10 diapers",
-        rate: 4.3,
-        ratingno: "325 ratings",
-        mrp: "MRP₹55028% OFF",
-        price: "₹ 396",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600553706/cropped/usu74sohegveqfzcxlug.jpg",
-        name: "Dettol Antiseptic Disinfectant Liquid",
-        inline: "bottle of 550 ml Liquid",
-        rate: 4.6,
-        ratingno: "10977 ratings",
-        mrp: "MRP₹194",
-        price: "₹ 194",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1609419124/wb4ndsavl7ixslwyohbi.jpg",
-        name: "Vicks Vaporub",
-        inline: "bottle of 50 gm Balm",
-        rate: 4.5,
-        ratingno: "1527 ratings",
-        mrp: "MRP₹14514% OFF",
-        price: "₹ 124",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1634636286/w5repuspahff9st0dp8a.jpg",
-        name: "Cetaphil Moisturising Cream",
-        inline: "tube of 80 gm Cream",
-        rate: 4.4,
-        ratingno: "223 ratings",
-        mrp: "MRP₹46515% OFF",
-        price: "₹ 395",
-    },
-    {
-        image: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1602507031/dvcnjp3dtor79sfkxyh7.jpg",
-        name: "VWash Plus Expert Intimate Hygiene",
-        inline: "bottle of 100 ml Liquid",
-        rate: 4.4,
-        ratingno: "985 ratings",
-        mrp: "MRP₹18020% OFF",
-        price: "₹ 143",
-    }];
-    var cartData = JSON.parse(localStorage.getItem("cart")) || [];
-    window.addEventListener("load", function () {
-      display( others);
+
+
+  var Explorenew = [
+  
+  {
+      Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1640110357/gmwzjt3hl13fakflv8cq.jpg",
+      Name:"Dr. Morepen Natural & Pure Shilajit Resin Form",
+      Inline:"jar of 15 gm Liquid",
+      Rate:" 3.5☆",
+      rate:" 600ratings",
+      MRP:"₹1499",
+      Discount:" 40% off",
+      Price:"₹899"
+  },
+ 
+  {
+     Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1640673370/ok8isrpmsmeubuxdrnu3.jpg",
+     Name:"Power Gummies for Jaw-Dropping Skin",
+     Inline:"bottle of 60 gummies",
+    Rate:" ☆",
+    rate:" 400ratings",
+     MRP:"₹1300",
+     Discount:" 20% off",
+     Price:"₹1040"
+ },
+ 
+ {
+     Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1642508482/pqljdlrlqfrxka7idf5r.jpg",
+     Name:"Siddhayu Wormzwin Herbal De-Worming Syrup ",
+     Inline:"for Kids (150ml Each) bottle of 2 syrups",
+     Rate:"4 ☆",
+     rate:"24 ratings",
+     MRP:"₹390",
+     Discount:" 17% off",
+     Price:"₹322.49"
+ },
+ 
+ {
+     Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1645792722/qqwsi6zhns4cvdemdyai.jpg",
+     Name:"Mom&Herbs Onion Hair Oil'",
+     Inline:"bottle of 100 ml Oil",
+     Rate:" 4☆",
+     rate:" 45ratings",
+     MRP:"₹345",
+     Discount:" 29% off",
+     Price:"₹245"
+ },
+ 
+ {
+     Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1634666917/zwl0ulr99mfm4uajly18.jpg",
+     Name:"Cetaphil Brightness Refresh Toner",
+     Inline:" bottle of 150 ml Toner",
+     Rate:" 5☆",
+     rate:" 56ratings",
+     MRP:"₹950",
+     Discount:"14 % off",
+     Price:"₹817.95"
+ },
+ 
+ {
+     Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1613479994/pbaxwcecrpsuom1biimv.jpg",
+     Name:"TrueBasics Multivit Table",
+     Inline:"bottle of 90 tablets",
+     Rate:" 5☆",
+     rate:" 43ratings",
+     MRP:"₹1099",
+     Discount:" 10% off",
+     Price:"₹989"
+ },
+ 
+ {
+     Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1601057138/cropped/dck60w9jyqvzopu8xzxz.jpg",
+     Name:"Ambic Chahel Anti-Stress Tablet",
+     Inline:"box of 60 tablets",
+     Rate:"4 ☆",
+     rate:" 43ratings",
+     MRP:"₹300",
+     Discount:" 15% off",
+     Price:"₹255"
+ },
+ 
+ {
+     Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1633440704/zxr6nrtvbuggsfcvdybz.jpg",
+     Name:"Nakpro Nutrition Whey Hydro Hydrolyzed Whey Protein Powder Chocolate",
+     Inline:"packet of 1 kg Powder",
+     Rate:"5 ☆",
+     rate:" 334ratings",
+     MRP:"₹3699",
+     Discount:" 54% off",
+     Price:"₹1699"
+ },
+ 
+ {
+     Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1642012100/fkbkngpbyxpt2wqis2gs.jpg",
+     Name:"Delight Nuts Fruits & Berries Mix",
+     Inline:"packet of 200 gm Pack",
+     Rate:"5 ☆",
+     rate:"34 ratings",
+     MRP:"₹349",
+     Discount:" 15% off",
+     Price:"₹297"
+ },
+ 
+ {
+     Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1601057138/cropped/dck60w9jyqvzopu8xzxz.jpg",
+     Name:"Dr. Morepen Itch Beat Dusting Powder",
+     Inline:"bottle of 100 gm Powder",
+     Rate:" 4☆",
+     rate:"345 ratings",
+     MRP:"₹115",
+     Discount:" 14% off",
+     Price:"₹98"
+ },
+ 
+ {
+     Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1640110357/gmwzjt3hl13fakflv8cq.jpg",
+     Name:"Siddhayu Calciactiv Advanced Natural Calcium Supplement Tablet",
+     Inline:"bottle of 100 gm Powder",
+     Rate:"5 ☆",
+     rate:" 345ratings",
+     MRP:"₹345",
+     Discount:" 17% off",
+     Price:"₹285.28"
+ },
+ 
+ {
+    Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600552604/cropped/sakgygle53njt6ngt4mh.png",
+    Name:"Drools Absolute Vitamin Syrup - Dog Supplement",
+    Inline:"box of 300 ml Pet Food",
+    Rate:" 4☆",
+    rate:" 245ratings",
+    MRP:"₹299",
+    Discount:" 2% off",
+    Price:"₹293.02"
+ },
+ 
+ {
+    Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1640782207/aed8zchrsekphafyafpk.jpg",
+    Name:"Mamaearth Coco Face Scrub",
+    Inline:"tube of 100 gm Scrub",
+    Rate:" 3☆",
+   rate:"655 ratings",
+    MRP:"₹349",
+    Discount:" 13% off",
+    Price:"₹303.63"
+ },
+ 
+ {
+    Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1609161376/jvatdanvdxyb0oyvr0y0.jpg",
+    Name:"Healthy Treat Classic Roasted 5-In-1 Superseed Mix (150gm Each)",
+    Inline:"combo pack of 2 jar",
+    Rate:"4☆",
+    rate:" 45ratings",
+    MRP:"₹350",
+    Discount:" 8% off",
+    Price:"₹322"
+ },
+ 
+ {
+    Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1609938588/rbit0bjumvno6xti6jxc.jpg",
+    Name:"Siddhayu Diabo Yogue Reduces Variability in Blood Sugar Levels Tablet",
+    Inline:" bottle of 60 tablets",
+    Rate:" 4.2☆",
+    rate:" 545 ratings",
+    MRP:"₹295",
+    Discount:" 17% off",
+    Price:"₹243.94"
+ },
+ 
+ {
+    Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600220792/cropped/g9vkae6qwpjkduoa7iyx.jpg",
+    Name:"Biotique Bio Walnut Purifying & Polishing Scrub",
+    Inline:"jar of 50 gm Scrub",
+    Rate:" 4☆",
+    rate:"3454 ratings",
+    MRP:"₹199",
+    Discount:" 17% off",
+    Price:"₹164.55"
+ },
+ 
+ {
+    Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1629209180/ngiropuifllakfqgniyt.jpg",
+    Name:"Whiskas Dry Food for Mother & Baby Cat Ocean Fish Flavour Junior 2-12 months",
+    Inline:" packet of 1.1 kg Pet Food",
+    Rate:"4☆",
+    rate:"53 ratings",
+    MRP:"₹400",
+   Discount:" % off",
+    Price:"₹400"
+ },
+ 
+ {
+    Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1601013956/cropped/lifu3zxsdmwkibq716so.png",
+    Name:"Chicnutrix Glow Glutathione and Vitamin C Strawberry...",
+ 
+    Inline:"bottle of 20 Effervescent Tablet",
+    Rate:"5☆",
+    rate:"45 ratings",
+    MRP:"₹1800",
+    Discount:" 30% off",
+    Price:"₹1260"
+ },
+ 
+ {
+    Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1642508827/epg76w1qmywxcue0gmkv.jpg",
+    Name:"Siddhayu Diabo Yogue Restorative Foot Care Cream....",
+    Inline:"tube of 60 gm Cream",
+    Rate:" 4.1☆",
+    rate:" 734 ratings",
+    MRP:"₹245",
+    Discount:" 15% off",
+    Price:"₹208"
+ },
+ 
+ {
+    Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1643653414/y0w5nsmrzzzom8dyjpdr.jpg",
+    Name:"Go 365 Ayurvedic Pain Reliever Spray",
+    Inline:"bottle of 90 ml Spray",
+    Rate:" 4☆",
+    rate:"435 ratings",
+    MRP:"₹245",
+    Discount:" 25% off",
+    Price:"₹183"
+ },
+ 
+ {
+     Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1640110655/d6f12cxsudhkjamlbz0c.jpg",
+     Name:"Dr. Morepen Omega 3 Triple Strength 1250mg Deep Sea Fish Oil with DHA & EPA 900mg Softgel",
+     Inline:" bottle of 60 soft gelatin capsules",
+     Rate:" 4.3☆",
+     rate:" 7ratings",
+     MRP:"₹1099",
+     Discount:" 36% off",
+     Price:"₹697"
+ },
+ 
+ {
+    Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600088083/cropped/v5tkdeeqryufa8dzj5nv.jpg",
+    Name:"Diataal -D Capsule",
+    Inline:"strip of 10 capsules",
+    Rate:" 4.4☆",
+    rate:" 244ratings",
+    MRP:"₹120",
+    Discount:" 26% off",
+    Price:"₹88"
+ },
+ 
+ {
+    Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1642508651/wgqgjpjaiby6hqqnaepk.jpg",
+    Name:"Ambic Diabiant Sugar Care Tablet",
+    Inline:"box of 30 tablets",
+     Rate:"5 ☆",
+    rate:"453 ratings",
+    MRP:"₹282",
+    Discount:" 14% off",
+    Price:"₹243"
+ },
+ 
+ {
+    Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600102381/cropped/uuxndudtxrcuocjhvddm.png",
+    Name:" Wellwoman Health Supplement Capsule",
+    Inline:" box of 30 capsules",
+    Rate:" 4.6☆",
+    rate:" 72ratings",
+    MRP:"₹626",
+    Discount:" 26% off",
+    Price:"₹461"
+ },
+ 
+ {
+    Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1625574332/otjmrlgx25mjmawziu0n.jpg",
+    Name:"Wellwoman 50+ Health Supplement for Women Tablet",
+    Inline:" strip of 30 tablets",
+    Rate:" 4.2☆",
+    rate:" 123ratings",
+    MRP:"₹646.5",
+    Discount:" 22% off",
+    Price:"₹500"
+ },
+ 
+ {
+    Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1645079255/seug8lsqoerrf3hv4pmh.jpg",
+    Name:"Tata 1mg Melatonin 10mg Vegetarian Capsule...",
+    Inline:" bottle of 30 capsules",
+    Rate:" 4.7☆",
+    rate:" 10ratings",
+    MRP:"₹510",
+    Discount:" 50% off",
+    Price:"₹255"
+ },
+ 
+ {
+    Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1640110790/kbypkrcum7uizhwxv21e.jpg",
+    Name:"Dr. Morepen Sleep Tablet",
+    Inline:"bottle of 60 tablets",
+    Rate:"4☆",
+    rate:"345 ratings",
+    MRP:"₹695",
+    Discount:" 30% off",
+    Price:"₹487"
+ },
+ 
+ {
+    Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1638263799/da53ml3uc1gpctmhanfm.jpg",
+    Name:"Wellwoman Hairfollic Hair Supplement Tablet",
+    Inline:"box of 30 tablets",
+    Rate:" 4.3☆",
+    rate:" 85ratings",
+    MRP:"₹708",
+    Discount:" 26% off",
+    Price:"₹523"
+ },
+ 
+ {
+    Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1631190246/asqryelbmu85zqqovpdu.jpg",
+    Name:"Zandu Ortho Vedic Knee & Joint Pain Oil",
+    Inline:"bottle of 120 ml Oil",
+    Rate:" 4.2☆",
+    rate:" 41ratings",
+    MRP:"₹295",
+    Discount:" 30% off",
+    Price:"₹207"
+ },
+ 
+ {
+    Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1633566493/j3xk5ncgcrghkwpdedu1.jpg",
+    Name:" Cetaphil Brightening Night Comfort Cream",
+    Inline:" bottle of 350 ml Liquid",
+    Rate:" 3.8☆",
+    rate:" 12ratings",
+    MRP:"₹950",
+    Discount:" 14% off",
+    Price:"₹817.95"
+ },
+ 
+ {
+     Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1619071815/icrinpgavzy6ztuyw1pt.jpg",
+     Name:"Siddhayu Digee Yogue Daily Digestive",
+     Inline:" bottle of 350 ml Liquid",
+     Rate:" 3☆",
+     rate:"344 ratings",
+     MRP:"₹245",
+     Discount:" 17% off",
+     Price:"₹202.59"
+ },
+ 
+ {
+    Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1640111046/aywb3kusfcv1tnyyt8qy.jpg",
+    Name:" Dr. Morepen Multi Vitamin Men...",
+    Inline:"bottle of 60 tablets",
+    Rate:"5☆",
+    rate:"443 ratings",
+    MRP:"₹999",
+    Discount:" 32% off",
+    Price:"₹679"
+ },
+ 
+ {
+    Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1607685977/fqley4y8yrcx3azbap1h.jpg",
+    Name:"Diataal Multivitamin, Beta Carotene...",
+    Inline:" strip of 15 capsules",
+    Rate:" 4.3☆",
+    rate:" 94ratings",
+    MRP:"₹105",
+    Discount:" 15% off",
+    Price:"₹88.72"
+ },
+ 
+ {
+    Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1646311438/e3dxbabtwsnv262qtpve.jpg",
+    Name:"Carbamide Forte Multivitamins with Probiotics...",
+    Inline:"  bottle of 60 tablets",
+    Rate:" 3.7☆",
+    rate:" 55ratings",
+    MRP:"₹375",
+    Discount:" 20% off",
+    Price:"₹299"
+ },
+ 
+ {
+    Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1645273075/fvj4yg4go9xjxlb0jfrv.jpg",
+    Name:" Tata 1mg Senior 50+ Mul...",
+    Inline:" bottle of 30 tablets",
+    Rate:" 4.2☆",
+    rate:" 255ratings",
+    MRP:"₹510",
+    Discount:" 55% off",
+    Price:"₹230"
+ },
+ 
+ {
+    Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1640196383/zvhu9efm88ozunxhw7qr.jpg",
+    Name:"Dr. Morepen Biotin+ Tablet for Healthy...",
+    Inline:"bottle of 60 tablets",
+    Rate:" 4.2☆",
+    rate:" 6ratings",
+    MRP:"₹999",
+    Discount:" 35% off",
+    Price:"₹649"
+ },
+ 
+ {
+    Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1601352306/cropped/qn6l5e8ntjtbwkjppafh.jpg",
+    Name:"TrueBasics Omega 3 Fish Oil Triple Strength Soft Gelatin Capsule",
+    Inline:" bottle of 60 soft gelatin capsules",
+    Rate:" 4.4☆",
+    rate:" 7ratings",
+    MRP:"899",
+    Discount:" 22% off",
+    Price:"₹701"
+ },
+ 
+ {
+    Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1640110790/kbypkrcum7uizhwxv21e.jpg",
+    Name:"Dr. Morepen Sleep Tablet",
+    Inline:"bottle of 60 tablets",
+    Rate:"4 ☆",
+    rate:"434 ratings",
+    MRP:"₹695",
+    Discount:" 30% off",
+    Price:"₹487"
+ },
+ 
+ {
+    Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1625684361/sgwhbl4vvgf1m55keg3h.jpg",
+    Name:"Hashmi Hard Rock Energino Male Boost...",
+    Inline:"bottle of 20 capsules",
+    Rate:"5☆",
+    rate:"445 ratings",
+    MRP:"₹1900",
+    Discount:" 7% off",
+    Price:"₹1767"
+ },
+ 
+ {
+    Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1637690910/d2vqga17hhmoifmktje4.jpg",
+    Name:"Dipya Ayurvedic Digestive Care Syrup",
+    Inline:"bottle of 200 ml Syrup",
+    Rate:"4 ☆",
+    rate:" 54 ratings",
+    MRP:"₹105",
+    Discount:" 25% off",
+    Price:"₹78"
+ },
+ 
+ {
+     Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1640110289/igxz8kckqf5hcplaek1m.jpg",
+     Name:"Dr. Morepen Exygra Spray",
+     Inline:"bottle of 20 gm Spray",
+     Rate:" 2.8☆",
+     rate:" 24ratings",
+     MRP:"₹175",
+     Discount:" 25% off",
+     Price:"₹131"
+ },
+ 
+ {
+    Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1625684873/orjgitje5epidfjjsz7h.jpg",
+    Name:"Hashmi Sikander-E-Azam Plus Capsule",
+    Inline:"bottle of 10 capsules",
+    Rate:" 4☆",
+    rate:" 9ratings",
+    MRP:"₹1286",
+    Discount:" 11% off",
+    Price:"₹1145"
+ },
+ 
+ {
+    Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1605793981/kwhnicty9dr71licy1wy.jpg",
+    Name:"BeatO Smart Glucometer Kit with 20 Strips",
+    Inline:"box of 1 Unit",
+    Rate:" 4.5☆",
+    rate:" 10ratings",
+    MRP:"₹4100",
+    Discount:" 73% off",
+    Price:"₹1090"
+ },
+ 
+ {
+    Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1607928612/bqxpq04k6ljx5uazzcfd.jpg",
+    Name:" Dr. Morepen QuickChek Advance Pregnancy...",
+    Inline:"   box of 1 Test Kit",
+    Rate:" 2.7☆",
+    rate:" 9ratings",
+    MRP:"₹75",
+    Discount:" 25% off",
+    Price:"₹56"
+ },
+ 
+ {
+    Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1641126880/xbhkkhnpj6gsv3xldvwq.jpg",
+    Name:"Carbamide Forte Multivitamin Sports..",
+    Inline:"bottle of 60 tablets",
+    Rate:"5 ☆",
+    rate:" ratings",
+    MRP:"₹875",
+    Discount:" 43% off",
+    Price:"₹499"
+ },
+ 
+ {
+    Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600162397/cropped/lmfkdxpp6lwqfogqtk27.png",
+    Name:"Optimum Nutrition (ON) Amino Energy Orange",
+    Inline:" box of 270 gm Powder",
+    Rate:" 4☆",
+    rate:" 6 ratings",
+    MRP:"₹2429",
+    Discount:" 15% off",
+    Price:"₹2065"
+ },
+ 
+ {
+    Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1625575754/yb8dwtd8dikpbomhrxph.jpg",
+    Name:"Wellwoman 70+ Health Supplement for Women Tablet",
+    Inline:"box of 30 tablets",
+    Rate:" 4.7☆",
+    rate:" 10ratings",
+    MRP:"₹468",
+    Discount:" 15% off",
+    Price:"₹398"
+ },
+ 
+ {
+    Image:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1633566659/vdp9ontpqsjy28ebupyq.jpg",
+    Name:"Cetaphil Brightening Lotion",
+    Inline:"  pump bottle of 245 ml Lotion",
+    Rate:" 5 ☆",
+    rate:" ratings",
+    MRP:"₹1480",
+    Discount:" 14% off",
+    Price:"₹1274"
+ },
+ 
+ 
+ ]
+ 
+
+ window.addEventListener("load", function () {
+      display(Explorenew);
     });
 function sort()
     {
       var s=document.querySelector("#s").value
-      
       if(s=="asd")
       { 
-        others.sort(function(a,b){
-          return a.price - b.price});
-          display( others)
+        Explorenew.sort(function(a,b){
+          return a.Price - b.Price});
+          display(Explorenew)
          
       }
      else if(s=="des")
-      { 
-      others.sort(function(a,b){
-          return b.price - a.price});
-          display(others)  
-      }
+      {
+        Explorenew.sort(function(a,b){
+          return b.Price - a.Price});
+          display(Explorenew)  
+      } 
     }
-    function display( others)
+    function display(Explorenew)
      {
     document.querySelector("#second").innerHTML=""
-    others.map(function (elem) {
+ var cartData = JSON.parse(localStorage.getItem("cart")) || [];
+    Explorenew.map(function (elem) {
     var box = document.createElement("div");
 
     var img = document.createElement("img");
-    img.src = elem.image;
+    img.src = elem.Image;
     img.setAttribute("class","secondimg")
 
     var name = document.createElement("h5");
-    name.textContent = elem.name;
+    name.textContent = elem.Name;
     name.style.color = "#212121"
 
     var inline = document.createElement("p");
-    inline.innerText = elem.inline;
+    inline.innerText = elem.Inline;
     inline.setAttribute("class","secondp")
     inline.style.color = "#757575"
 
     var star = document.createElement("h4");
-    star.innerText =elem.rate+"☆"
+    star.innerText =elem.Rate
     star.setAttribute("id","secondh4")
 
     var ratee = document.createElement("pre");
-    ratee.innerText=`  ${elem.ratingno}` 
+    ratee.innerText=`  ${elem. rate}` 
     ratee.setAttribute("class","secondp2")
     
     var Mrp = document.createElement("p");
-    Mrp.innerText = elem.mrp;
+    Mrp.innerText = elem.MRP;
     Mrp.setAttribute("class","secondp")
 
     var Price = document.createElement("h2");
-    Price.innerText = elem.price;
-    var num=elem.price.split("")
+    Price.innerText = elem.Price;
+    var num=elem.Price.split("")
     var n=num[0];
     if(n=='₹')
     { num.shift()
-    
     num=num.join("")
-    elem.price=num
+    elem.Price=num
 }
 
     var btn = document.createElement("button");
@@ -1029,9 +1203,15 @@ function sort()
   });
 
   function addToCart(elem) {
+    console.log(elem);
     cartData.push(elem);
     localStorage.setItem("cart", JSON.stringify(cartData));
     alert("item added to cart");
   }
 }
-</script>
+</script> 
+
+
+
+
+

@@ -7,263 +7,203 @@
     <title>Document</title>
     <script src="https://kit.fontawesome.com/24c494a6b6.js"
     crossorigin="anonymous"></script>
-    <style>
-        body{
-            font-family: "Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-            }
-        #main{
-        width: 90%;
-        height: auto;
-        margin: auto;
-        display: flex;
-        }
-        #first{
-        width: 20%;
-        /* overflow-y: scroll; */
-        height: auto;
-        font-size: 12px;
-        line-height: 20px;
-        }
-        a {
-        text-decoration: none;
-        cursor: pointer;
-        color: #666666;
-        line-height: 20px;
-        font-size: 12px;
-        }
-        ul{
-        list-style-type: none;
-        margin: 10px;
-        padding: 10px;
-        }
-        .al{
-        margin-left: 20px;
-        }
-        #second{
-        width: 70%;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: auto;
-        gap: 20px;
-        margin-top: 50px;
-        }
-        #second>div{
-        width: 220px;
-        height: 400px;
-        margin: auto;
-        }
-        #second>div>div{
-        display: flex;
-        justify-content: space-between;
-        font-weight: bold;
-        }
-        img{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-        width: 100px;
-        height: 100px;
-        }
-        .scroller{
-        width: 240px;
-        height: 100px;
-        overflow-y: scroll;
-        scrollbar-color: rebeccapurple green;
-        scrollbar-width: thin;
-        }
-        .inside{
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: space-between;
-        margin: auto;
-        margin-left: 20px;
-        }
-        #lbl{
-        font-size: 14px;
-        font-weight: bold;
-        }
-        #dis{
-        width: 80%;
-        justify-content: space-between;
-        }
-        #head {
-        text-align: center;
-        color: #1a1a1a;
-        font-size: 14px;
-        }
-        h2{
-        font-size: 16px;
-        }
-        h3{
-        font-size: 14px;
-        }
-        p{
-        color: #666666;
-        line-height: 20px;
-        }
-        #container{
-        width: 90%;
-        height: auto;
-        margin: auto;
-        }
-        .rel {
-        width: 70%;
-        height: auto;
-        display: flex;
-        margin: auto;
-        }
-        .rel > div {
-        width: 32%;
-        height: auto;
-        text-align: center;
-        padding: 10px;
-        margin-top: 25px;
-        margin-bottom: 25px;
-        }
-        .rel > div > .rate{
-        font-weight: 700;
-        font-size: 30px;
-        }
-        #link {
-        width: 50%;
-        height: auto;
-        display: flex;
-        margin: auto;
-        margin-top: 10px;
-        }
-        #link>div{
-        width: 48%;
-        height: 100px;
-        font-size: 20px;
-        }
-        input {
-        border: none;
-        }
-        button{
-        border: none;
-        background-color: #ff6f61;
-        margin-left: 8px;
-        padding: 10px;
-        border-radius: 4px;
-        color: white;
-        }
-        .overall {
-        width: 95%;
-        height: auto;
-        display: flex;
-        margin: auto;
-        }
-        .overall > div{
-        width: 20%;
-        height: auto;
-        /* margin: auto; */
-        }
-        .overall>.onside {
-        padding-top: 30px;
-        }
-        .extra{
-        font-size: 16px;
-        color: #30281a;
-        }
-        ul{
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        }
-        a {
-        text-decoration: none;
-        cursor: pointer;
-        color: #666666;
-        line-height: 20px;
-        font-size: 12px;
-        }
-        #btn {
-        width: 97px;
-        height: 40px;
-        border-radius: 4px;
-        background-color: #ff6f61;
-        font-weight: 700;
-        border: none;
-        vertical-align: middle;
-        color: #fff;
-        }
-        .tag{
-        font-size: 14px;
-        color: #767676;
-        margin: 0px 10px 0px 10px;
-        line-height: 10px;
-        }
-        .icn{
-        width: 100px;
-        height: 100px;
-        background-color: #1a1a1a;
-        color: white;
-        margin-right: 12px;
-        /* font-weight: bold; */
-        font-size: large;
-        padding: 5px;
-        }
-       .secure {
-        width: 90%;
-        height: auto;
-        display: flex;
-        margin: auto;
-        margin-top: 25px;
-        margin-bottom: 25px;
-       } 
-       .secure > div{
-        width: 30%;
-        height: auto;
-        display: flex;
-        margin: auto;
-       }
-       .secure > div > div{
-        width: 50%;
-        height: auto;
-       }
-       .secure > div > :first-child {
-        text-align: center;
-        padding-top: 50px;
-       }
-       .img{
-        width: 90px;
-        height: 90px;
-       }
-       .blur{
-        color: #767676;
-        font-size: 12px;
-       }
-       .last {
-        width: 60%;
-        height: auto;
-        display: flex;
-        padding-left: 500px;
-        margin: auto;
-        text-align: center;
-       }
-       .last > div{
-        width: auto;
-        height: auto;
-        margin-right: 20px;
-       }
-       #h{
-        width: 30%;
-        margin: auto;
-        text-align: center;
-       }
-       .disclaimer{
-        width: 100%;
-        height: auto;
-        display: flex;
-       }
-       .disclaimer>:first-child{
-        color: #bfc5c6;
-       }
-    </style>
+    <link rel="stylesheet" href="./styles/adult.css">
 </head>
 <body>
+    <div id="b1">
+        <div class="b2"><a href="index.html"><img src="https://www.1mg.com/images/tata_1mg_logo.svg"></div> </a>
+    
+        <div> <p> <a id="a1" href="index.html">MEDICINE</a></p> </div>
+   
+        <div class="b1"><p><a href="labtest.html">LAB TESTS</a></p></div>
+        <div class="b1"><p><a href="askdoctor.html">ASK DOCTOR</a></p></div>
+        <div class="b1"><p><a href="covid.html">COVID-19</a></p></div>
+        <div class="b1"><p><a href="herbs.html">AYURVEDA</a></p></div>
+        <div class="b1"><p><a href="plan.html">CARE PLAN</a></p></div>
+        <!-- <div class="b3"> <P><a>Login</a>/<a>Sign Up</a></P></div> -->
+        <!-- ................................................... .................................-->
+      <div>  <P><a  onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login/Sign Up</a></div>
+
+        <!-- ..................................................................................... -->
+        <div><p><a href="offer.html">Offers</a></p></div>
+        <a href="Cart.html"><i style="font-size: 30px;" class="fa-solid fa-cart-arrow-down"></i></a>
+        <div><p><a href="Needhelp.html">Need Help?</a></p></div>
+</div>
+<div id="b1">
+ 
+     <div class="location">
+       <i class="fa-solid fa-location-dot icon"></i>
+       <select>
+           <option>delhi</option>
+           <option>Annur</option>
+           <option>Arantangi</option>
+           <option>Ashok Nagar</option>
+           <option>Attuvampatti</option>
+           <option>Aurangabad Maharashtra</option>
+           <option>Aviyur</option>
+           <option>Bagalkot</option>
+           <option>Baghpat</option>
+           <option>Bahadurgarh</option>
+           <option>Bahraich</option>
+           <option>Assaudh</option>
+           <option>Ayyangarkulam</option>
+           <option>Aurangabad Bihar</option>
+
+       </select>
+       <div class="sicon"><i style="margin-left: 40px;" class="fa-solid fa-location-crosshairs  icon"></i></div>
+     </div>
+     <div class="search">
+
+              <div class="input"><input type="search" placeholder="Search for Medicines and Health Products "class="input"></div> 
+           
+             <div class="tsearch"><span class="tr"><a><i class="fa-solid fa-magnifying-glass icon"></i></a></span></div>  
+</div>
+  <div class="offer"><div style="width: 40px;"><i style="color: red;" class="fa-solid fa-bolt icon"></i></div><span class="text">QUICK BUY! Flat 25% off on medicines*</span></div>
+ 
+  <button class="btn1">Upload</button> 
+</div>
+<!--.................................................................. home page list.................................................................................... -->
+<div class="list">
+   
+     <div>  <ul id="menu">
+           <li><a href="#">Health Resource Center<span><i class="fa-solid fa-angle-down down"></i></span></a>
+           <uL>
+               <li>All Diseases</li>
+               <li>All Medicines</li>
+               <li>Medicines by the Therapeutic Class</li>
+   
+           </uL></li>
+       </ul>
+       </div>
+       <div style="width: 170px;">
+           <ul id="menu">
+       <li><a href="#">Covid Essentials<span><i class="fa-solid fa-angle-down down"></i></span></a>
+          <ul>
+         <li>Covid-19 Self test kits</li>
+         <li>Oxygen Cans & Concentrators</li>
+         <li>Masks</li>
+         <li>Sanitizers & Handwash Products</li>
+         <li>Support Your Immunity</li>
+         <li>Thermometer</li>
+         <li>Chyawanprash</li>  l
+       </ul>
+      </li>
+   </ul>
+   </div>
+   <div style="width: 100px;">
+       <ul id="menu">
+      <li ><a>Featured <span><i class="fa-solid fa-angle-down down"></i></span></a>
+         <ul>
+         <li>Tata 1mg Health Products</li>
+         <li>What others are buying</li>
+         <li>New Arrivals on Tata 1MG</li>
+         <li>Buy More, Save More</li>
+         <li>Minimum 33% Off</li>
+         <li>Combos</li> 
+       </ul>
+              </li>
+           </ul>
+  </div>
+   <div>
+<ul id="menu">
+   <li ><a>Vitamins & Nutrition<span ><i class="fa-solid fa-angle-down down"></i></span></a>
+      <ul>
+      <li>Multivitamins</li>
+      <li>Vitamins A-Z</li>
+      <li>Mineral Supplements</li>
+      <li>Vitamin B12 & B Complex</li>
+      <li>Nutritional Drinks</li>
+      <li>Adult Daily Nutrition</li>
+      <li>Kids Nutrition (2-15 Yrs)</li>
+      <li>For Women </li>
+
+    </ul>
+           </li>
+        </ul> 
+       </div>
+       <div style="width: 140px;">
+           <ul id="menu">
+               <li ><a>Diabetes<span ><i class="fa-solid fa-angle-down down"></i></span></a>
+                  <ul>
+                  <li>Devices</li>
+                  <li>Blood Glucose Monitors</li>
+                  <li>Test Strips & Lancets</li>
+                  <li>Syringes & Pens</li>
+                  <li>Nutritional Drinks</li>
+                  <li> Homeopathy Medicines</li>
+                  <li>Diabetic Medicines</li>
+                  <li>Ayurvedic Medicines </li>
+            </ul>
+            </li>
+           </ul> 
+       </div>
+       <div style="width: 180px;">
+           <ul id="menu">
+               <li ><a>Healthcare Devices<span ><i class="fa-solid fa-angle-down down"></i></span></a>
+                  <ul>
+                  <li>Devices</li>
+                  <li>Blood Glucose Monitors</li>
+                  <li>Test Strips & Lancets</li>
+                  <li>Syringes & Pens</li>
+                  <li>Nutritional Drinks</li>
+                  <li> Homeopathy Medicines</li>
+                  <li>Diabetic Medicines</li>
+                  <li>Ayurvedic Medicines </li>
+            </ul>
+            </li>
+           </ul> 
+       </div>
+       <div style="width: 170px;">
+           <ul id="menu">
+          <li ><a>Personal Care<span ><i class="fa-solid fa-angle-down down"></i></span></a>
+             <ul>
+             <li>Tata 1mg Health Products</li>
+             <li>What others are buying</li>
+             <li>New Arrivals on Tata 1MG</li>
+             <li>Buy More, Save More</li>
+             <li>Minimum 33% Off</li>
+             <li>Combos</li> 
+           </ul>
+                  </li>
+               </ul>
+      </div>
+      <div style="width: 30px;">
+       <ul id="menu">
+      <li ><a>Ayurveda Products<span ><i class="fa-solid fa-angle-down down"></i></span></a>
+         <ul>
+         <li>Tata 1mg Health Products</li>
+         <li>What others are buying</li>
+         <li>New Arrivals on Tata 1MG</li>
+         <li>Buy More, Save More</li>
+         <li>Minimum 33% Off</li>
+         <li>Combos</li> 
+       </ul>
+              </li>
+           </ul>
+  </div>
+  <div style="margin: auto;">
+   <ul id="menu">
+  <li ><a>Homeopathy<span ><i class="fa-solid fa-angle-down down"></i></span></a>
+     <ul>
+     <li>Tata 1mg Health Products</li>
+     <li>What others are buying</li>
+     <li>New Arrivals on Tata 1MG</li>
+     <li>Buy More, Save More</li>
+     <li>Minimum 33% Off</li>
+     <li>Combos</li> 
+   </ul>
+          </li>
+       </ul>
+</div>  
+</div>
+<div class="sort">
+    <p>Sort By</p>
+    <select id="s" onchange="sort()">
+    <option value="">Relevance</option>
+<option value="asd">Price: low to high</option>
+<option value="des">Price: high to low</option>
+</select>
+</div>
     <div id="main">
         <div id="first">
             <div>
@@ -507,9 +447,12 @@
                 </div>
             </div>
         </div>
+                  
+<!--.....................................................{second div} <h2>What others are buying</h2>............................................................................. -->
+ 
         <div id="second">
-            <!-- <h2>What others are buying</h2> -->
-        </div>
+           
+         </div>
     </div>
     <h2 id="head">INDIA’S LARGEST HEALTHCARE PLATFORM</h2>
     <div class="rel">
@@ -1010,51 +953,77 @@
         price: "₹3059",
     }];
     var cartData = JSON.parse(localStorage.getItem("cart")) || [];
+
+    window.addEventListener("load", function () {
+      display(women);
+    });
+function sort()
+    {
+      var s=document.querySelector("#s").value
+      if(s=="asd")
+      { 
+        women.sort(function(a,b){
+          return a.price - b.price});
+          display(women)
+         
+      }
+     else if(s=="des")
+      {
+        women.sort(function(a,b){
+          return b.price - a.price});
+          display(women)  
+      }
+    }
+    function display(women)
+     {
+    document.querySelector("#second").innerHTML=""
     women.map(function (elem) {
     var box = document.createElement("div");
 
     var img = document.createElement("img");
     img.src = elem.image;
+    img.setAttribute("class","secondimg")
 
-    var name = document.createElement("h3");
+    var name = document.createElement("h5");
     name.textContent = elem.name;
     name.style.color = "#212121"
 
     var inline = document.createElement("p");
     inline.innerText = elem.inline;
+    inline.setAttribute("class","secondp")
     inline.style.color = "#757575"
 
-    var box1 = document.createElement("div");
+    var star = document.createElement("h4");
+    star.innerText =elem.rate+"☆"
+    star.setAttribute("id","secondh4")
 
-    var star = document.createElement("p");
-    star.innerText = elem.rate;
-    star.style.color = "white";
-    star.style.backgroundColor = "#1aab2a"
-
-    var ratee = document.createElement("p");
-    ratee.innerText = elem.ratingno; 
-
-    box1.append(star,ratee);
+    var ratee = document.createElement("pre");
+    ratee.innerText=`  ${elem.ratingno}` 
+    ratee.setAttribute("class","secondp2")
     
     var Mrp = document.createElement("p");
     Mrp.innerText = elem.mrp;
+    Mrp.setAttribute("class","secondp")
 
-    var box2 = document.createElement("div");
-
-    var Price = document.createElement("p");
+    var Price = document.createElement("h2");
     Price.innerText = elem.price;
+
+    var num=elem.price.split("")
+    var n=num[0];
+    if(n=='₹')
+    { num.shift()
+    
+    num=num.join("")
+    elem.price=num
+}
 
     var btn = document.createElement("button");
     btn.innerText = "ADD";
-    btn.style.color = "#ff7062"
-    btn.style.backgroundColor = "white"
     btn.addEventListener("click", function () {
       addToCart(elem);
     });
-
-    box2.append(Price,btn);
-
-    box.append(img,name,inline,box1,Mrp,box2);
+    btn.setAttribute("class","button1")
+    box.append(img,name,inline,star,ratee,Mrp,Price,btn);
 
     document.querySelector("#second").append(box);
   });
@@ -1065,4 +1034,5 @@
     localStorage.setItem("cart", JSON.stringify(cartData));
     alert("item added to cart");
   }
+}
 </script>
