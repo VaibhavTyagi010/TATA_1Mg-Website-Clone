@@ -1,3 +1,6 @@
+
+
+
 # 1Mg-clone
 TATA 1MG Clone
 Our first group project at masai
@@ -25,6 +28,8 @@ Some Glimpse and Screenshots of our website:-
 
 Home Page -
 
+![Screenshot (16)](https://user-images.githubusercontent.com/93308342/185572798-b1d0d89e-f5d1-4622-92a1-82e4b0573000.png)
+
 HOME PAGE
 This is the main landing page of our website. Here clicking on any option on the Navbar will redirect the user to the respective Product Page.
 It is fully functional and responsive.
@@ -41,10 +46,16 @@ This is one of the product pages of our website.
 In this user gets a regular update about new deals and products.
 Also, the user can filter the products according to name, category, and price.
 Clicking on the Add To Bag Button will add products to the Bag.
+
+![Screenshot (17)](https://user-images.githubusercontent.com/93308342/185572834-ca24c447-842e-48bf-9fa3-851e7e1576cc.png)
+
 Cart Page -
 
 CART PAGE
 Here the users can see the products added and can proceed to the payment page.
+
+![Screenshot (18)](https://user-images.githubusercontent.com/93308342/185572867-993dae6c-7b26-4575-b880-3f8c0eaae0f8.png)
+
 Payment Page -
 
 PAYMENT PAGE
